@@ -16,7 +16,7 @@ int main(void)
 /*
 	while(parser(input,&x1,&x2,&x3)!=ERROR)
 	{
-		printf("OJETE %d %d %d\n",x1,x2,x3);
+		
 
 	}
 */
