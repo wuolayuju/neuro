@@ -17,7 +17,7 @@ int main(void)
 	while(parser(input,&x1,&x2,&x3)!=ERROR)
 	{
 		
-
+asdasdsdasd
 	}
 */
 	times = parser(input,inputs);
