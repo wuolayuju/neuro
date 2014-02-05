@@ -16,8 +16,7 @@ int main(void)
 /*
 	while(parser(input,&x1,&x2,&x3)!=ERROR)
 	{
-		
-asdasdsdasd
+		Probando de nuevo commit, por si acaso
 	}
 */
 	times = parser(input,inputs);
