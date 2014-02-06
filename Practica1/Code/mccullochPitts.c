@@ -9,7 +9,7 @@ int parserBasic(FILE *inputFile, boolean *x1, boolean *x2, boolean *x3)
 
 	if(fgets(string,MAX_LINE,inputFile)!=NULL)
 	{
-		if(sscanf(string,"%d %d %d\n",x1,x2,x3)!=3)
+		if(sscanf(string,"%d %d %d\n",(int *)x1,(int *)x2,(int *)x3)!=3)
 			return 0;
 
 			
@@ -32,12 +32,13 @@ int parser(FILE *inputFile,boolean inputs[][3])
 
 }
 
-void initNeuron(Neuron *neuron)
+void initNeuron(Neuron *neuron, int id)
 {
 	neuron->weights = NULL;
 	neuron->inputs = NULL;
 	neuron->y = 0;
 	neuron->numConnections = 0;
+	neuron->id = id;
 
 }
 
@@ -45,16 +46,42 @@ void initNetworkMP(Network *net, int x1, int x2, int x3)
 {
 	int i;
 
-	initNeuron(&net->outputNeurons[0]);
-	initNeuron(&net->outputNeurons[1]);
+	initNeuron(&net->outputNeurons[0],10);
+	initNeuron(&net->outputNeurons[1],11);
 	
-	initNeuron(&net->fstHiddenLayer[0]);
-	initNeuron(&net->fstHiddenLayer[1]);
-	initNeuron(&net->fstHiddenLayer[2]);
+	initNeuron(&net->fstHiddenLayer[0],1);
+	initNeuron(&net->fstHiddenLayer[1],2);
+	initNeuron(&net->fstHiddenLayer[2],3);
 
 	for(i=0;i<6;i++)
-		initNeuron(&net->scndHiddenLayer[i]);
+		initNeuron(&net->scndHiddenLayer[i],i+4);
 
+}
+
+void initNetworkXOR(NetworkXOR *net, int x1, int x2, float threshold)
+{
+
+	net->threshold = threshold;
+
+	initNeuron(&net->inputs[0],0);
+	initNeuron(&net->inputs[1],0);
+	
+	initNeuron(&net->fstHiddenLayer[0],1);
+	initNeuron(&net->fstHiddenLayer[1],2);
+
+	initNeuron(&net->outputNeuron,3);
+
+	net->inputs[0].y=x1;
+	net->inputs[1].y=x2;
+
+	addConnection(&net->fstHiddenLayer[0],&net->inputs[0],2);
+	addConnection(&net->fstHiddenLayer[0],&net->inputs[1],-1);
+
+	addConnection(&net->fstHiddenLayer[1],&net->inputs[0],-1);
+	addConnection(&net->fstHiddenLayer[1],&net->inputs[1],2);
+
+	addConnection(&net->outputNeuron,&net->fstHiddenLayer[0],2);
+	addConnection(&net->outputNeuron,&net->fstHiddenLayer[1],2);
 }
 
 
@@ -83,6 +110,16 @@ void freeNetworkMP(Network *net)
 
 	for(i=0;i<6;i++)
 		freeNeuron(&net->scndHiddenLayer[i]);
+}
+
+void freeNetworkXOR(NetworkXOR *net)
+{
+
+	freeNeuron(&net->outputNeuron);
+	
+	freeNeuron(&net->fstHiddenLayer[0]);
+	freeNeuron(&net->fstHiddenLayer[1]);
+
 }
 
 
@@ -118,7 +155,7 @@ void transferFunction(Neuron *neuron, float threshold)
 	for(i=0;i<neuron->numConnections;i++)
 		y_in+= *neuron->inputs[i] * neuron->weights[i];
 
-	printf("Y_IN %d THRESHOLD %.3f\n",y_in,threshold);
+	printf("Z%d : Y_IN %d THRESHOLD %.3f\n",neuron->id,y_in,threshold);
 	if(y_in>=threshold)
 		neuron->y = 1;
 	else

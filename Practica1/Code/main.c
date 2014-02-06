@@ -6,19 +6,20 @@
 int main(void)
 {
 	/*boolean x1,x2,x3;*/
-	FILE *input=fopen("input","r");
+	/*FILE *input=fopen("input","r");
 	boolean inputs[256][3];
 		Neuron neuron;
 	Neuron n1,n2;
 	int i;
 	int times;
-	int y_in=0;
+	int y_in=0;*/
 /*
 	while(parser(input,&x1,&x2,&x3)!=ERROR)
 	{
-		Probando de nuevo commit, por si acaso
+		printf("OJETE %d %d %d\n",x1,x2,x3);
+
 	}
-*/
+
 	times = parser(input,inputs);
 
 	for(i=0;i<times;i++)
@@ -28,7 +29,7 @@ int main(void)
 
 	n1.y=1;
 	n2.y=1;
-/*
+
 	neuron.inputs = (int **)malloc(sizeof(int)*2);
 	neuron.weights = (int *)malloc(sizeof(int)*2);
 	neuron.numConnections=2;
@@ -36,7 +37,7 @@ int main(void)
 	neuron.inputs[1]=&n2.y;
 	neuron.weights[0]=2;
 	neuron.weights[1]=5;
-	n2.y=0;*/
+	n2.y=0;
 
 	initNeuron(&neuron);
 	addConnection(&neuron,&n2,6);
@@ -52,6 +53,18 @@ int main(void)
 	printf("AYAYAY %d\n",neuron.y);
 
 	freeNeuron(&neuron);
+	*/
+
+	NetworkXOR network;
+
+	initNetworkXOR(&network,1,0,2);
+
+	transferFunction(&network.fstHiddenLayer[0],network.threshold);
+	transferFunction(&network.fstHiddenLayer[1],network.threshold);
+
+	transferFunction(&network.outputNeuron,network.threshold);
+	
+	freeNetworkXOR(&network);
 	return 0;
 
 }
