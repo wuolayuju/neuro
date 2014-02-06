@@ -163,4 +163,51 @@ void transferFunction(Neuron *neuron, float threshold)
 
 }
 
+void initNetworkXOREpochs(NetworkXOREpochs *net)
+{
+	net->threshold = 2;
 
+	initNeuron(&net->inputs[0],0);
+	initNeuron(&net->inputs[1],1);
+	
+	initNeuron(&net->fstHiddenLayer[0],2);
+	initNeuron(&net->fstHiddenLayer[1],3);
+
+	initNeuron(&net->outputNeuron,4);
+
+	addConnection(&net->fstHiddenLayer[0], &net->inputs[0], -1);
+	addConnection(&net->fstHiddenLayer[0], &net->inputs[1], -1);
+
+	addConnection(&net->fstHiddenLayer[1], &net->inputs[0], 2);
+	addConnection(&net->fstHiddenLayer[1], &net->inputs[1], 2);
+
+	addConnection(&net->outputNeuron, &net->fstHiddenLayer[0], 2);
+	addConnection(&net->outputNeuron, &net->fstHiddenLayer[1], 2);
+}
+
+void freeNetworkXOREpochs(NetworkXOREpochs *net)
+{
+	freeNeuron(&net->outputNeuron);
+	
+	freeNeuron(&net->fstHiddenLayer[0]);
+	freeNeuron(&net->fstHiddenLayer[1]);
+}
+
+void feedNetworkXOREpochs(NetworkXOREpochs *net, int x1, int x2)
+{
+	net->inputs[0].y = x1;
+	net->inputs[1].y = x2;
+
+	propagateXOREpochs(net);
+}
+
+void propagateXOREpochs(NetworkXOREpochs *net)
+{
+	transferFunction(&net->outputNeuron, net->threshold);
+
+	transferFunction(&net->fstHiddenLayer[0], net->threshold);
+	transferFunction(&net->fstHiddenLayer[1], net->threshold);
+
+	transferFunction(&net->inputs[0], net->threshold);
+	transferFunction(&net->inputs[1], net->threshold);
+}

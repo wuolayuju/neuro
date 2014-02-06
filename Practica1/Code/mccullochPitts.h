@@ -43,6 +43,15 @@ typedef struct {
 
 }NetworkXOR;
 
+typedef struct {
+
+	Neuron inputs[2];
+	Neuron outputNeuron;
+	Neuron fstHiddenLayer[2];
+	float threshold;
+
+}NetworkXOREpochs;
+
 
 
 int parserBasic(FILE *inputFile, boolean *x1, boolean *x2, boolean *x3);
@@ -59,5 +68,12 @@ void freeNetworkMP(Network *net);
 
 void initNetworkXOR(NetworkXOR *net, int x1, int x2, float threshold);
 void freeNetworkXOR(NetworkXOR *net);
+
+void initNetworkXOREpochs(NetworkXOREpochs *net);
+void freeNetworkXOREpochs(NetworkXOREpochs *net);
+
+void feedNetworkXOREpochs(NetworkXOREpochs *net, int x1, int x2);
+void propagateXOREpochs(NetworkXOREpochs *net);
+
 
 #endif

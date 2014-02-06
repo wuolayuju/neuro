@@ -55,6 +55,7 @@ int main(void)
 	freeNeuron(&neuron);
 	*/
 
+/*
 	NetworkXOR network;
 
 	initNetworkXOR(&network,1,0,2);
@@ -64,7 +65,20 @@ int main(void)
 
 	transferFunction(&network.outputNeuron,network.threshold);
 	
-	freeNetworkXOR(&network);
+	freeNetworkXOR(&network);*/
+
+	NetworkXOREpochs netxor;
+
+	initNetworkXOREpochs(&netxor);
+
+	feedNetworkXOREpochs(&netxor, 0, 0);
+	feedNetworkXOREpochs(&netxor, 0, 1);
+	feedNetworkXOREpochs(&netxor, 1, 0);
+	feedNetworkXOREpochs(&netxor, 1, 1);
+	feedNetworkXOREpochs(&netxor, 0, 0);
+
+	freeNetworkXOREpochs(&netxor);
+
 	return 0;
 
 }
