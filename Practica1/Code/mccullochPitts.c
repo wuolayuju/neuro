@@ -155,11 +155,12 @@ void transferFunction(Neuron *neuron, float threshold)
 	for(i=0;i<neuron->numConnections;i++)
 		y_in+= *neuron->inputs[i] * neuron->weights[i];
 
-	printf("Z%d : Y_IN %d THRESHOLD %.3f\n",neuron->id,y_in,threshold);
+	printf("Z%d : Y_IN %d THRESHOLD %.3f",neuron->id,y_in,threshold);
 	if(y_in>=threshold)
 		neuron->y = 1;
 	else
 		neuron->y = 0;
+	printf(" OUT %d\n", neuron->y);
 
 }
 

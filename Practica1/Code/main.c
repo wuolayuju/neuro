@@ -76,6 +76,7 @@ int main(void)
 	feedNetworkXOREpochs(&netxor, 1, 0);
 	feedNetworkXOREpochs(&netxor, 1, 1);
 	feedNetworkXOREpochs(&netxor, 0, 0);
+	feedNetworkXOREpochs(&netxor, 0, 0);
 
 	freeNetworkXOREpochs(&netxor);
 
