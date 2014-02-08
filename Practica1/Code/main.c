@@ -70,12 +70,17 @@ int main(void)
 	NetworkXOREpochs netxor;
 
 	initNetworkXOREpochs(&netxor);
-
+	printf("0 0\n");
 	feedNetworkXOREpochs(&netxor, 0, 0);
+	printf("0 1\n");
 	feedNetworkXOREpochs(&netxor, 0, 1);
+	printf("1 0\n");
 	feedNetworkXOREpochs(&netxor, 1, 0);
+	printf("1 1\n");
 	feedNetworkXOREpochs(&netxor, 1, 1);
+	printf("0 0\n");
 	feedNetworkXOREpochs(&netxor, 0, 0);
+	printf("0 0\n");
 	feedNetworkXOREpochs(&netxor, 0, 0);
 
 	freeNetworkXOREpochs(&netxor);

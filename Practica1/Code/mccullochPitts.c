@@ -155,6 +155,13 @@ void transferFunction(Neuron *neuron, float threshold)
 	for(i=0;i<neuron->numConnections;i++)
 		y_in+= *neuron->inputs[i] * neuron->weights[i];
 
+	for(i=0;i<neuron->numConnections;i++)
+	{
+		//printf("INPUT Z%d: %d\n",neuron->id,*neuron->inputs[i]);
+		//printf("WEIGHT %d\n",neuron->weights[i]);
+	}
+		
+
 	printf("Z%d : Y_IN %d THRESHOLD %.3f",neuron->id,y_in,threshold);
 	if(y_in>=threshold)
 		neuron->y = 1;
@@ -169,18 +176,18 @@ void initNetworkXOREpochs(NetworkXOREpochs *net)
 	net->threshold = 2;
 
 	initNeuron(&net->inputs[0],0);
-	initNeuron(&net->inputs[1],1);
+	initNeuron(&net->inputs[1],0);
 	
-	initNeuron(&net->fstHiddenLayer[0],2);
-	initNeuron(&net->fstHiddenLayer[1],3);
+	initNeuron(&net->fstHiddenLayer[0],1);
+	initNeuron(&net->fstHiddenLayer[1],2);
 
-	initNeuron(&net->outputNeuron,4);
+	initNeuron(&net->outputNeuron,3);
 
 	addConnection(&net->fstHiddenLayer[0], &net->inputs[0], -1);
-	addConnection(&net->fstHiddenLayer[0], &net->inputs[1], -1);
+	addConnection(&net->fstHiddenLayer[0], &net->inputs[1], 2);
 
 	addConnection(&net->fstHiddenLayer[1], &net->inputs[0], 2);
-	addConnection(&net->fstHiddenLayer[1], &net->inputs[1], 2);
+	addConnection(&net->fstHiddenLayer[1], &net->inputs[1], -1);
 
 	addConnection(&net->outputNeuron, &net->fstHiddenLayer[0], 2);
 	addConnection(&net->outputNeuron, &net->fstHiddenLayer[1], 2);
@@ -204,11 +211,12 @@ void feedNetworkXOREpochs(NetworkXOREpochs *net, int x1, int x2)
 
 void propagateXOREpochs(NetworkXOREpochs *net)
 {
-	transferFunction(&net->outputNeuron, net->threshold);
+
 
 	transferFunction(&net->fstHiddenLayer[0], net->threshold);
 	transferFunction(&net->fstHiddenLayer[1], net->threshold);
 
-	transferFunction(&net->inputs[0], net->threshold);
-	transferFunction(&net->inputs[1], net->threshold);
+	transferFunction(&net->outputNeuron, net->threshold);
+
+	printf("FINAL OUTPUT %d\n",net->outputNeuron.y);
 }
