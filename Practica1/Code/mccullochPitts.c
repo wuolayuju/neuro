@@ -1,8 +1,6 @@
 
 #include "mccullochPitts.h"
 
-
-
 int parserBasic(FILE *inputFile, boolean *x1, boolean *x2, boolean *x3)
 {
 	char string[MAX_LINE];
@@ -88,7 +86,7 @@ void initNetworkMP(Network *net, float threshold)
 	/*Second Layer connections*/
 	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[0],2);
 	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[2],2);
-	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[3],2);
+	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[4],2);
 	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[1],2);
 	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[3],2);
 	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[5],2);
