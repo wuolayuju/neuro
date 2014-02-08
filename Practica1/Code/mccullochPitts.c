@@ -49,32 +49,32 @@ void initNetworkMP(Network *net, float threshold)
 	net->threshold = threshold;
 
 	initNeuron(&net->inputs[0],0);
-	initNeuron(&net->inputs[1],0);
-	initNeuron(&net->inputs[2],0);
+	initNeuron(&net->inputs[1],1);
+	initNeuron(&net->inputs[2],2);
 
 
-	initNeuron(&net->fstHiddenLayer[0],1);
-	initNeuron(&net->fstHiddenLayer[1],2);
-	initNeuron(&net->fstHiddenLayer[2],3);
+	initNeuron(&net->fstHiddenLayer[0],3);
+	initNeuron(&net->fstHiddenLayer[1],4);
+	initNeuron(&net->fstHiddenLayer[2],5);
 
 	for(i=0;i<6;i++)
-		initNeuron(&net->scndHiddenLayer[i],i+4);
+		initNeuron(&net->scndHiddenLayer[i],i+6);
 
-	initNeuron(&net->outputNeurons[0],10);
-	initNeuron(&net->outputNeurons[1],11);
+	initNeuron(&net->outputNeurons[0],12);
+	initNeuron(&net->outputNeurons[1],13);
 
 	/*Inputs connections*/
 	addConnection(&net->fstHiddenLayer[0],&net->inputs[0],2);
-	addConnection(&net->scndHiddenLayer[2],&net->inputs[0],1);
+	addConnection(&net->scndHiddenLayer[3],&net->inputs[0],1);
 	addConnection(&net->scndHiddenLayer[4],&net->inputs[0],1);
 
 	addConnection(&net->fstHiddenLayer[1],&net->inputs[1],2);
-	addConnection(&net->scndHiddenLayer[1],&net->inputs[1],1);
+	addConnection(&net->scndHiddenLayer[0],&net->inputs[1],1);
 	addConnection(&net->scndHiddenLayer[5],&net->inputs[1],1);
 
 	addConnection(&net->fstHiddenLayer[2],&net->inputs[2],2);
-	addConnection(&net->scndHiddenLayer[3],&net->inputs[2],1);
-	addConnection(&net->scndHiddenLayer[0],&net->inputs[2],1);
+	addConnection(&net->scndHiddenLayer[1],&net->inputs[2],1);
+	addConnection(&net->scndHiddenLayer[2],&net->inputs[2],1);
 
 	/*First Layer connections*/
 	addConnection(&net->scndHiddenLayer[0],&net->fstHiddenLayer[0],1);
@@ -86,11 +86,11 @@ void initNetworkMP(Network *net, float threshold)
 
 
 	/*Second Layer connections*/
-	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[1],2);
+	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[0],2);
+	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[2],2);
 	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[3],2);
-	addConnection(&net->outputNeurons[0],&net->scndHiddenLayer[4],2);
-	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[0],2);
-	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[2],2);
+	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[1],2);
+	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[3],2);
 	addConnection(&net->outputNeurons[1],&net->scndHiddenLayer[5],2);
 }
 
@@ -261,7 +261,7 @@ void propagateMP(Network *net)
 
 	transferFunction(&net->outputNeurons[0], net->threshold);
 	transferFunction(&net->outputNeurons[1], net->threshold);
-	transferFunction(&net->outputNeurons[2], net->threshold);
+	//transferFunction(&net->outputNeurons[2], net->threshold);
 
 	for(i=0;i<6;i++)
 		transferFunction(&net->scndHiddenLayer[i], net->threshold);
