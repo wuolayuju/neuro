@@ -13,7 +13,6 @@ typedef enum
 	false=0
 }boolean;
 
-
 typedef struct
 {
 	boolean y;
@@ -34,29 +33,7 @@ typedef struct {
 
 }Network;
 
-typedef struct {
-
-	Neuron inputs[2];
-	Neuron outputNeuron;
-	Neuron fstHiddenLayer[2];
-	float threshold;
-
-}NetworkXOR;
-
-typedef struct {
-
-	Neuron inputs[2];
-	Neuron outputNeuron;
-	Neuron fstHiddenLayer[2];
-	float threshold;
-
-}NetworkXOREpochs;
-
-
-
-
 int parserBasic(FILE *inputFile, boolean *x1, boolean *x2, boolean *x3);
-int parser(FILE *inputFile,boolean inputs[][3]);
 
 void initNeuron(Neuron *neuron, int id);
 void freeNeuron(Neuron *neuron);
@@ -66,17 +43,9 @@ void transferFunction(Neuron *neuron, float threshold);
 
 void initNetworkMP(Network *net, float threshold);
 void freeNetworkMP(Network *net);
-
-void initNetworkXOR(NetworkXOR *net, int x1, int x2, float threshold);
-void freeNetworkXOR(NetworkXOR *net);
-
-void initNetworkXOREpochs(NetworkXOREpochs *net);
-void freeNetworkXOREpochs(NetworkXOREpochs *net);
+int getOutputNetworkMP(Network *net, int n_neuron);
 
 void feedNetworkMP(Network *net, int x1, int x2, int x3);
 void propagateMP(Network *net);
-void feedNetworkXOREpochs(NetworkXOREpochs *net, int x1, int x2);
-void propagateXOREpochs(NetworkXOREpochs *net);
-
 
 #endif
