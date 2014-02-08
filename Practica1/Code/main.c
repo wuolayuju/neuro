@@ -55,6 +55,7 @@ int main(void)
 	freeNeuron(&neuron);
 	*/
 
+/*
 	NetworkXOR network;
 
 	initNetworkXOR(&network,1,0,2);
@@ -65,6 +66,51 @@ int main(void)
 	transferFunction(&network.outputNeuron,network.threshold);
 	
 	freeNetworkXOR(&network);
+
+	NetworkXOREpochs netxor;
+
+	initNetworkXOREpochs(&netxor);
+	printf("0 0\n");
+	feedNetworkXOREpochs(&netxor, 0, 0);
+	printf("0 1\n");
+	feedNetworkXOREpochs(&netxor, 0, 1);
+	printf("1 0\n");
+	feedNetworkXOREpochs(&netxor, 1, 0);
+	printf("1 1\n");
+	feedNetworkXOREpochs(&netxor, 1, 1);
+	printf("0 0\n");
+	feedNetworkXOREpochs(&netxor, 0, 0);
+	printf("0 0\n");
+	feedNetworkXOREpochs(&netxor, 0, 0);
+
+	freeNetworkXOREpochs(&netxor);
+*/
+	Network net;
+
+	initNetworkMP(&net,2);
+	feedNetworkMP(&net, 1, 0, 0);
+	feedNetworkMP(&net, 0, 1, 0);
+	feedNetworkMP(&net, 0, 0, 1);
+	feedNetworkMP(&net, 1, 0, 0);
+	printf("FINALLL O1 %d O2 %d\n",net.outputNeurons[0].y,net.outputNeurons[1].y);
+
+	feedNetworkMP(&net, 0, 0, 1);
+	feedNetworkMP(&net, 0, 1, 0);
+	feedNetworkMP(&net, 1, 0, 0);
+	printf("FINALLL O1 %d O2 %d\n",net.outputNeurons[0].y,net.outputNeurons[1].y);
+
+	feedNetworkMP(&net, 0, 0, 1);
+	feedNetworkMP(&net, 0, 1, 0);
+	feedNetworkMP(&net, 1, 0, 0);
+	printf("FINALLL O1 %d O2 %d\n",net.outputNeurons[0].y,net.outputNeurons[1].y);
+
+	feedNetworkMP(&net, 1, 0, 0);
+	feedNetworkMP(&net, 0, 1, 0);
+	feedNetworkMP(&net, 0, 0, 1);
+	feedNetworkMP(&net, 1, 0, 0);
+	printf("FINALLL O1 %d O2 %d\n",net.outputNeurons[0].y,net.outputNeurons[1].y);
+
+	freeNetworkMP(&net);
 	return 0;
 
 }

@@ -1,7 +1,7 @@
 
 
 
-CC = gcc -ansi -pedantic -g -lm
+CC = gcc  -g -lm
 CFLAGS = -Wall
 EXE = main
 
