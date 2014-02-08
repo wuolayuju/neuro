@@ -26,7 +26,7 @@ typedef struct
 
 typedef struct {
 
-	Neuron inputs[2];
+	Neuron inputs[3];
 	Neuron outputNeurons[2];
 	Neuron fstHiddenLayer[3];
 	Neuron scndHiddenLayer[6];
@@ -54,6 +54,7 @@ typedef struct {
 
 
 
+
 int parserBasic(FILE *inputFile, boolean *x1, boolean *x2, boolean *x3);
 int parser(FILE *inputFile,boolean inputs[][3]);
 
@@ -63,7 +64,7 @@ void freeNeuron(Neuron *neuron);
 void addConnection(Neuron *neuron, Neuron *input, int weight);
 void transferFunction(Neuron *neuron, float threshold);
 
-void initNetworkMP(Network *net, int x1, int x2, int x3);
+void initNetworkMP(Network *net, float threshold);
 void freeNetworkMP(Network *net);
 
 void initNetworkXOR(NetworkXOR *net, int x1, int x2, float threshold);
@@ -72,6 +73,8 @@ void freeNetworkXOR(NetworkXOR *net);
 void initNetworkXOREpochs(NetworkXOREpochs *net);
 void freeNetworkXOREpochs(NetworkXOREpochs *net);
 
+void feedNetworkMP(Network *net, int x1, int x2, int x3);
+void propagateMP(Network *net);
 void feedNetworkXOREpochs(NetworkXOREpochs *net, int x1, int x2);
 void propagateXOREpochs(NetworkXOREpochs *net);
 
