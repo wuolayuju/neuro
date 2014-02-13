@@ -84,8 +84,9 @@ int parser(FILE *file, Pattern *pattern)
 		return 0;
 
 	printf("NA = %d, NC = %d\n", numAttributes, numCategories);
-	pattern->attributes = (float **)malloc(sizeof(float)*INCR_SIZE_PATTERN);
-	pattern->categories = (int **)malloc(sizeof(int)*INCR_SIZE_PATTERN);
+	//pattern = (Pattern *)malloc(sizeof(Pattern));
+	pattern->attributes = (float **)malloc(sizeof(float *)*INCR_SIZE_PATTERN);
+	pattern->categories = (int **)malloc(sizeof(int *)*INCR_SIZE_PATTERN);
 
 	printf("DONE MALLOC INIT\n");
 
@@ -99,12 +100,12 @@ int parser(FILE *file, Pattern *pattern)
 	
 	while(fgets(string,MAX_LINE,file)!=NULL)
 	{
-		printf("OLINGUI %s\n",string);
+		printf("\nOLINGUI %s\n",string);
 		// Tokenizacion de los patrones
 		ptr = strtok(string, tokens );
 		if(ptr == NULL)
 			printf("MECAGOENLAHOSTIA\n");
-		printf("%s ", ptr);
+		printf("%s \n", ptr);
 		pattern->attributes[patternCount][0] = atof(ptr);
 		for(i=1;i<numAttributes;i++)
 		{
@@ -118,18 +119,17 @@ int parser(FILE *file, Pattern *pattern)
 			pattern->categories[patternCount][i] =  atoi(ptr);	
 			printf("%s ", ptr);		
 		}
-		printf("\n");
 		patternCount++;
-		printf("PATTER %d\n",patternCount);
+		printf("\nPATTER %d\n",patternCount);
 		// Aumento de la memoria reservada para los patrones en caso necesario
 		if ((patternCount % INCR_SIZE_PATTERN) == 0)
 		{
-			//printf("ROQUEFOR %d\n",patternCount);
+			printf("ROQUEFOR %d\n",patternCount);
 			
-			pattern->attributes = (float **)realloc(pattern->attributes, sizeof(float)*(INCR_SIZE_PATTERN)*numIncr);
-			pattern->categories = (int **)realloc(pattern->categories, sizeof(int)*(INCR_SIZE_PATTERN)*numIncr);
-			if(patternCount == 200)
-				break;
+			pattern->attributes = (float **)realloc(pattern->attributes, sizeof(float *)*(INCR_SIZE_PATTERN+patternCount));
+			pattern->categories = (int **)realloc(pattern->categories, sizeof(int *)*(INCR_SIZE_PATTERN+patternCount));
+			// if(patternCount == 200)
+			// 	break;
 			for(i=patternCount; i < INCR_SIZE_PATTERN+patternCount ; i++)
 			{
 				pattern->attributes[i]= (float *)malloc(sizeof(float)*numAttributes);
@@ -157,6 +157,7 @@ void freePattern(Pattern *pattern)
 	}
 	free(pattern->attributes);
 	free(pattern->categories);
+	free(pattern);
 }
 
 int learn(Perceptron *perceptron, float learningRate, float threshold, FILE *file, int endFile)
