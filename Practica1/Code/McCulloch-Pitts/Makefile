@@ -1,11 +1,23 @@
-
-
-
 CC = gcc  -g -lm
 CFLAGS = -Wall
-EXE = main
+EXE = scales
 
-all : $(EXE)
+help : 
+	@echo "---------------------------"
+	@echo "USO : make <comando>"
+	@echo "\nCOMANDOS\n"
+	@echo "\thelp : Muestra esta ayuda."
+	@echo "\tcompile : Compila y enlaza el programa 'scales'."
+	@echo "\tclean : Borra los ficheros objeto y los ejecutables generados."
+	@echo "\nPROGRAMA\n"
+	@echo "\tUSO: ./scales -input <f_entrada> -output <f_salida>"
+	@echo "\nFICHEROS DE PRUEBA\n"
+	@echo "\tarriba_abajo.in : Contiene dos secuencias de estímulos que cumplen la clase arriba_abajo."
+	@echo "\tabajo_arriba.in : Contiene dos secuencias de estímulos que cumplen la clase abajo_arriba."
+	@echo "\tmixto.in : Contiene una serie de estímulos mezclados entre los dos patrones descritos, así como de patrones estáticos."
+	@echo "---------------------------"
+
+compile : $(EXE)
 
 .PHONY : clean
 clean :

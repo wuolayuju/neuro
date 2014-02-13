@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 	FILE *input = NULL;
 	int i;
 
+	/* Lectura de los argumentos de entrada */
 	for (i = 1; i < argc; i++)
 	{
 		if (strcmp("-input", argv[i])==0) {
@@ -24,8 +25,10 @@ int main(int argc, char **argv)
 		exit(0);
 	}
 
+	/* Inicialización de la red con umbral = 2 */
 	initNetworkMP(&net,2);
 
+	/* Lectura de fichero y estímulo de la red con las entradas leídas */
 	while(parserBasic(input, &x1, &x2, &x3)) {
 		feedNetworkMP(&net, x1, x2, x3);
 		fprintf(output, "%d %d\n", 
@@ -33,6 +36,7 @@ int main(int argc, char **argv)
 			getOutputNetworkMP(&net, 1));
 	}
 
+	/* Se realiza una excitación adicional para obtener la última salida */
 	feedNetworkMP(&net, 0, 0, 0);
 	fprintf(output, "%d %d\n", 
 			getOutputNetworkMP(&net, 0), 
