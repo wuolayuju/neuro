@@ -4,8 +4,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX_LINE 256
+#define NUM_MAX_ITER 3000
+#define INCR_SIZE_PATTERN 100
 
 typedef enum
 {
@@ -32,11 +35,27 @@ typedef struct
 
 }Perceptron;
 
+typedef struct
+{
+	float **attributes;
+	int **categories;
+	int numAttributes;
+	int numCategories;
+	int numPatterns;
+}Pattern;
+
+int parser(FILE *file, Pattern *pattern);
+
+void freePattern(Pattern *pattern);
+
+void initNeuron(Neuron *neuron, int id, int numConnections);
+void freeNeuron(Neuron *neuron);
+void createPerceptron(Perceptron *p, float threshold, int numConnections, int numOutputs);
+void deletePerceptron(Perceptron *p);
 
 
 int learn(Perceptron *perceptron, float learningRate, float threshold, FILE *file, int endFile);
 int test(Perceptron *perceptron, FILE *file, int endFile);
-void createPerceptron(Perceptron *p, int numConnections, int numOutputs);
-void deletePerceptron(Perceptron *p);
+
 
 #endif
