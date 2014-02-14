@@ -20,17 +20,17 @@ typedef struct
 {
 	int y;
 	int id;
-	int **inputs;
-	int *weights;
+	float **inputs;
+	float *weights;
 	int numConnections;
 }Neuron;
 
 typedef struct
 {
 	float threshold;
-	int *inputs;
+	float *inputs;
 	int numInputs;
-	Neuron *outputs;
+	Neuron output;
 	int numOutputs;
 
 }Perceptron;
@@ -54,7 +54,7 @@ void createPerceptron(Perceptron *p, float threshold, int numConnections, int nu
 void deletePerceptron(Perceptron *p);
 
 
-int learn(Perceptron *perceptron, float learningRate, float threshold, FILE *file, int endFile);
+int learnPerceptron(Perceptron *perceptron, float learningRate, float threshold, Pattern *patterns, int numberPatterns);
 int test(Perceptron *perceptron, FILE *file, int endFile);
 
 

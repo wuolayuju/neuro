@@ -4,8 +4,8 @@
 void initNeuron(Neuron *neuron, int id, int numConnections)
 {
 	neuron->id = id;
-	neuron->weights = (int *)calloc(sizeof(int),numConnections);
-	neuron->inputs = (int **)malloc(sizeof(int *)*numConnections);
+	neuron->weights = (float *)calloc(sizeof(float),numConnections);
+	neuron->inputs = (float **)malloc(sizeof(float *)*numConnections);
 	neuron->y = 0;
 	neuron->numConnections = numConnections;
 }
@@ -22,30 +22,29 @@ void freeNeuron(Neuron *neuron)
 	}
 }
 
+
+
 void createPerceptron(Perceptron *p, float threshold, int numConnections, int numOutputs)
 {
-	int i;
+	//int i;
 
 	p->threshold = threshold;
 	p->numOutputs = numOutputs;
 
-	p->inputs = (int *)malloc(sizeof(int)*numConnections);
-	p->outputs = (Neuron *)malloc(sizeof(Neuron)*numOutputs);
-	for(i=0;i<numOutputs;i++)
-	{
-		initNeuron(&p->outputs[i],i,numConnections);
-	}
+	p->inputs = (float *)malloc(sizeof(float)*numConnections);
+	//p->outputs = (Neuron *)malloc(sizeof(Neuron)*numOutputs);
+	//for(i=0;i<numOutputs;i++)
+	//{
+		initNeuron(&p->output,0,numConnections);
+	//}
+
+
 }
 
 void deletePerceptron(Perceptron *p)
 {
-	int i;
 
-	for(i=0;i<p->numOutputs;i++)
-	{
-		freeNeuron(&p->outputs[i]);
-	}
-	free(p->outputs);
+	freeNeuron(&p->output);
 	free(p->inputs);
 		
 }
@@ -60,9 +59,9 @@ void transferFunction(Neuron *neuron, float threshold)
 	for(i=0;i<neuron->numConnections;i++)
 		y_in+= *neuron->inputs[i] * neuron->weights[i];
 
-	if(y_in>threshold)
+	if(y_in > threshold)
 		neuron->y = 1;
-	else if(y_in<-threshold)
+	else if(y_in < -threshold)
 		neuron->y = -1;
 	else
 		neuron->y = 0;
@@ -71,71 +70,57 @@ void transferFunction(Neuron *neuron, float threshold)
 int parser(FILE *file, Pattern *pattern)
 {
 	int numAttributes, numCategories;
-	int numIncr = 1;
 	char string[MAX_LINE];
 	char tokens[ ] = " \n\t";
 	char *ptr = NULL;
 	int patternCount=0;
 	int i;
 
+	// Lectura del numero de atributos y clases del fichero
 	fscanf(file, "%d %d\n", &numAttributes, &numCategories);
-
 	if(numAttributes<=0 || numCategories<=0)
 		return 0;
 
-	printf("NA = %d, NC = %d\n", numAttributes, numCategories);
-	//pattern = (Pattern *)malloc(sizeof(Pattern));
+	// Reserva de memoria inicial para almacenar los patrones
 	pattern->attributes = (float **)malloc(sizeof(float *)*INCR_SIZE_PATTERN);
 	pattern->categories = (int **)malloc(sizeof(int *)*INCR_SIZE_PATTERN);
-
-	printf("DONE MALLOC INIT\n");
 
 	for(i=0;i<INCR_SIZE_PATTERN;i++)
 	{
 		pattern->attributes[i]= (float *)malloc(sizeof(float)*numAttributes);
 		pattern->categories[i]= (int *)malloc(sizeof(int)*numCategories);
 	}
-
-	printf("DONE MALLOC TOTO\n");
 	
 	while(fgets(string,MAX_LINE,file)!=NULL)
 	{
-		printf("\nOLINGUI %s\n",string);
 		// Tokenizacion de los patrones
 		ptr = strtok(string, tokens );
-		if(ptr == NULL)
-			printf("MECAGOENLAHOSTIA\n");
-		printf("%s \n", ptr);
-		pattern->attributes[patternCount][0] = atof(ptr);
+		pattern->attributes[patternCount][0] = atof(ptr); // Primera lectura especial
+
 		for(i=1;i<numAttributes;i++)
 		{
 			ptr = strtok(NULL, tokens );
 			pattern->attributes[patternCount][i] =atof(ptr);
-			printf("%s ", ptr);
 		}
+
 		for(i=0;i<numCategories;i++)
 		{
 			ptr = strtok(NULL, tokens );
 			pattern->categories[patternCount][i] =  atoi(ptr);	
-			printf("%s ", ptr);		
 		}
-		patternCount++;
-		printf("\nPATTER %d\n",patternCount);
+
 		// Aumento de la memoria reservada para los patrones en caso necesario
+		patternCount++;
 		if ((patternCount % INCR_SIZE_PATTERN) == 0)
-		{
-			printf("ROQUEFOR %d\n",patternCount);
-			
+		{		
 			pattern->attributes = (float **)realloc(pattern->attributes, sizeof(float *)*(INCR_SIZE_PATTERN+patternCount));
 			pattern->categories = (int **)realloc(pattern->categories, sizeof(int *)*(INCR_SIZE_PATTERN+patternCount));
-			// if(patternCount == 200)
-			// 	break;
+
 			for(i=patternCount; i < INCR_SIZE_PATTERN+patternCount ; i++)
 			{
 				pattern->attributes[i]= (float *)malloc(sizeof(float)*numAttributes);
 				pattern->categories[i]= (int *)malloc(sizeof(int)*numCategories);
 			}
-			//numIncr++;
 		}
 	}
 
@@ -157,87 +142,54 @@ void freePattern(Pattern *pattern)
 	}
 	free(pattern->attributes);
 	free(pattern->categories);
-	free(pattern);
+	//free(pattern);
 }
 
-int learn(Perceptron *perceptron, float learningRate, float threshold, FILE *file, int endFile)
+int learnPerceptron(
+	Perceptron *perceptron, 
+	float learningRate, 
+	float threshold, 
+	Pattern *patterns, 
+	int numberPatterns)
 {
-	int numConnections, numOutputs;
-	long filePosition;
-	int p, i, w, patternCount=0;
-	int index=0;
-	int **y = NULL;
-	int **x = NULL;
-	char ch;
-	char string[MAX_LINE];
+	int p, i, w;
 	boolean weightChange=false;
-	char *ptr;
-	char token[ ] = " \n\t";
-
-	fscanf(file, "%d %d\n", &numConnections, &numOutputs);
-	createPerceptron(perceptron, threshold, numConnections, numOutputs);
-
-	filePosition = ftell(file);
-
-	/*obtiene el numero de patrones*/
-	do 
-	{
-	    ch = fgetc(file);
-	    if(ch == '\n')
-	    	patternCount++;
-	} while (ch != EOF);
-
-
-	// last line doesn't end with a new line!
-	// but there has to be a line at least before the last line
-	if(ch != '\n' && patternCount != 0) 
-	    patternCount++;
-
-	y = (int **)malloc(sizeof(int *) * patternCount);
-	x = (int **)malloc(sizeof(int *) * patternCount);
-
-	for(i=0;i<patternCount;i++)
-	{
-		y[i] = (int *)malloc(sizeof(int) * numOutputs);
-		x[i] = (int *)malloc(sizeof(int) * numConnections);
-	}
-
-	/*vuelve donde estaba en el fichero*/
-	fseek(file,filePosition,SEEK_SET);
-
-	while( index<endFile && (fgets(string,MAX_LINE,file)!=NULL))
-	{
-		ptr = strtok(string, token );
-
-		index++;
-	}
-
 
 	do{
-		for (p = 0; p < patternCount; p++)
+
+		weightChange = false;
+
+		for (p = 0; p < numberPatterns; p++)
 		{
-			for(i=0;i<numOutputs;i++)
+			// Estimulacion de las entradas
+			for (i = 0; i < perceptron->numInputs ; i++)
 			{
-				transferFunction(&perceptron->outputs[i],perceptron->threshold);
-				if(y[p][i] != perceptron->outputs[i].y)
+				perceptron->inputs[i] = patterns->attributes[p][i];
+			}
+
+			// Aplicación de la función de transferencia
+			transferFunction(&perceptron->output, perceptron->threshold);
+
+			// Comprobación de error
+			if ((perceptron->output.y == -1 && patterns->categories[p][0] == 1)
+				|| (perceptron->output.y == 1 && patterns->categories[p][0] == 0))
+			{
+				weightChange = true;	
+			}
+
+			// Cambio en los pesos
+			if (weightChange == true) {
+				for (w = 0; w < perceptron->numInputs; w++)
 				{
-					weightChange = true;
-					for(w=0;w < perceptron->outputs[w].numConnections; w++)
-						perceptron->outputs[i].weights[w] += learningRate * y[p][i] * x[p][w];
+					if (patterns->categories[p][0] == 1)
+						perceptron->output.weights[w] += learningRate * perceptron->inputs[w];
+
+					if (patterns->categories[p][0] == 0)
+					perceptron->output.weights[w] += -learningRate * perceptron->inputs[w];
 				}
 			}
       	}
 	}while (weightChange);
-
-
-	/*Memory free*/
-	for(i=0;i<patternCount;i++)
-	{
-		free(x[i]);
-		free(y[i]);
-	}
-	free(x);
-	free(y);
 
 	return 0;
 
