@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #define MAX_LINE 256
 #define NUM_MAX_ITER 3000
@@ -45,7 +46,10 @@ typedef struct
 }Pattern;
 
 int parser(FILE *file, Pattern *pattern);
-
+int getRandomNumber(int inf, int sup);
+int swap(int pos_1, int pos_2, void **vector);
+int patternShuffle(Pattern *p, int seed);
+int createPattern(FILE *file, Pattern *p);
 void freePattern(Pattern *pattern);
 
 void initNeuron(Neuron *neuron, int id, int numConnections);

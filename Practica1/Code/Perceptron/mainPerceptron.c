@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 
 	FILE *output = NULL;
 	FILE *input = NULL;
-	int i;
+	int i, j;
 	float threshold = 0.8;
 	/* comprueba la linea de comandos */
 	for (i = 1; i < argc; i++)
@@ -28,10 +28,34 @@ int main(int argc, char **argv)
 	// deletePerceptron(&perceptron);
 
 	Pattern patterns;
-
+/*
 	parser(input, &patterns);
+	for(i=0;i<patterns.numPatterns;i++)
+	{
+		for(j=0;j<patterns.numAttributes;j++)
+			printf("%.1f ",patterns.attributes[i][j]);
 
-	//freePattern(&patterns);
+		for(j=0;j<patterns.numCategories;j++)
+			printf("%d ",patterns.categories[i][j]);
+		printf("\n");
+	}
+
+	printf("=======================\n");
+
+	patternShuffle(&patterns,time(NULL));
+*/
+	createPattern(input, &patterns);
+	for(i=0;i<patterns.numPatterns;i++)
+	{
+		for(j=0;j<patterns.numAttributes;j++)
+			printf("%.1f ",patterns.attributes[i][j]);
+
+		for(j=0;j<patterns.numCategories;j++)
+			printf("%d ",patterns.categories[i][j]);
+		printf("\n");
+	}
+
+	freePattern(&patterns);
 
 	return 0;
 

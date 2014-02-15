@@ -1,6 +1,69 @@
 
 #include "perceptron.h"
 
+
+/***************************************************/
+/* Funcion: aleat_num Fecha: 29/09/2012            */
+/* Autores: Adrián Lorenzo Mateo                   */
+/*        Ari Handler Gamboa               */
+/*                                                 */
+/* Rutina que genera un numero aleatorio           */
+/* entre dos numeros dados                         */
+/*                                                 */
+/* Entrada:                                        */
+/* int inf: limite inferior                        */
+/* int sup: limite superior                        */
+/* Salida:                                         */
+/* int: numero aleatorio                           */
+/***************************************************/
+int getRandomNumber(int inf, int sup)
+{
+    /* Control de errores de los parametros de entrada*/
+    if ((sup < inf) || (sup > RAND_MAX) || ((inf < 0 ) ||
+            (sup < 0)) || (sup > RAND_MAX))
+        return -1;
+    /*la función rand() limita el rango [0, 1) debido a la división entre RAND_MAX+1.
+     * La segunda parte multiplica dicho valor por un número que se encuentre aproximadamente
+     * en la mitad del rango (sup-inf +1), de este modo se normaliza el anterior valor
+     * acotándolo entre 0 y el número intermedio.  Sin embargo, es necesario sumar el límite
+     * inferior al resultado con el fin de que se obtenga un valor superior a este.*/
+    return (int)((rand()/(RAND_MAX+1.))*(sup-inf+1))+inf;
+}
+
+int swap(int pos_1, int pos_2, void **vector)
+{
+
+    void *ptr = NULL;
+    if((vector == NULL) || ((pos_1 < 0) || (pos_2 < 0)))
+        return 0;
+
+    ptr = vector[pos_1];
+    vector[pos_1] = vector[pos_2];
+    vector[pos_2] = ptr;
+
+    return 1;
+
+}
+
+int patternShuffle(Pattern *p, int seed)
+{
+    int indice;
+    int i;
+
+    srand(seed);
+    
+    for (i=0; i< p->numPatterns ;i++)
+    {
+    	indice = getRandomNumber(i,p->numPatterns-1);
+        swap(i,indice,(void **)p->categories);
+        swap(i,indice,(void **)p->attributes);   	
+    }
+
+
+
+    return 1;
+}
+
 void initNeuron(Neuron *neuron, int id, int numConnections)
 {
 	neuron->id = id;
@@ -131,18 +194,31 @@ int parser(FILE *file, Pattern *pattern)
 	return 1;
 }
 
+int createPattern(FILE *file, Pattern *p)
+{
+	if(parser(file, p))
+	{
+		patternShuffle(p, time(NULL));
+		return 1;
+	}
+	return 0;
+}
+
+
+
+
 void freePattern(Pattern *pattern)
 {
 	int i;
 
 	for (i = 0; i < pattern->numPatterns;i++)
 	{
-		free(pattern[i].attributes);
-		free(pattern[i].categories);
+		free(pattern->attributes[i]);
+		free(pattern->categories[i]);
 	}
 	free(pattern->attributes);
 	free(pattern->categories);
-	//free(pattern);
+
 }
 
 int learnPerceptron(
