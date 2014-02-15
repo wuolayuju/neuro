@@ -68,7 +68,7 @@ void initNeuron(Neuron *neuron, int id, int numConnections)
 {
 	neuron->id = id;
 	neuron->weights = (float *)calloc(sizeof(float),numConnections);
-	neuron->inputs = (float **)malloc(sizeof(float *)*numConnections);
+	neuron->inputs = (float *)malloc(sizeof(float)*numConnections);
 	neuron->y = 0;
 	neuron->numConnections = numConnections;
 }
@@ -95,6 +95,7 @@ void createPerceptron(Perceptron *p, float threshold, int numConnections, int nu
 	p->numOutputs = numOutputs;
 
 	p->inputs = (float *)malloc(sizeof(float)*numConnections);
+	p->numInputs = numConnections;
 	//p->outputs = (Neuron *)malloc(sizeof(Neuron)*numOutputs);
 	//for(i=0;i<numOutputs;i++)
 	//{
@@ -117,10 +118,11 @@ void transferFunction(Neuron *neuron, float threshold)
 {
 
 	int i;
-	int y_in=0;
+	float y_in=0;
 
-	for(i=0;i<neuron->numConnections;i++)
-		y_in+= *neuron->inputs[i] * neuron->weights[i];
+	for(i=0;i<neuron->numConnections;i++){
+		y_in += neuron->inputs[i] * neuron->weights[i];
+	}
 
 	if(y_in > threshold)
 		neuron->y = 1;
@@ -128,6 +130,8 @@ void transferFunction(Neuron *neuron, float threshold)
 		neuron->y = -1;
 	else
 		neuron->y = 0;
+
+	printf("Y = %.2f Y_IN = %d\n", y_in, neuron->y);
 }
 
 int parser(FILE *file, Pattern *pattern)
@@ -204,14 +208,14 @@ int createPattern(FILE *file, Pattern *p)
 	return 0;
 }
 
-
-
-
 void freePattern(Pattern *pattern)
 {
 	int i;
 
-	for (i = 0; i < pattern->numPatterns;i++)
+	// Hay que liberar hasta un total del techo a centenas de numPatterns
+	int totalToFree = 100 - (pattern->numPatterns % 100) + pattern->numPatterns;
+
+	for (i = 0; i < totalToFree ;i++)
 	{
 		free(pattern->attributes[i]);
 		free(pattern->categories[i]);
@@ -222,49 +226,65 @@ void freePattern(Pattern *pattern)
 }
 
 int learnPerceptron(
-	Perceptron *perceptron, 
-	float learningRate, 
-	float threshold, 
-	Pattern *patterns, 
+	Perceptron *perceptron, float learningRate, 
+	float threshold, Pattern *patterns, 
 	int numberPatterns)
 {
 	int p, i, w;
 	boolean weightChange=false;
+	int n_iter = 1;
 
 	do{
+
+		printf("=========EPOCA %d==========\n", n_iter);
 
 		weightChange = false;
 
 		for (p = 0; p < numberPatterns; p++)
 		{
+			printf("Entrada: ");
 			// Estimulacion de las entradas
 			for (i = 0; i < perceptron->numInputs ; i++)
 			{
-				perceptron->inputs[i] = patterns->attributes[p][i];
+				perceptron->output.inputs[i] = patterns->attributes[p][i];
+				printf("%.1f ", perceptron->output.inputs[i]);
 			}
+			printf("\n");
 
 			// Aplicación de la función de transferencia
 			transferFunction(&perceptron->output, perceptron->threshold);
 
+			if (patterns->categories[p][0] == 1)
+				printf("T = 1\n");
+			else
+				printf("T = -1\n");
+			
 			// Comprobación de error
 			if ((perceptron->output.y == -1 && patterns->categories[p][0] == 1)
-				|| (perceptron->output.y == 1 && patterns->categories[p][0] == 0))
+				|| (perceptron->output.y == 1 && patterns->categories[p][0] == 0)
+				|| (perceptron->output.y == 0))
 			{
-				weightChange = true;	
+				weightChange = true;
 			}
 
 			// Cambio en los pesos
 			if (weightChange == true) {
 				for (w = 0; w < perceptron->numInputs; w++)
 				{
-					if (patterns->categories[p][0] == 1)
-						perceptron->output.weights[w] += learningRate * perceptron->inputs[w];
+					if (patterns->categories[p][0] == 1){
+						perceptron->output.weights[w] += learningRate * perceptron->output.inputs[w];
+					}
 
-					if (patterns->categories[p][0] == 0)
-					perceptron->output.weights[w] += -learningRate * perceptron->inputs[w];
+					if (patterns->categories[p][0] == 0){
+						perceptron->output.weights[w] += -learningRate * perceptron->output.inputs[w];
+					}
 				}
+				printf("\n");
 			}
       	}
+      	n_iter++;
+      	if (n_iter > NUM_MAX_ITER)
+      		break;
 	}while (weightChange);
 
 	return 0;

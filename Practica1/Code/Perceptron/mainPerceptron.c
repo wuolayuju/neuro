@@ -44,17 +44,29 @@ int main(int argc, char **argv)
 
 	patternShuffle(&patterns,time(NULL));
 */
-	createPattern(input, &patterns);
-	for(i=0;i<patterns.numPatterns;i++)
-	{
-		for(j=0;j<patterns.numAttributes;j++)
-			printf("%.1f ",patterns.attributes[i][j]);
-
-		for(j=0;j<patterns.numCategories;j++)
-			printf("%d ",patterns.categories[i][j]);
-		printf("\n");
+	if (!createPattern(input, &patterns)) {
+		fprintf(stderr, "Error en la lectura de patrones\n");
+		exit(0);
 	}
 
+	fclose(input);
+	fclose(output);
+
+	// for(i=0;i<patterns.numPatterns;i++)
+	// {
+	// 	for(j=0;j<patterns.numAttributes;j++)
+	// 		printf("%.1f ",patterns.attributes[i][j]);
+
+	// 	for(j=0;j<patterns.numCategories;j++)
+	// 		printf("%d ",patterns.categories[i][j]);
+	// 	printf("\n");
+	// }
+
+	createPerceptron(&perceptron, 0, patterns.numAttributes, 1);
+
+	learnPerceptron(&perceptron, 0.1, 0, &patterns, 100);
+
+	deletePerceptron(&perceptron);
 	freePattern(&patterns);
 
 	return 0;

@@ -8,7 +8,7 @@
 #include <time.h>
 
 #define MAX_LINE 256
-#define NUM_MAX_ITER 3000
+#define NUM_MAX_ITER 10
 #define INCR_SIZE_PATTERN 100
 
 typedef enum
@@ -21,7 +21,7 @@ typedef struct
 {
 	int y;
 	int id;
-	float **inputs;
+	float *inputs;
 	float *weights;
 	int numConnections;
 }Neuron;
