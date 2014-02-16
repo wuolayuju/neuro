@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 
 	createPerceptron(&perceptron, 0, patterns.numAttributes, 1);
 
-	learnPerceptron(&perceptron, 0.1, 0, &patterns, 100);
+	learnPerceptron(&perceptron, 0.1, 0, &patterns, 300);
 
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);

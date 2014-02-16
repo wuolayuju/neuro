@@ -8,7 +8,7 @@
 #include <time.h>
 
 #define MAX_LINE 256
-#define NUM_MAX_ITER 10
+#define NUM_MAX_ITER 1000
 #define INCR_SIZE_PATTERN 100
 
 typedef enum
@@ -58,8 +58,9 @@ void createPerceptron(Perceptron *p, float threshold, int numConnections, int nu
 void deletePerceptron(Perceptron *p);
 
 
-int learnPerceptron(Perceptron *perceptron, float learningRate, float threshold, Pattern *patterns, int numberPatterns);
-int test(Perceptron *perceptron, FILE *file, int endFile);
+int learnPerceptron(Perceptron *perceptron, float learningRate, 
+	float threshold, Pattern *patterns, int numberPatterns);
+int test(Perceptron *perceptron, Pattern *pattern, int numFirstPattern);
 
 
 #endif

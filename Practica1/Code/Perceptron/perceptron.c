@@ -99,7 +99,7 @@ void createPerceptron(Perceptron *p, float threshold, int numConnections, int nu
 	//p->outputs = (Neuron *)malloc(sizeof(Neuron)*numOutputs);
 	//for(i=0;i<numOutputs;i++)
 	//{
-		initNeuron(&p->output,0,numConnections);
+	initNeuron(&p->output,0,numConnections);
 	//}
 
 
@@ -291,8 +291,21 @@ int learnPerceptron(
 
 }
 
-int test(Perceptron *perceptron, FILE *file, int endFile)
+int test(Perceptron *perceptron, Pattern *pattern, int numFirstPattern)
 {
+	int i, j;
 
-	return 0;
+	for(i=numFirstPattern; i<pattern->numPatterns ;i++)
+	{
+		for (j = 0; j < perceptron->numInputs ; j++)
+		{
+			perceptron->output.inputs[j] = pattern->attributes[i][j];
+			printf("%.1f ", perceptron->output.inputs[j]);
+		}
+
+		transferFunction(&perceptron->output, perceptron->threshold);
+	}
+
+
+	return 1;
 }
