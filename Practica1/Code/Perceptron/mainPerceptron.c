@@ -62,9 +62,9 @@ int main(int argc, char **argv)
 	// 	printf("\n");
 	// }
 
-	createPerceptron(&perceptron, 0, patterns.numAttributes, 1);
+	createPerceptron(&perceptron, 0.2, patterns.numAttributes, 1);
 
-	learnPerceptron(&perceptron, 0.1, 0, &patterns, 300);
+	learnPerceptron(&perceptron, 1, 0, &patterns, patterns.numPatterns*(float) 1/3);
 
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);

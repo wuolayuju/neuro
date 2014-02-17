@@ -120,6 +120,7 @@ void transferFunction(Neuron *neuron, float threshold)
 	int i;
 	float y_in=0;
 
+
 	for(i=0;i<neuron->numConnections;i++){
 		y_in += neuron->inputs[i] * neuron->weights[i];
 	}
@@ -202,7 +203,7 @@ int createPattern(FILE *file, Pattern *p)
 {
 	if(parser(file, p))
 	{
-		patternShuffle(p, time(NULL));
+		//patternShuffle(p, time(NULL));
 		return 1;
 	}
 	return 0;
@@ -232,16 +233,18 @@ int learnPerceptron(
 {
 	int p, i, w;
 	boolean weightChange=false;
+	boolean weightChangeEpoch=false;
 	int n_iter = 1;
 
 	do{
 
 		printf("=========EPOCA %d==========\n", n_iter);
 
-		weightChange = false;
+		weightChangeEpoch = false;
 
 		for (p = 0; p < numberPatterns; p++)
 		{
+
 			printf("Entrada: ");
 			// Estimulacion de las entradas
 			for (i = 0; i < perceptron->numInputs ; i++)
@@ -264,28 +267,39 @@ int learnPerceptron(
 				|| (perceptron->output.y == 1 && patterns->categories[p][0] == 0)
 				|| (perceptron->output.y == 0))
 			{
+				printf("tocoto\n");
 				weightChange = true;
+				weightChangeEpoch = true;
 			}
+
+			else
+				weightChange = false;
 
 			// Cambio en los pesos
 			if (weightChange == true) {
 				for (w = 0; w < perceptron->numInputs; w++)
 				{
 					if (patterns->categories[p][0] == 1){
-						perceptron->output.weights[w] += learningRate * perceptron->output.inputs[w];
+						printf("DELTA peso %d  %.2f\n",w,learningRate * patterns->attributes[p][w]);
+						perceptron->output.weights[w] += learningRate * patterns->attributes[p][w];
 					}
 
 					if (patterns->categories[p][0] == 0){
-						perceptron->output.weights[w] += -learningRate * perceptron->output.inputs[w];
+						printf("DELTA peso %d %.2f\n",w,-learningRate * patterns->attributes[p][w]);
+						perceptron->output.weights[w] += -(learningRate * patterns->attributes[p][w]);
 					}
 				}
 				printf("\n");
 			}
+			for(i=0;i<perceptron->output.numConnections;i++)
+				printf("W %.2f ",perceptron->output.weights[i]);
+
+			printf("\n");
       	}
       	n_iter++;
       	if (n_iter > NUM_MAX_ITER)
       		break;
-	}while (weightChange);
+	}while (weightChangeEpoch);
 
 	return 0;
 
