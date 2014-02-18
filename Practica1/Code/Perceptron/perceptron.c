@@ -235,6 +235,7 @@ int learnPerceptron(
 	boolean weightChange=false;
 	boolean weightChangeEpoch=false;
 	int n_iter = 1;
+	int currentCategory;
 
 	do{
 
@@ -257,17 +258,17 @@ int learnPerceptron(
 			// Aplicación de la función de transferencia
 			transferFunction(&perceptron->output, perceptron->threshold);
 
+			// Conversión de categoria original a la necesaria para learn
 			if (patterns->categories[p][0] == 1)
-				printf("T = 1\n");
+				currentCategory = 1;
 			else
-				printf("T = -1\n");
+				currentCategory = -1;
+
+			printf("T = %d\n", currentCategory);
 			
 			// Comprobación de error
-			if ((perceptron->output.y == -1 && patterns->categories[p][0] == 1)
-				|| (perceptron->output.y == 1 && patterns->categories[p][0] == 0)
-				|| (perceptron->output.y == 0))
+			if ((perceptron->output.y != currentCategory) || (perceptron->output.y == 0))
 			{
-				printf("tocoto\n");
 				weightChange = true;
 				weightChangeEpoch = true;
 			}
@@ -279,15 +280,8 @@ int learnPerceptron(
 			if (weightChange == true) {
 				for (w = 0; w < perceptron->numInputs; w++)
 				{
-					if (patterns->categories[p][0] == 1){
-						printf("DELTA peso %d  %.2f\n",w,learningRate * patterns->attributes[p][w]);
-						perceptron->output.weights[w] += learningRate * patterns->attributes[p][w];
-					}
-
-					if (patterns->categories[p][0] == 0){
-						printf("DELTA peso %d %.2f\n",w,-learningRate * patterns->attributes[p][w]);
-						perceptron->output.weights[w] += -(learningRate * patterns->attributes[p][w]);
-					}
+					perceptron->output.weights[w] += learningRate * patterns->attributes[p][w] * currentCategory;
+					printf("DELTA peso %d  %.2f\n",w,learningRate * patterns->attributes[p][w] * currentCategory);
 				}
 				printf("\n");
 			}
