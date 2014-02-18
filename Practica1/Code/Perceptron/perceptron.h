@@ -7,9 +7,19 @@
 #include <string.h>
 #include <time.h>
 
+//#define DEBUG
+
+#ifdef DEBUG
+#define DEBUG_TEST 1
+#else
+#define DEBUG_TEST 0
+#endif
+
 #define MAX_LINE 256
-#define NUM_MAX_ITER 1000
+#define NUM_MAX_ITER 2000
 #define INCR_SIZE_PATTERN 100
+
+
 
 typedef enum
 {
@@ -24,6 +34,7 @@ typedef struct
 	float *inputs;
 	float *weights;
 	int numConnections;
+	float b;
 }Neuron;
 
 typedef struct

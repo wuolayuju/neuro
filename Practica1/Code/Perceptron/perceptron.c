@@ -70,6 +70,7 @@ void initNeuron(Neuron *neuron, int id, int numConnections)
 	neuron->weights = (float *)calloc(sizeof(float),numConnections);
 	neuron->inputs = (float *)malloc(sizeof(float)*numConnections);
 	neuron->y = 0;
+	neuron->b = 0;
 	neuron->numConnections = numConnections;
 }
 
@@ -125,6 +126,8 @@ void transferFunction(Neuron *neuron, float threshold)
 		y_in += neuron->inputs[i] * neuron->weights[i];
 	}
 
+	y_in += neuron->b;
+
 	if(y_in > threshold)
 		neuron->y = 1;
 	else if(y_in < -threshold)
@@ -132,7 +135,8 @@ void transferFunction(Neuron *neuron, float threshold)
 	else
 		neuron->y = 0;
 
-	printf("Y = %.2f Y_IN = %d\n", y_in, neuron->y);
+	if(DEBUG_TEST)
+		printf("Y_IN = %.2f Y = %d\n", y_in, neuron->y);
 }
 
 int parser(FILE *file, Pattern *pattern)
@@ -203,7 +207,7 @@ int createPattern(FILE *file, Pattern *p)
 {
 	if(parser(file, p))
 	{
-		//patternShuffle(p, time(NULL));
+		patternShuffle(p, time(NULL));
 		return 1;
 	}
 	return 0;
@@ -236,24 +240,31 @@ int learnPerceptron(
 	boolean weightChangeEpoch=false;
 	int n_iter = 1;
 	int currentCategory;
+	int errors = 0;
 
 	do{
 
-		printf("=========EPOCA %d==========\n", n_iter);
+		errors = 0;
+
+		if(DEBUG_TEST)
+			printf("=========EPOCA %d==========\n", n_iter);
 
 		weightChangeEpoch = false;
 
 		for (p = 0; p < numberPatterns; p++)
 		{
 
-			printf("Entrada: ");
+			if(DEBUG_TEST)
+				printf("Entrada: ");
 			// Estimulacion de las entradas
 			for (i = 0; i < perceptron->numInputs ; i++)
 			{
 				perceptron->output.inputs[i] = patterns->attributes[p][i];
-				printf("%.1f ", perceptron->output.inputs[i]);
+				if(DEBUG_TEST)
+					printf("%.1f ", perceptron->output.inputs[i]);
 			}
-			printf("\n");
+			if(DEBUG_TEST)
+				printf("\n");
 
 			// Aplicación de la función de transferencia
 			transferFunction(&perceptron->output, perceptron->threshold);
@@ -264,13 +275,15 @@ int learnPerceptron(
 			else
 				currentCategory = -1;
 
-			printf("T = %d\n", currentCategory);
+			if(DEBUG_TEST)
+				printf("T = %d\n", currentCategory);
 			
 			// Comprobación de error
 			if ((perceptron->output.y != currentCategory) || (perceptron->output.y == 0))
 			{
 				weightChange = true;
 				weightChangeEpoch = true;
+				errors++;
 			}
 
 			else
@@ -281,18 +294,26 @@ int learnPerceptron(
 				for (w = 0; w < perceptron->numInputs; w++)
 				{
 					perceptron->output.weights[w] += learningRate * patterns->attributes[p][w] * currentCategory;
-					printf("DELTA peso %d  %.2f\n",w,learningRate * patterns->attributes[p][w] * currentCategory);
+					if(DEBUG_TEST)
+						printf("DELTA peso %d  %.2f\n",w,learningRate * patterns->attributes[p][w] * currentCategory);
 				}
+				perceptron->output.b += learningRate * currentCategory;
+				if(DEBUG_TEST)
+					printf("\n");
+			}
+			if(DEBUG_TEST)
+			{
+				for(i=0;i<perceptron->output.numConnections;i++)
+					printf("W %.2f ",perceptron->output.weights[i]);
 				printf("\n");
 			}
-			for(i=0;i<perceptron->output.numConnections;i++)
-				printf("W %.2f ",perceptron->output.weights[i]);
-
-			printf("\n");
       	}
       	n_iter++;
       	if (n_iter > NUM_MAX_ITER)
       		break;
+
+      	printf("\nEPOCA %d ERRORES = %.4f\n", n_iter, (float)errors/numberPatterns*100);
+
 	}while (weightChangeEpoch);
 
 	return 0;
@@ -302,17 +323,60 @@ int learnPerceptron(
 int test(Perceptron *perceptron, Pattern *pattern, int numFirstPattern)
 {
 	int i, j;
+	int currentCategory;
+	int hits = 0;
+	int totalTargetCat_1 = 0; /* Cateogoria 1 */
+	int totalTargetCat_2 = 0; /* Cateogoria 1 */
+	int totalTestCat_1 = 0; /* Cateogoria 1 */
+	int totalTestCat_2 = 0; /* Cateogoria -1 */
+	int nTestPatterns = 0;
+	int errors = 0;
 
 	for(i=numFirstPattern; i<pattern->numPatterns ;i++)
 	{
+		if(DEBUG_TEST)
+			printf("Entrada: ");
 		for (j = 0; j < perceptron->numInputs ; j++)
 		{
 			perceptron->output.inputs[j] = pattern->attributes[i][j];
-			printf("%.1f ", perceptron->output.inputs[j]);
+			if(DEBUG_TEST)
+				printf("%.1f ", perceptron->output.inputs[j]);
 		}
+		if(DEBUG_TEST)
+			printf("\n");
 
 		transferFunction(&perceptron->output, perceptron->threshold);
+
+		if (pattern->categories[i][0] == 1){
+			currentCategory = 1;
+			totalTargetCat_1++;
+		}
+		else{
+			currentCategory = -1;
+		}
+		if (DEBUG_TEST)
+			printf("T = %d\n", currentCategory);
+
+		if (perceptron->output.y == currentCategory)
+			hits++;
+
+		if (perceptron->output.y == 1)
+			totalTestCat_1++;
+		else if (perceptron->output.y == -1)
+			totalTestCat_2++;
 	}
+
+	nTestPatterns = pattern->numPatterns - numFirstPattern;
+
+	errors = nTestPatterns - hits;
+
+	totalTargetCat_2 = nTestPatterns - totalTargetCat_1;
+
+	printf("\nClase 1 = %d (%.2f%%)\n", totalTargetCat_1, (float)totalTargetCat_1/nTestPatterns*100);
+	printf("Clase 2 = %d (%.2f%%)\n", totalTargetCat_2, (float)totalTargetCat_2/nTestPatterns*100);
+
+	printf("\nFallos = %d (%.2f%%)\n", errors, (float)errors/nTestPatterns*100);
+	printf("Aciertos = %d (%.2f%%)\n", hits, (float)hits/nTestPatterns*100);
 
 
 	return 1;

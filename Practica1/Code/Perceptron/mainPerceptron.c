@@ -7,8 +7,12 @@ int main(int argc, char **argv)
 
 	FILE *output = NULL;
 	FILE *input = NULL;
+	float fractionLearn = 0;
+	float learnRate = 0.1;
 	int i, j;
 	float threshold = 0.8;
+	Pattern patterns;
+
 	/* comprueba la linea de comandos */
 	for (i = 1; i < argc; i++)
 	{
@@ -18,53 +22,47 @@ int main(int argc, char **argv)
 		else if (strcmp("-output", argv[i])==0) {
 			output = fopen(argv[i+1], "w");
 		}
+		else if (strcmp("-part", argv[i])==0) {
+			fractionLearn = atof(argv[i+1]);
+		}
+		else if (strcmp("-learnrate", argv[i])==0) {
+			learnRate = atof(argv[i+1]);
+		}
+		else if (strcmp("-threshold", argv[i])==0) {
+			threshold = atof(argv[i+1]);
+		}
 	}
 
-	if (input == NULL || output == NULL) {
-		printf("USO: %s -input <f_entrada> -output <f_salida>\n", argv[0]);
+	if (input == NULL || output == NULL) 
+	{
+		printf("USO: %s -input <f_entrada> -output <f_salida> [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n", argv[0]);
 		exit(0);
 	}
-	// createPerceptron(&perceptron,threshold,8,2);
-	// deletePerceptron(&perceptron);
 
-	Pattern patterns;
-/*
-	parser(input, &patterns);
-	for(i=0;i<patterns.numPatterns;i++)
+	if ((fractionLearn < 0.0 || fractionLearn > 1) || (learnRate <= 0))
 	{
-		for(j=0;j<patterns.numAttributes;j++)
-			printf("%.1f ",patterns.attributes[i][j]);
-
-		for(j=0;j<patterns.numCategories;j++)
-			printf("%d ",patterns.categories[i][j]);
-		printf("\n");
+		fprintf(stderr, "ERROR: Valor de porcentaje de aprendizaje (0,1] o factor de aprendizaje ( >0 )\n");
+		exit(0);
 	}
 
-	printf("=======================\n");
-
-	patternShuffle(&patterns,time(NULL));
-*/
-	if (!createPattern(input, &patterns)) {
-		fprintf(stderr, "Error en la lectura de patrones\n");
+	if (!createPattern(input, &patterns))
+	{
+		fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
 		exit(0);
 	}
 
 	fclose(input);
 	fclose(output);
 
-	// for(i=0;i<patterns.numPatterns;i++)
-	// {
-	// 	for(j=0;j<patterns.numAttributes;j++)
-	// 		printf("%.1f ",patterns.attributes[i][j]);
+	createPerceptron(&perceptron, threshold, patterns.numAttributes, 1);
 
-	// 	for(j=0;j<patterns.numCategories;j++)
-	// 		printf("%d ",patterns.categories[i][j]);
-	// 	printf("\n");
-	// }
+	printf("\n##################LEARN##################\n");
 
-	createPerceptron(&perceptron, 0.2, patterns.numAttributes, 1);
+	learnPerceptron(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns*fractionLearn);
 
-	learnPerceptron(&perceptron, 1, 0, &patterns, patterns.numPatterns*(float) 1/3);
+	printf("\n##################TEST##################\n");
+
+	test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);
