@@ -61,6 +61,9 @@ int main(int argc, char **argv)
 	learnPerceptron(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns*fractionLearn);
 
 	printf("\n##################TEST##################\n");
+	
+	if(fractionLearn == 1)
+		fractionLearn = 0;
 
 	test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 
