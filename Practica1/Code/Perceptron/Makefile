@@ -3,7 +3,7 @@
 
 CC = gcc  -g -lm
 CFLAGS = -Wall
-EXE = mainPerceptron
+EXE = mainPerceptron perceptronNoClasif
 
 compile : $(EXE)
 help : 
