@@ -58,7 +58,9 @@ int main(int argc, char **argv)
 	fclose(input);
 	fclose(output);
 
-	createPerceptron(&perceptron, threshold, patterns.numAttributes, 1);
+	createPerceptron(&perceptron, 0, patterns.numAttributes, 1);
+	initWeightsAdaline(&perceptron);
+
 
 	printf("\n##################LEARN##################\n");
 

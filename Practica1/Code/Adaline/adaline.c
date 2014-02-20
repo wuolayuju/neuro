@@ -1,7 +1,30 @@
 
 #include "adaline.h"
 
+float getRandomNumberF(float inf, float sup)
+{
+    /* Control de errores de los parametros de entrada*/
+    if ((sup < inf) || (sup > RAND_MAX) || (sup < 0) || (sup > RAND_MAX))
+        return -1;
+    /*la función rand() limita el rango [0, 1) debido a la división entre RAND_MAX+1.
+     * La segunda parte multiplica dicho valor por un número que se encuentre aproximadamente
+     * en la mitad del rango (sup-inf +1), de este modo se normaliza el anterior valor
+     * acotándolo entre 0 y el número intermedio.  Sin embargo, es necesario sumar el límite
+     * inferior al resultado con el fin de que se obtenga un valor superior a este.*/
+    return (float)((rand()/(RAND_MAX+1.))*(sup-inf))+inf;
+}
 
+void initWeightsAdaline(Perceptron *perceptron)
+{
+	int i;
+
+	for(i=0; i<perceptron->output.numConnections; i++)
+		perceptron->output.weights[i] = getRandomNumberF(-0.1,0.1);
+
+	for(i=0; i<perceptron->output.numConnections; i++)
+		printf("W %.3f ",perceptron->output.weights[i]);
+	printf("\n");
+}
 
 int learnAdaline(
 	Perceptron *perceptron, float learningRate, 

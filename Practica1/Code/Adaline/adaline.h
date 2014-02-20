@@ -14,5 +14,7 @@
 int learnAdaline(Perceptron *perceptron, float learningRate, 
 	float threshold, Pattern *patterns, int numberPatterns, float errorTolerance);
 
+float getRandomNumberF(float inf, float sup);
 
+void initWeightsAdaline(Perceptron *perceptron);
 #endif
