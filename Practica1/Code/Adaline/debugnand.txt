@@ -1,0 +1,24 @@
+W -0.027 W 0.057 
+
+##################LEARN##################
+Epoca 1 Error Cuadrático Medio :1,1479
+Epoca 2 Error Cuadrático Medio :1,0134
+Epoca 3 Error Cuadrático Medio :0,9200
+Epoca 4 Error Cuadrático Medio :0,8438
+Epoca 5 Error Cuadrático Medio :0,7784
+Epoca 6 Error Cuadrático Medio :0,7214
+Epoca 7 Error Cuadrático Medio :0,6715
+Epoca 8 Error Cuadrático Medio :0,6279
+Epoca 9 Error Cuadrático Medio :0,5897
+Epoca 10 Error Cuadrático Medio :0,5562
+Epoca 11 Error Cuadrático Medio :0,5268
+Epoca 12 Error Cuadrático Medio :0,5011
+Epoca 13 Error Cuadrático Medio :0,4785
+
+##################TEST##################
+
+Clase 1 = 1 (25.00%)
+Clase 2 = 3 (75.00%)
+
+Fallos = 0 (0.00%)
+Aciertos = 4 (100.00%)
