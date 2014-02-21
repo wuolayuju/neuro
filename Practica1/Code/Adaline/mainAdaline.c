@@ -61,7 +61,6 @@ int main(int argc, char **argv)
 	createPerceptron(&perceptron, 0, patterns.numAttributes, 1);
 	initWeightsAdaline(&perceptron);
 
-
 	printf("\n##################LEARN##################\n");
 
 	learnAdaline(&perceptron, learnRate, threshold, &patterns, 
@@ -69,7 +68,7 @@ int main(int argc, char **argv)
 
 	printf("\n##################TEST##################\n");
 
-	test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
+	test(&perceptron, &patterns, ((int)(patterns.numPatterns*fractionLearn)) % patterns.numPatterns);
 
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);

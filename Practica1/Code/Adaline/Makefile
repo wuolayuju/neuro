@@ -1,6 +1,3 @@
-
-
-
 CC = gcc  -g -lm
 CFLAGS = -Wall
 EXE = mainAdaline
