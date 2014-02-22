@@ -1,6 +1,6 @@
 CC = gcc  -g -lm
 CFLAGS = -Wall
-EXE = mainAdaline
+EXE = mainAdaline adalineNoClasif
 
 compile : $(EXE)
 help : 

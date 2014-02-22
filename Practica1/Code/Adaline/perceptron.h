@@ -72,6 +72,6 @@ void deletePerceptron(Perceptron *p);
 int learnPerceptron(Perceptron *perceptron, float learningRate, 
 	float threshold, Pattern *patterns, int numberPatterns);
 int test(Perceptron *perceptron, Pattern *pattern, int numFirstPattern);
-
+int printTest(Perceptron *perceptron, Pattern *pattern, int numFirstPattern, FILE *out);
 
 #endif

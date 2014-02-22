@@ -312,12 +312,44 @@ int learnPerceptron(
       	if (n_iter > NUM_MAX_ITER)
       		break;
 
-      	printf("\nEPOCA %d ERRORES = %.4f\n", n_iter, (float)errors/numberPatterns*100);
+      	printf("ERRORES = %.4f\n",(float)errors/numberPatterns*100);
 
 	}while (weightChangeEpoch);
 
 	return 0;
 
+}
+
+int printTest(Perceptron *perceptron, Pattern *pattern, int numFirstPattern, FILE *out)
+{
+
+	int i, j;
+
+	
+	for(i=numFirstPattern; i<pattern->numPatterns ;i++)
+	{
+		if(DEBUG_TEST)
+			printf("Entrada: ");
+		for (j = 0; j < perceptron->numInputs ; j++)
+		{
+			perceptron->output.inputs[j] = pattern->attributes[i][j];
+			if(DEBUG_TEST)
+				printf("%.1f ", perceptron->output.inputs[j]);
+		}
+		if(DEBUG_TEST)
+			printf("\n");
+
+		transferFunction(&perceptron->output, perceptron->threshold);
+
+		if(perceptron->output.y == 1)
+			fprintf(out,"0 1\n");
+
+		else if(perceptron->output.y == -1)
+			fprintf(out,"1 0\n");
+		else
+			fprintf(out,"0 0\n");
+	}
+	return 1;
 }
 
 int test(Perceptron *perceptron, Pattern *pattern, int numFirstPattern)
