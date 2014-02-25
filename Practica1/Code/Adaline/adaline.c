@@ -120,10 +120,11 @@ int learnAdaline(
 			}
       	}
 
+
       	printf("Epoca %d Error Cuadrático Medio :%.4f\n",
 				n_iter, (float)errors/numberPatterns);
       	if(DEBUG_TEST)
-      		printf("BIGGER CHANGE %.3f ERROR TOLERANCE %.3f\n",fabs(biggerWeightChange),errorTolerance);
+      		printf("BIGGEST CHANGE %.3f ERROR TOLERANCE %.3f\n",fabs(biggerWeightChange),errorTolerance);
       	n_iter++;
       	if (n_iter > NUM_MAX_ITER)
       		break;
