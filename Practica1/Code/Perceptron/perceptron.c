@@ -213,6 +213,11 @@ int createPattern(FILE *file, Pattern *p)
 	return 0;
 }
 
+int createPatternExploit(FILE *file, Pattern *p)
+{
+	return parser(file, p);
+}
+
 void freePattern(Pattern *pattern)
 {
 	int i;
@@ -325,7 +330,8 @@ int printTest(Perceptron *perceptron, Pattern *pattern, int numFirstPattern, FIL
 
 	int i, j;
 
-	
+	printf("\nClasificando %d patrones...", pattern->numPatterns - numFirstPattern);
+
 	for(i=numFirstPattern; i<pattern->numPatterns ;i++)
 	{
 		if(DEBUG_TEST)
@@ -349,6 +355,9 @@ int printTest(Perceptron *perceptron, Pattern *pattern, int numFirstPattern, FIL
 		else
 			fprintf(out,"0 0\n");
 	}
+
+	printf("HECHO\n\n");
+
 	return 1;
 }
 

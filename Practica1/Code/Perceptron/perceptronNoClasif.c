@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 	FILE *inputLearn = NULL;
 	FILE *inputTest = NULL;
 	float learnRate = 0.1;
+	float fractionLearn = 0.3;
 	int i;
 	float threshold = 0.8;
 	Pattern patterns;
@@ -31,15 +32,25 @@ int main(int argc, char **argv)
 		else if (strcmp("-threshold", argv[i])==0) {
 			threshold = atof(argv[i+1]);
 		}
+		else if (strcmp("-part", argv[i])==0) {
+			fractionLearn = atof(argv[i+1]);
+		}
 	}
 
-	if (inputLearn == NULL || output == NULL || inputTest == NULL) 
+	// Comprobamos los únicos dos argumentos obligatorios
+	if (inputLearn == NULL || output == NULL ) 
 	{
-		printf("USO: %s -inputLearn <f_entrada> -inputTest <f_entrada> -output <f_salida> [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n", argv[0]);
+		printf("USO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n", argv[0]);
 		exit(0);
 	}
 
 	if (learnRate <= 0)
+	{
+		fprintf(stderr, "ERROR: Valor de porcentaje de aprendizaje (0,1] o factor de aprendizaje ( >0 )\n");
+		exit(0);
+	}
+
+	if ((fractionLearn < 0.0 || fractionLearn > 1) || (learnRate <= 0))
 	{
 		fprintf(stderr, "ERROR: Valor de porcentaje de aprendizaje (0,1] o factor de aprendizaje ( >0 )\n");
 		exit(0);
@@ -53,26 +64,36 @@ int main(int argc, char **argv)
 
 	fclose(inputLearn);
 	
-
 	createPerceptron(&perceptron, threshold, patterns.numAttributes, 1);
 
 	printf("\n##################LEARN##################\n");
 
-	learnPerceptron(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns);
-
-	freePattern(&patterns);
+	learnPerceptron(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns*fractionLearn);
 
 	printf("\n##################TEST##################\n");
 	
-	if (!createPattern(inputTest, &patterns))
-	{
-		fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
-		exit(0);
-	}	
-	printTest(&perceptron, &patterns, 0, output);
 
-	fclose(output);
-	fclose(inputTest);
+
+	if (inputTest != NULL) {
+
+		freePattern(&patterns);
+
+		if (!createPatternExploit(inputTest, &patterns))
+		{
+			fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
+			exit(0);
+		}
+
+		printTest(&perceptron, &patterns, 0, output);
+		fclose(inputTest);
+		fclose(output);
+	}
+	else 
+	{
+		test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
+	}
+		
+
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);
 

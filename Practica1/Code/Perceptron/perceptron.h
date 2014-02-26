@@ -61,6 +61,7 @@ int getRandomNumber(int inf, int sup);
 int swap(int pos_1, int pos_2, void **vector);
 int patternShuffle(Pattern *p, int seed);
 int createPattern(FILE *file, Pattern *p);
+int createPatternExploit(FILE *file, Pattern *p);
 void freePattern(Pattern *pattern);
 
 void initNeuron(Neuron *neuron, int id, int numConnections);
