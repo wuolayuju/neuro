@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	float learnRate = 0.1;
 	float fractionLearn = 0.3;
 	int i;
-	float threshold = 0.8;
+	float threshold = 0;
 	Pattern patterns;
 
 	/* comprueba la linea de comandos */
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 	// Comprobamos los únicos dos argumentos obligatorios
 	if (inputLearn == NULL || output == NULL ) 
 	{
-		printf("USO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
 		exit(0);
 	}
 
@@ -72,8 +72,6 @@ int main(int argc, char **argv)
 
 	printf("\n##################TEST##################\n");
 	
-
-
 	if (inputTest != NULL) {
 
 		freePattern(&patterns);
@@ -90,6 +88,7 @@ int main(int argc, char **argv)
 	}
 	else 
 	{
+		fractionLearn = fractionLearn == 1 ? 0 : fractionLearn;
 		test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 	}
 		

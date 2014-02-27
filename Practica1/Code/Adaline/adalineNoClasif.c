@@ -10,7 +10,8 @@ int main(int argc, char **argv)
 	float errorTolerance = 0.1;
 	float learnRate = 0.1;
 	int i;
-	float threshold = 0.8;
+	float threshold = 0;
+	float fractionLearn = 0.3;
 	Pattern patterns;
 
 	/* comprueba la linea de comandos */
@@ -36,13 +37,19 @@ int main(int argc, char **argv)
 		}
 	}
 
-	if (inputLearn == NULL || output == NULL || inputTest == NULL) 
+	if (inputLearn == NULL || output == NULL ) 
 	{
-		printf("USO: %s -inputLearn <f_entrada> -inputTest <f_entrada> -output <f_salida> [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-tolerance <error_tolerance] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
 		exit(0);
 	}
 
 	if (learnRate <= 0)
+	{
+		fprintf(stderr, "ERROR: Valor de porcentaje de aprendizaje (0,1] o factor de aprendizaje ( >0 )\n");
+		exit(0);
+	}
+
+	if ((fractionLearn < 0.0 || fractionLearn > 1) || (learnRate <= 0))
 	{
 		fprintf(stderr, "ERROR: Valor de porcentaje de aprendizaje (0,1] o factor de aprendizaje ( >0 )\n");
 		exit(0);
