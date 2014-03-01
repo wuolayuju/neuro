@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 
 	FILE *output = NULL;
 	FILE *inputLearn = NULL;
-	FILE *inputTest = NULL;
+	FILE *inputExploit = NULL;
 	float learnRate = 0.1;
 	float fractionLearn = 0.3;
 	int i;
@@ -20,8 +20,8 @@ int main(int argc, char **argv)
 		if (strcmp("-inputLearn", argv[i])==0) {
 			inputLearn = fopen(argv[i+1], "r");
 		}
-		if (strcmp("-inputTest", argv[i])==0) {
-			inputTest = fopen(argv[i+1], "r");
+		if (strcmp("-inputExploit", argv[i])==0) {
+			inputExploit = fopen(argv[i+1], "r");
 		}
 		else if (strcmp("-output", argv[i])==0) {
 			output = fopen(argv[i+1], "w");
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 	// Comprobamos los únicos dos argumentos obligatorios
 	if (inputLearn == NULL || output == NULL ) 
 	{
-		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputExploit <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
 		exit(0);
 	}
 
@@ -69,27 +69,25 @@ int main(int argc, char **argv)
 	printf("\n##################LEARN##################\n");
 
 	learnPerceptron(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns*fractionLearn);
-
+	fractionLearn = fractionLearn == 1 ? 0 : fractionLearn;
 	printf("\n##################TEST##################\n");
+	test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 	
-	if (inputTest != NULL) {
+	printf("\n##################EXPLOIT##################\n");
+	
+	if (inputExploit != NULL) {
 
 		freePattern(&patterns);
 
-		if (!createPatternExploit(inputTest, &patterns))
+		if (!createPatternExploit(inputExploit, &patterns))
 		{
 			fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
 			exit(0);
 		}
 
 		printTest(&perceptron, &patterns, 0, output);
-		fclose(inputTest);
+		fclose(inputExploit);
 		fclose(output);
-	}
-	else 
-	{
-		fractionLearn = fractionLearn == 1 ? 0 : fractionLearn;
-		test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 	}
 		
 

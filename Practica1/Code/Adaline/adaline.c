@@ -32,8 +32,6 @@ int learnAdaline(
 	int numberPatterns, float errorTolerance)
 {
 	int p, i, w;
-	boolean weightChange=false;
-	boolean weightChangeEpoch=false;
 	float biggerWeightChange;
 	float deltaChange;
 	int n_iter = 1;
@@ -45,12 +43,11 @@ int learnAdaline(
 
 		errors = 0;
 
-		biggerWeightChange = -1;
+		biggerWeightChange = LONG_MIN;
 
 		if(DEBUG_TEST)
 			printf("=========EPOCA %d==========\n", n_iter);
 
-		weightChangeEpoch = false;
 
 		for (p = 0; p < numberPatterns; p++)
 		{

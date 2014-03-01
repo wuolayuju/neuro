@@ -16,7 +16,7 @@
 #endif
 
 #define MAX_LINE 256
-#define NUM_MAX_ITER 2000
+#define NUM_MAX_ITER 200
 #define INCR_SIZE_PATTERN 100
 
 

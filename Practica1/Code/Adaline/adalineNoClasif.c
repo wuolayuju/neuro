@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 
 	FILE *output = NULL;
 	FILE *inputLearn = NULL;
-	FILE *inputTest = NULL;
+	FILE *inputExploit = NULL;
 	float errorTolerance = 0.1;
 	float learnRate = 0.1;
 	int i;
@@ -20,8 +20,8 @@ int main(int argc, char **argv)
 		if (strcmp("-inputLearn", argv[i])==0) {
 			inputLearn = fopen(argv[i+1], "r");
 		}
-		if (strcmp("-inputTest", argv[i])==0) {
-			inputTest = fopen(argv[i+1], "r");
+		if (strcmp("-inputExploit", argv[i])==0) {
+			inputExploit = fopen(argv[i+1], "r");
 		}
 		else if (strcmp("-output", argv[i])==0) {
 			output = fopen(argv[i+1], "w");
@@ -37,9 +37,9 @@ int main(int argc, char **argv)
 		}
 	}
 
-	if (inputLearn == NULL || output == NULL ) 
+	if (inputLearn == NULL || output == NULL || inputExploit == NULL  ) 
 	{
-		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputTest <f_entrada>] [-tolerance <error_tolerance] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputExploit <f_entrada>] [-tolerance <error_tolerance] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
 		exit(0);
 	}
 
@@ -70,11 +70,16 @@ int main(int argc, char **argv)
 
 	learnAdaline(&perceptron, learnRate, threshold, &patterns, patterns.numPatterns,errorTolerance);
 
-	freePattern(&patterns);
+
 
 	printf("\n##################TEST##################\n");
+
+	test(&perceptron, &patterns, ((int)(patterns.numPatterns*fractionLearn)) % patterns.numPatterns);
+
+	freePattern(&patterns);
+	printf("\n##################EXPLOTACION##################\n");
 	
-	if (!createPattern(inputTest, &patterns))
+	if (!createPattern(inputExploit, &patterns))
 	{
 		fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
 		exit(0);
@@ -82,7 +87,7 @@ int main(int argc, char **argv)
 	printTest(&perceptron, &patterns, 0, output);
 
 	fclose(output);
-	fclose(inputTest);
+	fclose(inputExploit);
 	deletePerceptron(&perceptron);
 	freePattern(&patterns);
 
