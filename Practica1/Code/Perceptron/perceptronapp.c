@@ -38,9 +38,9 @@ int main(int argc, char **argv)
 	}
 
 	// Comprobamos los únicos dos argumentos obligatorios
-	if (inputLearn == NULL || output == NULL ) 
+	if (inputLearn == NULL || (inputExploit!=NULL&&(output == NULL))) 
 	{
-		printf("\nUSO: %s -inputLearn <f_entrada> -output <f_salida> [-inputExploit <f_entrada>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> [-inputExploit <f_entrada> -output <f_salida>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>] [-threshold <umbral>]\n\n", argv[0]);
 		exit(0);
 	}
 
