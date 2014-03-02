@@ -73,9 +73,9 @@ int main(int argc, char **argv)
 	printf("\n##################TEST##################\n");
 	test(&perceptron, &patterns, patterns.numPatterns*fractionLearn);
 	
-	printf("\n##################EXPLOIT##################\n");
-	
 	if (inputExploit != NULL) {
+
+		printf("\n##################EXPLOIT##################\n");
 
 		freePattern(&patterns);
 
