@@ -25,17 +25,41 @@ float **generateWeights(int weightsRow, int weightsColumn)
 	return weights;
 }
 
+void debugWeight(float **weight, int row, int column)
+{
+	int i,j;
 
-float *generateBias(int numHidderLayerNeurons, int numCategories)
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<column;j++)
+			printf("%.2f ",weight[i][j]);		
+		printf("\n");
+	}
+
+	
+}	
+
+float *generateBias(int numHiddenLayerNeurons, int numCategories)
 {
 	int i;
 
-	float *bias = (float *)malloc(sizeof(float)*(numHidderLayerNeurons + numCategories));
+	float *bias = (float *)malloc(sizeof(float)*(numHiddenLayerNeurons + numCategories));
 
-	for(i=0;i<(numHidderLayerNeurons + numCategories);i++)
+	for(i=0;i<(numHiddenLayerNeurons + numCategories);i++)
 		bias[i] = getRandomNumberF(-0.5 , 0.5); 
 
 	return bias;
+}
+
+void freeWeights(float **weights, int weightsRow)
+{
+	int i;
+
+	for(i=0;i<weightsRow;i++)
+		free(weights[i]);
+
+	free(weights);
+
 }
 
 float function_bipolar(float in)
@@ -59,7 +83,7 @@ float dfunction_binary(float fx)
 }
 
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHidderLayerNeurons, float learningRate, int numPatterns)
+	int numHiddenLayerNeurons, float learnRate, int numPatterns)
 {
 
 	int i, j, p;
@@ -75,83 +99,90 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	float *Ab = NULL;
 
 	/*Neuron Inputs*/
-	z_in = (float *)calloc(sizeof(float),numHidderLayerNeurons);
+	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
 
 	/*Neuron Outputs*/
-	z = (float *)calloc(sizeof(float),numHidderLayerNeurons);
+	z = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y = (float *)calloc(sizeof(float),pattern->numCategories);
 
 	/*Errores*/
 	dk = (float *)malloc(sizeof(float)*pattern->numCategories);
-	d_inj = (float *)malloc(sizeof(float)*numHidderLayerNeurons);
-	dj = (float *)malloc(sizeof(float)*numHidderLayerNeurons);
+	d_inj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
+	dj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
 
 
 	/*Incrementos de peso*/
-	Aw = (float **)malloc(sizeof(float *)*numHidderLayerNeurons);
-	for(i=0;i<numHidderLayerNeurons;i++)
-		Aw[i] = (float *)malloc(sizeof(float)*pattern->numCategories);
+	Aw = (float **)malloc(sizeof(float *)*pattern->numCategories);
+	for(i=0;i<pattern->numCategories;i++)
+		Aw[i] = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
 
-	Av = (float **)malloc(sizeof(float *)*pattern->numAttributes);
-	for(i=0;i<pattern->numAttributes;i++)
-		Av[i] = (float *)malloc(sizeof(float)*numHidderLayerNeurons);
+	Av = (float **)malloc(sizeof(float *)*numHiddenLayerNeurons);
+	for(i=0;i<numHiddenLayerNeurons;i++)
+		Av[i] = (float *)malloc(sizeof(float)*pattern->numAttributes);
 
-	Ab = (float *)malloc(sizeof(float)*(numHidderLayerNeurons + pattern->numCategories));
+	Ab = (float *)malloc(sizeof(float)*(numHiddenLayerNeurons + pattern->numCategories));
 
 	/*Learn*/
 	for(p=0; p < numPatterns; p++)
 	{
 		/*Propagación palante*/
-		for (i=0; i<numHidderLayerNeurons; i++)
+		for (i=0; i<numHiddenLayerNeurons; i++)
 		{
 			z_in[i] = bias[i];
 			for (j=0; j<pattern->numAttributes; j++)
 				z_in[i] += weightsV[i][j] * pattern->attributes[p][j];
 			
 			z[i] = function_bipolar(z_in[i]);
+			printf("Z[%d] = %.2f\n",i,z[i]);
 		}
 
 		for (i=0; i<pattern->numCategories; i++)
 		{
-			y_in[i] = bias[numHidderLayerNeurons+i];
-			for (j=0; j<numHidderLayerNeurons; j++)
+			y_in[i] = bias[numHiddenLayerNeurons+i];
+			for (j=0; j<numHiddenLayerNeurons; j++)
 				y_in[i] += weightsW[i][j]*z[j];
-			
+			printf("Y_IN %.2f\n",y_in[i]);
 			y[i] = function_bipolar(y_in[i]);
+			printf("Y[%d] = %.2f\n",i,y[i]);
 		}
 
 		// Calculo del error en neuronas de salida
 		// y del incremento de los pesos
 		for(i=0;i<pattern->numCategories;i++)
 		{
-			dk[i] = (pattern->attributes[p][i] - y[i])*dfunction_bipolar(y[i]);
-			
-			for(j=0;j<numHidderLayerNeurons;j++)
-				Aw[j][i] = learningRate*dk[i]*z[j]; 
+			dk[i] = (pattern->categories[p][i] - y[i])*dfunction_bipolar(y[i]);
+			printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],dfunction_bipolar(y[i]));
+			printf("DK[%d] = %.2f\n",i,dk[i]);
 
-			Ab[numHidderLayerNeurons+i] = learningRate*dk[i];
+			for(j=0;j<numHiddenLayerNeurons;j++)
+			{
+				Aw[i][j] = learnRate*dk[i]*z[j];
+				printf("Aw[%d][%d] = %.2f\n",i,j,Aw[i][j]);
+			}
+			Ab[numHiddenLayerNeurons+i] = learnRate*dk[i];
+			printf("Ab[%d] = %.2f\n",numHiddenLayerNeurons+i,Ab[numHiddenLayerNeurons+i]);
 		}
 
-
+/*
 		//Retropropagación
 		//FALTAN COSAS
 
 		//Actualiza pesos (derrame cerebrall)
 		for (i=0; i<pattern->numCategories; i++)
 		{
-			for (j=0; j<numHidderLayerNeurons; j++)
+			for (j=0; j<numHiddenLayerNeurons; j++)
 			{
 				weightsW[i][j] += Aw[i][j];
 			}
 		}	
-		for (i=0; i<numHidderLayerNeurons; i++)
+		for (i=0; i<numHiddenLayerNeurons; i++)
 		{
 			for (j=0; j<pattern->numAttributes; j++)
 			{
 				weightsV[i][j] += Av[i][j];
 			}
-		}
+		}*/
 	}
 
 	free(y);
@@ -160,10 +191,12 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	free(y_in);
 	free(dk);
 	free(Ab);
-	for(i=0;i<numHidderLayerNeurons;i++)
+
+	for(i=0;i<pattern->numCategories;i++)
 		free(Aw[i]);
 	free(Aw);
-	for(i=0;i<pattern->numAttributes;i++)
+
+	for(i=0;i<numHiddenLayerNeurons;i++)
 		free(Av[i]);
 	free(Av);
 
