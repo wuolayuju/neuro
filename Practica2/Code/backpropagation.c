@@ -69,6 +69,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	float *z_in = NULL;
 	float *z = NULL;
 	float *y = NULL;
+	float **dV = NULL;
+	float **dW = NULL;
 
 	z_in = (float *)calloc(sizeof(float *),numHidderLayerNeurons);
 	y_in = (float *)calloc(sizeof(float *),pattern->numCategories);
@@ -79,11 +81,12 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		for (i=0; i<numHidderLayerNeurons; i++)
 		{
 			z_in[i] = bias[i];
-			for (j=0; j<numPatterns; j++)
+			for (j=0; j<pattern->numAttributes; j++)
 				z_in[i] += weightsV[i][j] * pattern->attributes[p][j];
 			
 			z[i] = function_bipolar(z_in[i]);
 		}
+
 		for (i=0; i<pattern->numCategories; i++)
 		{
 			y_in[i] = bias[numHidderLayerNeurons+i];
@@ -92,7 +95,29 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			
 			y[i] = function_bipolar(y_in[i]);
 		}
+
+
+		//FALTAN COSAS
+
+		//Actualiza pesos (derrame cerebrall)
+		for (i=0; i<pattern->numCategories; i++)
+		{
+			for (j=0; j<numHidderLayerNeurons; j++)
+			{
+				weightsW[i][j] += dW[i][j];
+			}
+		}	
+		for (i=0; i<numHidderLayerNeurons; i++)
+		{
+			for (j=0; j<pattern->numAttributes; j++)
+			{
+				weightsV[i][j] += dV[i][j];
+			}
+		}
 	}
+
+
+
 	free(y);
 	free(z);
 	free(z_in);
