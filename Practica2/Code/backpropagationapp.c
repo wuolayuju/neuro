@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 	float **weightsV = NULL;
 	float **weightsW = NULL;	
 	float *bias = NULL;	
+	float errorTolerance = 0.05;
 	Pattern patterns;
 
 	/* comprueba la linea de comandos */
@@ -38,12 +39,15 @@ int main(int argc, char **argv)
 		else if (strcmp("-numNeurons", argv[i])==0) {
 			numHiddenLayerNeurons = atoi(argv[i+1]);
 		}
+		else if (strcmp("-tolerance", argv[i])==0) {
+			errorTolerance = atof(argv[i+1]);
+		}
 	}
 
 	// Comprobamos los únicos dos argumentos obligatorios
 	if (inputLearn == NULL || (inputExploit!=NULL&&(output == NULL))) 
 	{
-		printf("\nUSO: %s -inputLearn <f_entrada> [-inputExploit <f_entrada> -output <f_salida>] [-numNeurons <numero_neuronas>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>]\n\n", argv[0]);
+		printf("\nUSO: %s -inputLearn <f_entrada> [-inputExploit <f_entrada> -output <f_salida>] [-tolerance <tolerancia>] [-numNeurons <numero_neuronas>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>]\n\n", argv[0]);
 		exit(0);
 	}
 
@@ -77,19 +81,6 @@ int main(int argc, char **argv)
 
 	bias = generateBias(numHiddenLayerNeurons,patterns.numCategories);
 
-	bias[0] = 0.4;
-	bias[1] = 0.6;
-	bias[2] = -0.3;
-
-	weightsV[0][0] = 0.7;
-	weightsV[0][1] = -0.2;
-
-	weightsV[1][0] = -0.4;
-	weightsV[1][1] = 0.3;
-
-	weightsW[0][0] = 0.5;
-	weightsW[0][1] = 0.1;
-
 	debugWeight(weightsV,numHiddenLayerNeurons,patterns.numAttributes);
 	debugWeight(weightsW,patterns.numCategories,numHiddenLayerNeurons);
 
@@ -99,7 +90,7 @@ int main(int argc, char **argv)
 
 	printf("\n##################LEARN##################\n");
 	learnBackPropagation(weightsV, weightsW, bias, &patterns, 
-	numHiddenLayerNeurons,learnRate,1);
+	numHiddenLayerNeurons,learnRate,patterns.numPatterns,errorTolerance);
 
 	printf("\n##################TEST##################\n");	
 	testBackPropagation(weightsV, weightsW, bias, &patterns, 

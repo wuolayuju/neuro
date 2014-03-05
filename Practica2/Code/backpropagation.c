@@ -83,7 +83,7 @@ float dfunction_binary(float fx)
 }
 
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numPatterns)
+	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance)
 {
 
 	int i, j, p;
@@ -144,7 +144,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					z_in[i] += weightsV[i][j] * pattern->attributes[p][j];
 				
 				z[i] = function_bipolar(z_in[i]);
-				printf("Z[%d] = %.2f\n",i,z[i]);
+				if(DEBUG_TEST)
+					printf("Z[%d] = %.2f\n",i,z[i]);
 			}
 
 			for (i=0; i<pattern->numCategories; i++)
@@ -152,9 +153,11 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				y_in[i] = bias[numHiddenLayerNeurons+i];
 				for (j=0; j<numHiddenLayerNeurons; j++)
 					y_in[i] += weightsW[i][j]*z[j];
-				printf("Y_IN %.2f\n",y_in[i]);
+				if(DEBUG_TEST)
+					printf("Y_IN %.2f\n",y_in[i]);
 				y[i] = function_bipolar(y_in[i]);
-				printf("Y[%d] = %.2f\n",i,y[i]);
+				if(DEBUG_TEST)
+					printf("Y[%d] = %.2f\n",i,y[i]);
 			}
 
 			// Calculo del error en neuronas de salida
@@ -162,18 +165,22 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			for(i=0;i<pattern->numCategories;i++)
 			{
 				dk[i] = (pattern->categories[p][i] - y[i])*dfunction_bipolar(y[i]);
-				printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],
+				if(DEBUG_TEST)
+					printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],
 					dfunction_bipolar(y[i]));
-				printf("DK[%d] = %.2f\n",i,dk[i]);
+				if(DEBUG_TEST)
+					printf("DK[%d] = %.2f\n",i,dk[i]);
 
 				for(j=0;j<numHiddenLayerNeurons;j++)
 				{
 					Aw[i][j] = learnRate*dk[i]*z[j];
-					printf("Aw[%d][%d] = %.2f\n",i,j,Aw[i][j]);
+					if(DEBUG_TEST)
+						printf("Aw[%d][%d] = %.2f\n",i,j,Aw[i][j]);
 				}
 				Ab[numHiddenLayerNeurons+i] = learnRate*dk[i];
 
-				printf("Ab[%d] = %.2f\n",numHiddenLayerNeurons+i,
+				if(DEBUG_TEST)
+					printf("Ab[%d] = %.2f\n",numHiddenLayerNeurons+i,
 					Ab[numHiddenLayerNeurons+i]);
 			}
 
@@ -182,21 +189,26 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				for (j=0; j<pattern->numCategories; j++)
 				{
 					d_inj[i]+=dk[j]*weightsW[j][i];
-					printf("%.3f %.3f\n",dk[j],weightsW[j][i]);
-					printf("D_IN[%d] = %.3f\n",i,d_inj[i]);
+					if(DEBUG_TEST)
+						printf("%.3f %.3f\n",dk[j],weightsW[j][i]);
+					if(DEBUG_TEST)
+						printf("D_IN[%d] = %.3f\n",i,d_inj[i]);
 				}
 
 				dj[i] = d_inj[i]*dfunction_bipolar(z[i]);
-				printf("D_J[%d] = %.3f\n",i,dj[i]);
+				if(DEBUG_TEST)
+					printf("D_J[%d] = %.3f\n",i,dj[i]);
 
 				for (j=0; j<pattern->numAttributes; j++)
 				{
 					Av[i][j]=learnRate*dj[i]*pattern->attributes[p][j];
-					printf("Av[%d][%d] = %.3f\n",i,j,Av[i][j]);
+					if(DEBUG_TEST)
+						printf("Av[%d][%d] = %.3f\n",i,j,Av[i][j]);
 				}
 				Ab[i]=learnRate*dj[i];
 
-				printf("Ab[%d] = %.3f\n",i,Ab[i]);
+				if(DEBUG_TEST)
+					printf("Ab[%d] = %.3f\n",i,Ab[i]);
 			}
 
 
@@ -208,33 +220,42 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			{
 				for (j=0; j<numHiddenLayerNeurons; j++)
 				{
-					printf("BEFORE w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
+					if(DEBUG_TEST)
+						printf("BEFORE w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
 					weightsW[i][j] += Aw[i][j];
-					printf("AFTER w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
+					if(DEBUG_TEST)
+						printf("AFTER w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
 				}
 			}	
 			for (i=0; i<numHiddenLayerNeurons; i++)
 			{
 				for (j=0; j<pattern->numAttributes; j++)
 				{
-					printf("BEFORE v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
+					if(DEBUG_TEST)
+						printf("BEFORE v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
 					weightsV[i][j] += Av[i][j];
-					printf("AFTER v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
+					if(DEBUG_TEST)
+						printf("AFTER v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
 				}
 			}
 			for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
 			{
-				printf("BEFORE b[%d] = %.4f\n",i,bias[i]);
+				if(DEBUG_TEST)
+					printf("BEFORE b[%d] = %.4f\n",i,bias[i]);
 				bias[i]+=Ab[i];
-				printf("AFTER b[%d] = %.4f\n",i,bias[i]);
+				if(DEBUG_TEST)
+					printf("AFTER b[%d] = %.4f\n",i,bias[i]);
 			}
 
 			for(i=0;i<pattern->numCategories;i++)
 				RMS += pow(pattern->categories[p][i] - y[i], 2)/numPatterns;
-			printf("RMS %.5f\n",RMS);
+			
 		}
 		n_iter++;
-	}while(n_iter<NUM_MAX_ITER);
+		printf("Epoca %d, RMS = %.5f\n",n_iter,RMS);
+		//if(n_iter>=NUM_MAX_ITER)
+			//break;
+	}while(RMS>tolerance);
 
 	free(y);
 	free(z);
@@ -293,7 +314,7 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 				y_in[i] += weightsW[i][j]*z[j];
 			printf("Y_IN %.2f\n",y_in[i]);
 			y[i] = function_bipolar(y_in[i]);
-			printf("Y[%d] = %.2f\n",i,y[i]);
+			printf("T[%d] = %d Y[%d] = %.2f\n",i,pattern->categories[p][i],i,y[i]);
 		}
 
 	}
