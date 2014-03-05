@@ -9,7 +9,6 @@ float **generateWeightsV();
 float **generateWeightsW();
 
 
-void initBias();
 void initWeights(float **weights, int numHidderLayerNeurons, int numAtributtes);
 
 float **generateWeights(int weightsRow, int weightsColumn);
@@ -23,6 +22,8 @@ float dfunction_binary(float fx);
 
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
 	int numHidderLayerNeurons, float learningRate, int numPatterns);
+int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
+	int numHiddenLayerNeurons, float learnRate, int numFirstPattern);
 
 void debugWeight(float **weight, int row, int column);
 
