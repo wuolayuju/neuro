@@ -152,7 +152,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		for(i=0;i<pattern->numCategories;i++)
 		{
 			dk[i] = (pattern->categories[p][i] - y[i])*dfunction_bipolar(y[i]);
-			printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],dfunction_bipolar(y[i]));
+			printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],
+				dfunction_bipolar(y[i]));
 			printf("DK[%d] = %.2f\n",i,dk[i]);
 
 			for(j=0;j<numHiddenLayerNeurons;j++)
@@ -161,10 +162,28 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				printf("Aw[%d][%d] = %.2f\n",i,j,Aw[i][j]);
 			}
 			Ab[numHiddenLayerNeurons+i] = learnRate*dk[i];
-			printf("Ab[%d] = %.2f\n",numHiddenLayerNeurons+i,Ab[numHiddenLayerNeurons+i]);
+			printf("Ab[%d] = %.2f\n",numHiddenLayerNeurons+i,
+				Ab[numHiddenLayerNeurons+i]);
 		}
 
-/*
+		for (i=0; i<numHiddenLayerNeurons; i++){
+
+			for (j=0; j<pattern->numCategories; j++){
+				d_inj[i]+=dk[j]*weightsW[j][i];
+				printf("%.3f %.3f\n",dk[j],weightsW[j][i]);
+				printf("D_IN[%d] = %.3f\n",i,d_inj[i]);
+			}
+			dj[i] = d_inj[i]*dfunction_bipolar(z[i]);
+			printf("D_J[%d] = %.3f\n",i,dj[i]);
+			for (j=0; j<pattern->numAttributes; j++){
+				Av[i][j]=learnRate*dj[i]*pattern->attributes[p][j];
+				printf("Av[%d][%d] = %.3f\n",i,j,Av[i][j]);
+			}
+			Ab[i]=learnRate*dj[i];
+			printf("Ab[%d] = %.3f\n",i,Ab[i]);
+		}
+
+
 		//Retropropagación
 		//FALTAN COSAS
 
@@ -173,16 +192,27 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		{
 			for (j=0; j<numHiddenLayerNeurons; j++)
 			{
+				printf("BEFORE w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
 				weightsW[i][j] += Aw[i][j];
+				printf("AFTER w[%d][%d] = %.4f\n",i,j,weightsW[i][j]);
 			}
 		}	
 		for (i=0; i<numHiddenLayerNeurons; i++)
 		{
 			for (j=0; j<pattern->numAttributes; j++)
 			{
+				printf("BEFORE v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
 				weightsV[i][j] += Av[i][j];
+				printf("AFTER v[%d][%d] = %.4f\n",i,j,weightsV[i][j]);
 			}
-		}*/
+		}
+		for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
+		{
+			printf("BEFORE b[%d] = %.4f\n",i,bias[i]);
+			bias[i]+=Ab[i];
+			printf("AFTER b[%d] = %.4f\n",i,bias[i]);
+		}
+			
 	}
 
 	free(y);
