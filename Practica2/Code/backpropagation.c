@@ -2,6 +2,21 @@
 #include "backpropagation.h"
 
 
+/******************************************************************************
+Purpose:
+
+	Init the weights between [-0.5, 0.5]
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	weights
+	weighsRow
+	weightsColumn
+******************************************************************************/
 void initWeights(float **weights, int weightsRow, int weightsColumn)
 {
 
@@ -11,7 +26,21 @@ void initWeights(float **weights, int weightsRow, int weightsColumn)
 		for(j=0;j<weightsColumn;j++)
 			weights[i][j] = getRandomNumberF(-0.5 , 0.5);
 }
+/******************************************************************************
+Purpose:
 
+	Return the matrix of weights of a neuronal network
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	weights
+	weighsRow
+
+******************************************************************************/
 float **generateWeights(int weightsRow, int weightsColumn)
 {
 	int i;
@@ -38,7 +67,22 @@ void debugWeight(float **weight, int row, int column)
 
 	
 }	
+/******************************************************************************
+Purpose:
 
+	Return the array of bias of a neuronal network
+	Each neuron have a bias
+	Number of bias = numHiddenLayerNeurons + numCategories
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	numHiddenLayerNeurons
+	numCategories
+
+******************************************************************************/
 float *generateBias(int numHiddenLayerNeurons, int numCategories)
 {
 	int i;
@@ -50,7 +94,21 @@ float *generateBias(int numHiddenLayerNeurons, int numCategories)
 
 	return bias;
 }
+/******************************************************************************
+Purpose:
 
+	free a matrix of weights of a neuronal network
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	weights
+	weightsRow
+
+******************************************************************************/
 void freeWeights(float **weights, int weightsRow)
 {
 	int i;
@@ -61,27 +119,99 @@ void freeWeights(float **weights, int weightsRow)
 	free(weights);
 
 }
+/******************************************************************************
+Purpose:
 
+	Calculates the value of bipolar sigmoidal function
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	in
+
+******************************************************************************/
 float function_bipolar(float in)
 {
 	return (2/(1+exp(-in)))-1;
 }
+/******************************************************************************
+Purpose:
 
+	Calculates the value of binary sigmoidal function
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	in
+
+******************************************************************************/
 float function_binary(float in)
 {
 	return 1/(1+exp(-in));
 }
+/******************************************************************************
+Purpose:
 
+	Calculates the value of bipolar sigmoidal derived function
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	fx
+
+******************************************************************************/
 float dfunction_bipolar(float fx)
 {
 	return 0.5*(1 + fx)*(1 - fx);
 }
+/******************************************************************************
+Purpose:
 
+	Calculates the value of binary sigmoidal derived function
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	fx
+
+******************************************************************************/
 float dfunction_binary(float fx)
 {
 	return fx*(1 - fx);
 }
+/******************************************************************************
+Purpose:
 
+	Calculates the value of bipolar sigmoidal derived function
+
+Author:
+
+	Ari Handler Adrián Lorenzo
+
+Parameters:
+
+	weightsV
+	weightsW
+	bias
+	pattern 
+	numHiddenLayerNeurons
+	learnRate
+	numPatterns
+	tolerance
+
+******************************************************************************/
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
 	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance)
 {
@@ -104,6 +234,9 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 
 	int n_iter = 0;
 	float RMS;
+
+	/**ALLOC BLOCK**/
+	
 	/*Neuron Inputs*/
 	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
@@ -117,7 +250,6 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	d_inj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
 	dj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
 
-
 	/*Incrementos de peso*/
 	Aw = (float **)malloc(sizeof(float *)*pattern->numCategories);
 	for(i=0;i<pattern->numCategories;i++)
@@ -129,7 +261,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 
 	Ab = (float *)malloc(sizeof(float)*(numHiddenLayerNeurons + pattern->numCategories));
 
-	/*Learn*/
+	/**LEARN BLOCK**/
 	do
 	{
 		RMS = 0;
@@ -257,6 +389,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			break;
 	}while(RMS>tolerance);
 
+
+	/**FREE BLOCK**/
 	free(y);
 	free(z);
 	free(z_in);

@@ -5,9 +5,6 @@
 #include "perceptron.h"
 
 
-float **generateWeightsV();
-float **generateWeightsW();
-
 
 void initWeights(float **weights, int numHidderLayerNeurons, int numAtributtes);
 
