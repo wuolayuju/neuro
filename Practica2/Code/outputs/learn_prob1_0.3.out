@@ -1,0 +1,5203 @@
+0.26 -0.23 0.22 -0.06 0.09 -0.24 -0.17 0.18 -0.48 
+0.41 0.11 0.34 -0.41 -0.16 0.14 0.18 -0.27 0.16 
+0.29 0.10 
+-0.38 -0.22 
+-0.07 0.10 -0.30 -0.34 
+
+##################LEARN##################
+Epoca 1, RMS = 0.33398
+Epoca 2, RMS = 0.08833
+Epoca 3, RMS = 0.07445
+Epoca 4, RMS = 0.06972
+Epoca 5, RMS = 0.06726
+Epoca 6, RMS = 0.06588
+Epoca 7, RMS = 0.06496
+Epoca 8, RMS = 0.06417
+Epoca 9, RMS = 0.06355
+Epoca 10, RMS = 0.06317
+Epoca 11, RMS = 0.06299
+Epoca 12, RMS = 0.06294
+Epoca 13, RMS = 0.06296
+Epoca 14, RMS = 0.06301
+Epoca 15, RMS = 0.06307
+Epoca 16, RMS = 0.06314
+Epoca 17, RMS = 0.06323
+Epoca 18, RMS = 0.06336
+Epoca 19, RMS = 0.06351
+Epoca 20, RMS = 0.06370
+Epoca 21, RMS = 0.06391
+Epoca 22, RMS = 0.06413
+Epoca 23, RMS = 0.06436
+Epoca 24, RMS = 0.06459
+Epoca 25, RMS = 0.06481
+Epoca 26, RMS = 0.06501
+Epoca 27, RMS = 0.06521
+Epoca 28, RMS = 0.06539
+Epoca 29, RMS = 0.06555
+Epoca 30, RMS = 0.06571
+Epoca 31, RMS = 0.06585
+Epoca 32, RMS = 0.06597
+Epoca 33, RMS = 0.06609
+Epoca 34, RMS = 0.06620
+Epoca 35, RMS = 0.06630
+Epoca 36, RMS = 0.06639
+Epoca 37, RMS = 0.06648
+Epoca 38, RMS = 0.06656
+Epoca 39, RMS = 0.06664
+Epoca 40, RMS = 0.06672
+Epoca 41, RMS = 0.06679
+Epoca 42, RMS = 0.06687
+Epoca 43, RMS = 0.06694
+Epoca 44, RMS = 0.06701
+Epoca 45, RMS = 0.06708
+Epoca 46, RMS = 0.06715
+Epoca 47, RMS = 0.06722
+Epoca 48, RMS = 0.06730
+Epoca 49, RMS = 0.06737
+Epoca 50, RMS = 0.06744
+Epoca 51, RMS = 0.06751
+Epoca 52, RMS = 0.06759
+Epoca 53, RMS = 0.06766
+Epoca 54, RMS = 0.06773
+Epoca 55, RMS = 0.06781
+Epoca 56, RMS = 0.06788
+Epoca 57, RMS = 0.06796
+Epoca 58, RMS = 0.06803
+Epoca 59, RMS = 0.06811
+Epoca 60, RMS = 0.06818
+Epoca 61, RMS = 0.06825
+Epoca 62, RMS = 0.06833
+Epoca 63, RMS = 0.06840
+Epoca 64, RMS = 0.06847
+Epoca 65, RMS = 0.06853
+Epoca 66, RMS = 0.06860
+Epoca 67, RMS = 0.06866
+Epoca 68, RMS = 0.06872
+Epoca 69, RMS = 0.06877
+Epoca 70, RMS = 0.06883
+Epoca 71, RMS = 0.06888
+Epoca 72, RMS = 0.06892
+Epoca 73, RMS = 0.06896
+Epoca 74, RMS = 0.06900
+Epoca 75, RMS = 0.06903
+Epoca 76, RMS = 0.06906
+Epoca 77, RMS = 0.06908
+Epoca 78, RMS = 0.06910
+Epoca 79, RMS = 0.06911
+Epoca 80, RMS = 0.06912
+Epoca 81, RMS = 0.06913
+Epoca 82, RMS = 0.06913
+Epoca 83, RMS = 0.06913
+Epoca 84, RMS = 0.06912
+Epoca 85, RMS = 0.06911
+Epoca 86, RMS = 0.06910
+Epoca 87, RMS = 0.06909
+Epoca 88, RMS = 0.06907
+Epoca 89, RMS = 0.06905
+Epoca 90, RMS = 0.06903
+Epoca 91, RMS = 0.06900
+Epoca 92, RMS = 0.06898
+Epoca 93, RMS = 0.06895
+Epoca 94, RMS = 0.06892
+Epoca 95, RMS = 0.06889
+Epoca 96, RMS = 0.06886
+Epoca 97, RMS = 0.06883
+Epoca 98, RMS = 0.06879
+Epoca 99, RMS = 0.06876
+Epoca 100, RMS = 0.06872
+Epoca 101, RMS = 0.06869
+Epoca 102, RMS = 0.06865
+Epoca 103, RMS = 0.06862
+Epoca 104, RMS = 0.06858
+Epoca 105, RMS = 0.06854
+Epoca 106, RMS = 0.06851
+Epoca 107, RMS = 0.06847
+Epoca 108, RMS = 0.06843
+Epoca 109, RMS = 0.06840
+Epoca 110, RMS = 0.06836
+Epoca 111, RMS = 0.06833
+Epoca 112, RMS = 0.06829
+Epoca 113, RMS = 0.06826
+Epoca 114, RMS = 0.06822
+Epoca 115, RMS = 0.06819
+Epoca 116, RMS = 0.06816
+Epoca 117, RMS = 0.06812
+Epoca 118, RMS = 0.06809
+Epoca 119, RMS = 0.06806
+Epoca 120, RMS = 0.06803
+Epoca 121, RMS = 0.06800
+Epoca 122, RMS = 0.06797
+Epoca 123, RMS = 0.06795
+Epoca 124, RMS = 0.06792
+Epoca 125, RMS = 0.06789
+Epoca 126, RMS = 0.06786
+Epoca 127, RMS = 0.06784
+Epoca 128, RMS = 0.06781
+Epoca 129, RMS = 0.06779
+Epoca 130, RMS = 0.06776
+Epoca 131, RMS = 0.06774
+Epoca 132, RMS = 0.06772
+Epoca 133, RMS = 0.06769
+Epoca 134, RMS = 0.06767
+Epoca 135, RMS = 0.06765
+Epoca 136, RMS = 0.06763
+Epoca 137, RMS = 0.06760
+Epoca 138, RMS = 0.06758
+Epoca 139, RMS = 0.06756
+Epoca 140, RMS = 0.06754
+Epoca 141, RMS = 0.06752
+Epoca 142, RMS = 0.06749
+Epoca 143, RMS = 0.06747
+Epoca 144, RMS = 0.06745
+Epoca 145, RMS = 0.06742
+Epoca 146, RMS = 0.06740
+Epoca 147, RMS = 0.06738
+Epoca 148, RMS = 0.06735
+Epoca 149, RMS = 0.06733
+Epoca 150, RMS = 0.06730
+Epoca 151, RMS = 0.06728
+Epoca 152, RMS = 0.06725
+Epoca 153, RMS = 0.06722
+Epoca 154, RMS = 0.06719
+Epoca 155, RMS = 0.06717
+Epoca 156, RMS = 0.06714
+Epoca 157, RMS = 0.06711
+Epoca 158, RMS = 0.06708
+Epoca 159, RMS = 0.06704
+Epoca 160, RMS = 0.06701
+Epoca 161, RMS = 0.06698
+Epoca 162, RMS = 0.06695
+Epoca 163, RMS = 0.06691
+Epoca 164, RMS = 0.06688
+Epoca 165, RMS = 0.06684
+Epoca 166, RMS = 0.06681
+Epoca 167, RMS = 0.06677
+Epoca 168, RMS = 0.06674
+Epoca 169, RMS = 0.06670
+Epoca 170, RMS = 0.06666
+Epoca 171, RMS = 0.06663
+Epoca 172, RMS = 0.06659
+Epoca 173, RMS = 0.06655
+Epoca 174, RMS = 0.06651
+Epoca 175, RMS = 0.06647
+Epoca 176, RMS = 0.06643
+Epoca 177, RMS = 0.06640
+Epoca 178, RMS = 0.06636
+Epoca 179, RMS = 0.06632
+Epoca 180, RMS = 0.06628
+Epoca 181, RMS = 0.06624
+Epoca 182, RMS = 0.06620
+Epoca 183, RMS = 0.06616
+Epoca 184, RMS = 0.06612
+Epoca 185, RMS = 0.06608
+Epoca 186, RMS = 0.06605
+Epoca 187, RMS = 0.06601
+Epoca 188, RMS = 0.06597
+Epoca 189, RMS = 0.06593
+Epoca 190, RMS = 0.06589
+Epoca 191, RMS = 0.06586
+Epoca 192, RMS = 0.06582
+Epoca 193, RMS = 0.06579
+Epoca 194, RMS = 0.06575
+Epoca 195, RMS = 0.06571
+Epoca 196, RMS = 0.06568
+Epoca 197, RMS = 0.06564
+Epoca 198, RMS = 0.06561
+Epoca 199, RMS = 0.06558
+Epoca 200, RMS = 0.06554
+Epoca 201, RMS = 0.06551
+Epoca 202, RMS = 0.06548
+Epoca 203, RMS = 0.06545
+Epoca 204, RMS = 0.06542
+Epoca 205, RMS = 0.06539
+Epoca 206, RMS = 0.06536
+Epoca 207, RMS = 0.06533
+Epoca 208, RMS = 0.06530
+Epoca 209, RMS = 0.06527
+Epoca 210, RMS = 0.06524
+Epoca 211, RMS = 0.06521
+Epoca 212, RMS = 0.06519
+Epoca 213, RMS = 0.06516
+Epoca 214, RMS = 0.06514
+Epoca 215, RMS = 0.06511
+Epoca 216, RMS = 0.06509
+Epoca 217, RMS = 0.06506
+Epoca 218, RMS = 0.06504
+Epoca 219, RMS = 0.06502
+Epoca 220, RMS = 0.06500
+Epoca 221, RMS = 0.06497
+Epoca 222, RMS = 0.06495
+Epoca 223, RMS = 0.06493
+Epoca 224, RMS = 0.06491
+Epoca 225, RMS = 0.06489
+Epoca 226, RMS = 0.06488
+Epoca 227, RMS = 0.06486
+Epoca 228, RMS = 0.06484
+Epoca 229, RMS = 0.06482
+Epoca 230, RMS = 0.06480
+Epoca 231, RMS = 0.06479
+Epoca 232, RMS = 0.06477
+Epoca 233, RMS = 0.06476
+Epoca 234, RMS = 0.06474
+Epoca 235, RMS = 0.06473
+Epoca 236, RMS = 0.06471
+Epoca 237, RMS = 0.06470
+Epoca 238, RMS = 0.06468
+Epoca 239, RMS = 0.06467
+Epoca 240, RMS = 0.06466
+Epoca 241, RMS = 0.06464
+Epoca 242, RMS = 0.06463
+Epoca 243, RMS = 0.06462
+Epoca 244, RMS = 0.06461
+Epoca 245, RMS = 0.06460
+Epoca 246, RMS = 0.06458
+Epoca 247, RMS = 0.06457
+Epoca 248, RMS = 0.06456
+Epoca 249, RMS = 0.06455
+Epoca 250, RMS = 0.06454
+Epoca 251, RMS = 0.06453
+Epoca 252, RMS = 0.06452
+Epoca 253, RMS = 0.06451
+Epoca 254, RMS = 0.06450
+Epoca 255, RMS = 0.06449
+Epoca 256, RMS = 0.06448
+Epoca 257, RMS = 0.06447
+Epoca 258, RMS = 0.06447
+Epoca 259, RMS = 0.06446
+Epoca 260, RMS = 0.06445
+Epoca 261, RMS = 0.06444
+Epoca 262, RMS = 0.06443
+Epoca 263, RMS = 0.06442
+Epoca 264, RMS = 0.06441
+Epoca 265, RMS = 0.06440
+Epoca 266, RMS = 0.06440
+Epoca 267, RMS = 0.06439
+Epoca 268, RMS = 0.06438
+Epoca 269, RMS = 0.06437
+Epoca 270, RMS = 0.06436
+Epoca 271, RMS = 0.06436
+Epoca 272, RMS = 0.06435
+Epoca 273, RMS = 0.06434
+Epoca 274, RMS = 0.06433
+Epoca 275, RMS = 0.06432
+Epoca 276, RMS = 0.06432
+Epoca 277, RMS = 0.06431
+Epoca 278, RMS = 0.06430
+Epoca 279, RMS = 0.06429
+Epoca 280, RMS = 0.06429
+Epoca 281, RMS = 0.06428
+Epoca 282, RMS = 0.06427
+Epoca 283, RMS = 0.06426
+Epoca 284, RMS = 0.06425
+Epoca 285, RMS = 0.06425
+Epoca 286, RMS = 0.06424
+Epoca 287, RMS = 0.06423
+Epoca 288, RMS = 0.06422
+Epoca 289, RMS = 0.06422
+Epoca 290, RMS = 0.06421
+Epoca 291, RMS = 0.06420
+Epoca 292, RMS = 0.06419
+Epoca 293, RMS = 0.06419
+Epoca 294, RMS = 0.06418
+Epoca 295, RMS = 0.06417
+Epoca 296, RMS = 0.06416
+Epoca 297, RMS = 0.06416
+Epoca 298, RMS = 0.06415
+Epoca 299, RMS = 0.06414
+Epoca 300, RMS = 0.06413
+Epoca 301, RMS = 0.06413
+Epoca 302, RMS = 0.06412
+Epoca 303, RMS = 0.06411
+Epoca 304, RMS = 0.06410
+Epoca 305, RMS = 0.06410
+Epoca 306, RMS = 0.06409
+Epoca 307, RMS = 0.06408
+Epoca 308, RMS = 0.06408
+Epoca 309, RMS = 0.06407
+Epoca 310, RMS = 0.06406
+Epoca 311, RMS = 0.06405
+Epoca 312, RMS = 0.06405
+Epoca 313, RMS = 0.06404
+Epoca 314, RMS = 0.06403
+Epoca 315, RMS = 0.06403
+Epoca 316, RMS = 0.06402
+Epoca 317, RMS = 0.06401
+Epoca 318, RMS = 0.06401
+Epoca 319, RMS = 0.06400
+Epoca 320, RMS = 0.06399
+Epoca 321, RMS = 0.06399
+Epoca 322, RMS = 0.06398
+Epoca 323, RMS = 0.06397
+Epoca 324, RMS = 0.06397
+Epoca 325, RMS = 0.06396
+Epoca 326, RMS = 0.06395
+Epoca 327, RMS = 0.06395
+Epoca 328, RMS = 0.06394
+Epoca 329, RMS = 0.06394
+Epoca 330, RMS = 0.06393
+Epoca 331, RMS = 0.06392
+Epoca 332, RMS = 0.06392
+Epoca 333, RMS = 0.06391
+Epoca 334, RMS = 0.06391
+Epoca 335, RMS = 0.06390
+Epoca 336, RMS = 0.06389
+Epoca 337, RMS = 0.06389
+Epoca 338, RMS = 0.06388
+Epoca 339, RMS = 0.06388
+Epoca 340, RMS = 0.06387
+Epoca 341, RMS = 0.06387
+Epoca 342, RMS = 0.06386
+Epoca 343, RMS = 0.06386
+Epoca 344, RMS = 0.06385
+Epoca 345, RMS = 0.06385
+Epoca 346, RMS = 0.06384
+Epoca 347, RMS = 0.06384
+Epoca 348, RMS = 0.06383
+Epoca 349, RMS = 0.06383
+Epoca 350, RMS = 0.06382
+Epoca 351, RMS = 0.06382
+Epoca 352, RMS = 0.06381
+Epoca 353, RMS = 0.06381
+Epoca 354, RMS = 0.06380
+Epoca 355, RMS = 0.06380
+Epoca 356, RMS = 0.06379
+Epoca 357, RMS = 0.06379
+Epoca 358, RMS = 0.06379
+Epoca 359, RMS = 0.06378
+Epoca 360, RMS = 0.06378
+Epoca 361, RMS = 0.06377
+Epoca 362, RMS = 0.06377
+Epoca 363, RMS = 0.06377
+Epoca 364, RMS = 0.06376
+Epoca 365, RMS = 0.06376
+Epoca 366, RMS = 0.06376
+Epoca 367, RMS = 0.06375
+Epoca 368, RMS = 0.06375
+Epoca 369, RMS = 0.06374
+Epoca 370, RMS = 0.06374
+Epoca 371, RMS = 0.06374
+Epoca 372, RMS = 0.06373
+Epoca 373, RMS = 0.06373
+Epoca 374, RMS = 0.06373
+Epoca 375, RMS = 0.06372
+Epoca 376, RMS = 0.06372
+Epoca 377, RMS = 0.06372
+Epoca 378, RMS = 0.06372
+Epoca 379, RMS = 0.06371
+Epoca 380, RMS = 0.06371
+Epoca 381, RMS = 0.06371
+Epoca 382, RMS = 0.06370
+Epoca 383, RMS = 0.06370
+Epoca 384, RMS = 0.06370
+Epoca 385, RMS = 0.06370
+Epoca 386, RMS = 0.06369
+Epoca 387, RMS = 0.06369
+Epoca 388, RMS = 0.06369
+Epoca 389, RMS = 0.06369
+Epoca 390, RMS = 0.06368
+Epoca 391, RMS = 0.06368
+Epoca 392, RMS = 0.06368
+Epoca 393, RMS = 0.06368
+Epoca 394, RMS = 0.06367
+Epoca 395, RMS = 0.06367
+Epoca 396, RMS = 0.06367
+Epoca 397, RMS = 0.06367
+Epoca 398, RMS = 0.06367
+Epoca 399, RMS = 0.06366
+Epoca 400, RMS = 0.06366
+Epoca 401, RMS = 0.06366
+Epoca 402, RMS = 0.06366
+Epoca 403, RMS = 0.06366
+Epoca 404, RMS = 0.06365
+Epoca 405, RMS = 0.06365
+Epoca 406, RMS = 0.06365
+Epoca 407, RMS = 0.06365
+Epoca 408, RMS = 0.06365
+Epoca 409, RMS = 0.06365
+Epoca 410, RMS = 0.06364
+Epoca 411, RMS = 0.06364
+Epoca 412, RMS = 0.06364
+Epoca 413, RMS = 0.06364
+Epoca 414, RMS = 0.06364
+Epoca 415, RMS = 0.06364
+Epoca 416, RMS = 0.06364
+Epoca 417, RMS = 0.06363
+Epoca 418, RMS = 0.06363
+Epoca 419, RMS = 0.06363
+Epoca 420, RMS = 0.06363
+Epoca 421, RMS = 0.06363
+Epoca 422, RMS = 0.06363
+Epoca 423, RMS = 0.06363
+Epoca 424, RMS = 0.06362
+Epoca 425, RMS = 0.06362
+Epoca 426, RMS = 0.06362
+Epoca 427, RMS = 0.06362
+Epoca 428, RMS = 0.06362
+Epoca 429, RMS = 0.06362
+Epoca 430, RMS = 0.06362
+Epoca 431, RMS = 0.06362
+Epoca 432, RMS = 0.06362
+Epoca 433, RMS = 0.06361
+Epoca 434, RMS = 0.06361
+Epoca 435, RMS = 0.06361
+Epoca 436, RMS = 0.06361
+Epoca 437, RMS = 0.06361
+Epoca 438, RMS = 0.06361
+Epoca 439, RMS = 0.06361
+Epoca 440, RMS = 0.06361
+Epoca 441, RMS = 0.06361
+Epoca 442, RMS = 0.06361
+Epoca 443, RMS = 0.06360
+Epoca 444, RMS = 0.06360
+Epoca 445, RMS = 0.06360
+Epoca 446, RMS = 0.06360
+Epoca 447, RMS = 0.06360
+Epoca 448, RMS = 0.06360
+Epoca 449, RMS = 0.06360
+Epoca 450, RMS = 0.06360
+Epoca 451, RMS = 0.06360
+Epoca 452, RMS = 0.06360
+Epoca 453, RMS = 0.06360
+Epoca 454, RMS = 0.06360
+Epoca 455, RMS = 0.06359
+Epoca 456, RMS = 0.06359
+Epoca 457, RMS = 0.06359
+Epoca 458, RMS = 0.06359
+Epoca 459, RMS = 0.06359
+Epoca 460, RMS = 0.06359
+Epoca 461, RMS = 0.06359
+Epoca 462, RMS = 0.06359
+Epoca 463, RMS = 0.06359
+Epoca 464, RMS = 0.06359
+Epoca 465, RMS = 0.06359
+Epoca 466, RMS = 0.06359
+Epoca 467, RMS = 0.06359
+Epoca 468, RMS = 0.06359
+Epoca 469, RMS = 0.06359
+Epoca 470, RMS = 0.06359
+Epoca 471, RMS = 0.06358
+Epoca 472, RMS = 0.06358
+Epoca 473, RMS = 0.06358
+Epoca 474, RMS = 0.06358
+Epoca 475, RMS = 0.06358
+Epoca 476, RMS = 0.06358
+Epoca 477, RMS = 0.06358
+Epoca 478, RMS = 0.06358
+Epoca 479, RMS = 0.06358
+Epoca 480, RMS = 0.06358
+Epoca 481, RMS = 0.06358
+Epoca 482, RMS = 0.06358
+Epoca 483, RMS = 0.06358
+Epoca 484, RMS = 0.06358
+Epoca 485, RMS = 0.06358
+Epoca 486, RMS = 0.06358
+Epoca 487, RMS = 0.06358
+Epoca 488, RMS = 0.06358
+Epoca 489, RMS = 0.06358
+Epoca 490, RMS = 0.06358
+Epoca 491, RMS = 0.06358
+Epoca 492, RMS = 0.06358
+Epoca 493, RMS = 0.06357
+Epoca 494, RMS = 0.06357
+Epoca 495, RMS = 0.06357
+Epoca 496, RMS = 0.06357
+Epoca 497, RMS = 0.06357
+Epoca 498, RMS = 0.06357
+Epoca 499, RMS = 0.06357
+Epoca 500, RMS = 0.06357
+Epoca 501, RMS = 0.06357
+Epoca 502, RMS = 0.06357
+Epoca 503, RMS = 0.06357
+Epoca 504, RMS = 0.06357
+Epoca 505, RMS = 0.06357
+Epoca 506, RMS = 0.06357
+Epoca 507, RMS = 0.06357
+Epoca 508, RMS = 0.06357
+Epoca 509, RMS = 0.06357
+Epoca 510, RMS = 0.06357
+Epoca 511, RMS = 0.06357
+Epoca 512, RMS = 0.06357
+Epoca 513, RMS = 0.06357
+Epoca 514, RMS = 0.06357
+Epoca 515, RMS = 0.06357
+Epoca 516, RMS = 0.06357
+Epoca 517, RMS = 0.06357
+Epoca 518, RMS = 0.06357
+Epoca 519, RMS = 0.06357
+Epoca 520, RMS = 0.06357
+Epoca 521, RMS = 0.06357
+Epoca 522, RMS = 0.06357
+Epoca 523, RMS = 0.06357
+Epoca 524, RMS = 0.06357
+Epoca 525, RMS = 0.06357
+Epoca 526, RMS = 0.06357
+Epoca 527, RMS = 0.06357
+Epoca 528, RMS = 0.06357
+Epoca 529, RMS = 0.06357
+Epoca 530, RMS = 0.06357
+Epoca 531, RMS = 0.06357
+Epoca 532, RMS = 0.06357
+Epoca 533, RMS = 0.06357
+Epoca 534, RMS = 0.06357
+Epoca 535, RMS = 0.06357
+Epoca 536, RMS = 0.06357
+Epoca 537, RMS = 0.06357
+Epoca 538, RMS = 0.06357
+Epoca 539, RMS = 0.06357
+Epoca 540, RMS = 0.06357
+Epoca 541, RMS = 0.06357
+Epoca 542, RMS = 0.06356
+Epoca 543, RMS = 0.06356
+Epoca 544, RMS = 0.06356
+Epoca 545, RMS = 0.06356
+Epoca 546, RMS = 0.06356
+Epoca 547, RMS = 0.06356
+Epoca 548, RMS = 0.06356
+Epoca 549, RMS = 0.06356
+Epoca 550, RMS = 0.06356
+Epoca 551, RMS = 0.06356
+Epoca 552, RMS = 0.06356
+Epoca 553, RMS = 0.06356
+Epoca 554, RMS = 0.06356
+Epoca 555, RMS = 0.06356
+Epoca 556, RMS = 0.06356
+Epoca 557, RMS = 0.06356
+Epoca 558, RMS = 0.06356
+Epoca 559, RMS = 0.06356
+Epoca 560, RMS = 0.06356
+Epoca 561, RMS = 0.06356
+Epoca 562, RMS = 0.06356
+Epoca 563, RMS = 0.06356
+Epoca 564, RMS = 0.06356
+Epoca 565, RMS = 0.06356
+Epoca 566, RMS = 0.06356
+Epoca 567, RMS = 0.06356
+Epoca 568, RMS = 0.06356
+Epoca 569, RMS = 0.06357
+Epoca 570, RMS = 0.06357
+Epoca 571, RMS = 0.06357
+Epoca 572, RMS = 0.06357
+Epoca 573, RMS = 0.06357
+Epoca 574, RMS = 0.06357
+Epoca 575, RMS = 0.06357
+Epoca 576, RMS = 0.06357
+Epoca 577, RMS = 0.06357
+Epoca 578, RMS = 0.06357
+Epoca 579, RMS = 0.06357
+Epoca 580, RMS = 0.06357
+Epoca 581, RMS = 0.06357
+Epoca 582, RMS = 0.06357
+Epoca 583, RMS = 0.06357
+Epoca 584, RMS = 0.06357
+Epoca 585, RMS = 0.06357
+Epoca 586, RMS = 0.06357
+Epoca 587, RMS = 0.06357
+Epoca 588, RMS = 0.06357
+Epoca 589, RMS = 0.06357
+Epoca 590, RMS = 0.06357
+Epoca 591, RMS = 0.06357
+Epoca 592, RMS = 0.06357
+Epoca 593, RMS = 0.06357
+Epoca 594, RMS = 0.06357
+Epoca 595, RMS = 0.06357
+Epoca 596, RMS = 0.06357
+Epoca 597, RMS = 0.06357
+Epoca 598, RMS = 0.06357
+Epoca 599, RMS = 0.06357
+Epoca 600, RMS = 0.06357
+Epoca 601, RMS = 0.06357
+Epoca 602, RMS = 0.06357
+Epoca 603, RMS = 0.06357
+Epoca 604, RMS = 0.06357
+Epoca 605, RMS = 0.06357
+Epoca 606, RMS = 0.06357
+Epoca 607, RMS = 0.06357
+Epoca 608, RMS = 0.06357
+Epoca 609, RMS = 0.06357
+Epoca 610, RMS = 0.06357
+Epoca 611, RMS = 0.06357
+Epoca 612, RMS = 0.06357
+Epoca 613, RMS = 0.06357
+Epoca 614, RMS = 0.06357
+Epoca 615, RMS = 0.06357
+Epoca 616, RMS = 0.06357
+Epoca 617, RMS = 0.06357
+Epoca 618, RMS = 0.06357
+Epoca 619, RMS = 0.06357
+Epoca 620, RMS = 0.06357
+Epoca 621, RMS = 0.06357
+Epoca 622, RMS = 0.06357
+Epoca 623, RMS = 0.06357
+Epoca 624, RMS = 0.06357
+Epoca 625, RMS = 0.06357
+Epoca 626, RMS = 0.06358
+Epoca 627, RMS = 0.06358
+Epoca 628, RMS = 0.06358
+Epoca 629, RMS = 0.06358
+Epoca 630, RMS = 0.06358
+Epoca 631, RMS = 0.06358
+Epoca 632, RMS = 0.06358
+Epoca 633, RMS = 0.06358
+Epoca 634, RMS = 0.06358
+Epoca 635, RMS = 0.06358
+Epoca 636, RMS = 0.06358
+Epoca 637, RMS = 0.06358
+Epoca 638, RMS = 0.06358
+Epoca 639, RMS = 0.06358
+Epoca 640, RMS = 0.06358
+Epoca 641, RMS = 0.06358
+Epoca 642, RMS = 0.06358
+Epoca 643, RMS = 0.06358
+Epoca 644, RMS = 0.06358
+Epoca 645, RMS = 0.06358
+Epoca 646, RMS = 0.06358
+Epoca 647, RMS = 0.06358
+Epoca 648, RMS = 0.06358
+Epoca 649, RMS = 0.06358
+Epoca 650, RMS = 0.06358
+Epoca 651, RMS = 0.06358
+Epoca 652, RMS = 0.06358
+Epoca 653, RMS = 0.06358
+Epoca 654, RMS = 0.06358
+Epoca 655, RMS = 0.06358
+Epoca 656, RMS = 0.06358
+Epoca 657, RMS = 0.06358
+Epoca 658, RMS = 0.06358
+Epoca 659, RMS = 0.06359
+Epoca 660, RMS = 0.06359
+Epoca 661, RMS = 0.06359
+Epoca 662, RMS = 0.06359
+Epoca 663, RMS = 0.06359
+Epoca 664, RMS = 0.06359
+Epoca 665, RMS = 0.06359
+Epoca 666, RMS = 0.06359
+Epoca 667, RMS = 0.06359
+Epoca 668, RMS = 0.06359
+Epoca 669, RMS = 0.06359
+Epoca 670, RMS = 0.06359
+Epoca 671, RMS = 0.06359
+Epoca 672, RMS = 0.06359
+Epoca 673, RMS = 0.06359
+Epoca 674, RMS = 0.06359
+Epoca 675, RMS = 0.06359
+Epoca 676, RMS = 0.06359
+Epoca 677, RMS = 0.06359
+Epoca 678, RMS = 0.06359
+Epoca 679, RMS = 0.06359
+Epoca 680, RMS = 0.06359
+Epoca 681, RMS = 0.06359
+Epoca 682, RMS = 0.06359
+Epoca 683, RMS = 0.06359
+Epoca 684, RMS = 0.06359
+Epoca 685, RMS = 0.06359
+Epoca 686, RMS = 0.06359
+Epoca 687, RMS = 0.06360
+Epoca 688, RMS = 0.06360
+Epoca 689, RMS = 0.06360
+Epoca 690, RMS = 0.06360
+Epoca 691, RMS = 0.06360
+Epoca 692, RMS = 0.06360
+Epoca 693, RMS = 0.06360
+Epoca 694, RMS = 0.06360
+Epoca 695, RMS = 0.06360
+Epoca 696, RMS = 0.06360
+Epoca 697, RMS = 0.06360
+Epoca 698, RMS = 0.06360
+Epoca 699, RMS = 0.06360
+Epoca 700, RMS = 0.06360
+Epoca 701, RMS = 0.06360
+Epoca 702, RMS = 0.06360
+Epoca 703, RMS = 0.06360
+Epoca 704, RMS = 0.06360
+Epoca 705, RMS = 0.06360
+Epoca 706, RMS = 0.06360
+Epoca 707, RMS = 0.06360
+Epoca 708, RMS = 0.06360
+Epoca 709, RMS = 0.06360
+Epoca 710, RMS = 0.06360
+Epoca 711, RMS = 0.06360
+Epoca 712, RMS = 0.06361
+Epoca 713, RMS = 0.06361
+Epoca 714, RMS = 0.06361
+Epoca 715, RMS = 0.06361
+Epoca 716, RMS = 0.06361
+Epoca 717, RMS = 0.06361
+Epoca 718, RMS = 0.06361
+Epoca 719, RMS = 0.06361
+Epoca 720, RMS = 0.06361
+Epoca 721, RMS = 0.06361
+Epoca 722, RMS = 0.06361
+Epoca 723, RMS = 0.06361
+Epoca 724, RMS = 0.06361
+Epoca 725, RMS = 0.06361
+Epoca 726, RMS = 0.06361
+Epoca 727, RMS = 0.06361
+Epoca 728, RMS = 0.06361
+Epoca 729, RMS = 0.06361
+Epoca 730, RMS = 0.06361
+Epoca 731, RMS = 0.06361
+Epoca 732, RMS = 0.06361
+Epoca 733, RMS = 0.06361
+Epoca 734, RMS = 0.06361
+Epoca 735, RMS = 0.06361
+Epoca 736, RMS = 0.06361
+Epoca 737, RMS = 0.06362
+Epoca 738, RMS = 0.06362
+Epoca 739, RMS = 0.06362
+Epoca 740, RMS = 0.06362
+Epoca 741, RMS = 0.06362
+Epoca 742, RMS = 0.06362
+Epoca 743, RMS = 0.06362
+Epoca 744, RMS = 0.06362
+Epoca 745, RMS = 0.06362
+Epoca 746, RMS = 0.06362
+Epoca 747, RMS = 0.06362
+Epoca 748, RMS = 0.06362
+Epoca 749, RMS = 0.06362
+Epoca 750, RMS = 0.06362
+Epoca 751, RMS = 0.06362
+Epoca 752, RMS = 0.06362
+Epoca 753, RMS = 0.06362
+Epoca 754, RMS = 0.06362
+Epoca 755, RMS = 0.06362
+Epoca 756, RMS = 0.06362
+Epoca 757, RMS = 0.06362
+Epoca 758, RMS = 0.06362
+Epoca 759, RMS = 0.06362
+Epoca 760, RMS = 0.06363
+Epoca 761, RMS = 0.06363
+Epoca 762, RMS = 0.06363
+Epoca 763, RMS = 0.06363
+Epoca 764, RMS = 0.06363
+Epoca 765, RMS = 0.06363
+Epoca 766, RMS = 0.06363
+Epoca 767, RMS = 0.06363
+Epoca 768, RMS = 0.06363
+Epoca 769, RMS = 0.06363
+Epoca 770, RMS = 0.06363
+Epoca 771, RMS = 0.06363
+Epoca 772, RMS = 0.06363
+Epoca 773, RMS = 0.06363
+Epoca 774, RMS = 0.06363
+Epoca 775, RMS = 0.06363
+Epoca 776, RMS = 0.06363
+Epoca 777, RMS = 0.06363
+Epoca 778, RMS = 0.06363
+Epoca 779, RMS = 0.06363
+Epoca 780, RMS = 0.06363
+Epoca 781, RMS = 0.06363
+Epoca 782, RMS = 0.06363
+Epoca 783, RMS = 0.06363
+Epoca 784, RMS = 0.06364
+Epoca 785, RMS = 0.06364
+Epoca 786, RMS = 0.06364
+Epoca 787, RMS = 0.06364
+Epoca 788, RMS = 0.06364
+Epoca 789, RMS = 0.06364
+Epoca 790, RMS = 0.06364
+Epoca 791, RMS = 0.06364
+Epoca 792, RMS = 0.06364
+Epoca 793, RMS = 0.06364
+Epoca 794, RMS = 0.06364
+Epoca 795, RMS = 0.06364
+Epoca 796, RMS = 0.06364
+Epoca 797, RMS = 0.06364
+Epoca 798, RMS = 0.06364
+Epoca 799, RMS = 0.06364
+Epoca 800, RMS = 0.06364
+Epoca 801, RMS = 0.06364
+Epoca 802, RMS = 0.06364
+Epoca 803, RMS = 0.06364
+Epoca 804, RMS = 0.06364
+Epoca 805, RMS = 0.06364
+Epoca 806, RMS = 0.06364
+Epoca 807, RMS = 0.06364
+Epoca 808, RMS = 0.06365
+Epoca 809, RMS = 0.06365
+Epoca 810, RMS = 0.06365
+Epoca 811, RMS = 0.06365
+Epoca 812, RMS = 0.06365
+Epoca 813, RMS = 0.06365
+Epoca 814, RMS = 0.06365
+Epoca 815, RMS = 0.06365
+Epoca 816, RMS = 0.06365
+Epoca 817, RMS = 0.06365
+Epoca 818, RMS = 0.06365
+Epoca 819, RMS = 0.06365
+Epoca 820, RMS = 0.06365
+Epoca 821, RMS = 0.06365
+Epoca 822, RMS = 0.06365
+Epoca 823, RMS = 0.06365
+Epoca 824, RMS = 0.06365
+Epoca 825, RMS = 0.06365
+Epoca 826, RMS = 0.06365
+Epoca 827, RMS = 0.06365
+Epoca 828, RMS = 0.06365
+Epoca 829, RMS = 0.06365
+Epoca 830, RMS = 0.06365
+Epoca 831, RMS = 0.06366
+Epoca 832, RMS = 0.06366
+Epoca 833, RMS = 0.06366
+Epoca 834, RMS = 0.06366
+Epoca 835, RMS = 0.06366
+Epoca 836, RMS = 0.06366
+Epoca 837, RMS = 0.06366
+Epoca 838, RMS = 0.06366
+Epoca 839, RMS = 0.06366
+Epoca 840, RMS = 0.06366
+Epoca 841, RMS = 0.06366
+Epoca 842, RMS = 0.06366
+Epoca 843, RMS = 0.06366
+Epoca 844, RMS = 0.06366
+Epoca 845, RMS = 0.06366
+Epoca 846, RMS = 0.06366
+Epoca 847, RMS = 0.06366
+Epoca 848, RMS = 0.06366
+Epoca 849, RMS = 0.06366
+Epoca 850, RMS = 0.06366
+Epoca 851, RMS = 0.06366
+Epoca 852, RMS = 0.06366
+Epoca 853, RMS = 0.06366
+Epoca 854, RMS = 0.06366
+Epoca 855, RMS = 0.06367
+Epoca 856, RMS = 0.06367
+Epoca 857, RMS = 0.06367
+Epoca 858, RMS = 0.06367
+Epoca 859, RMS = 0.06367
+Epoca 860, RMS = 0.06367
+Epoca 861, RMS = 0.06367
+Epoca 862, RMS = 0.06367
+Epoca 863, RMS = 0.06367
+Epoca 864, RMS = 0.06367
+Epoca 865, RMS = 0.06367
+Epoca 866, RMS = 0.06367
+Epoca 867, RMS = 0.06367
+Epoca 868, RMS = 0.06367
+Epoca 869, RMS = 0.06367
+Epoca 870, RMS = 0.06367
+Epoca 871, RMS = 0.06367
+Epoca 872, RMS = 0.06367
+Epoca 873, RMS = 0.06367
+Epoca 874, RMS = 0.06367
+Epoca 875, RMS = 0.06367
+Epoca 876, RMS = 0.06367
+Epoca 877, RMS = 0.06367
+Epoca 878, RMS = 0.06367
+Epoca 879, RMS = 0.06367
+Epoca 880, RMS = 0.06368
+Epoca 881, RMS = 0.06368
+Epoca 882, RMS = 0.06368
+Epoca 883, RMS = 0.06368
+Epoca 884, RMS = 0.06368
+Epoca 885, RMS = 0.06368
+Epoca 886, RMS = 0.06368
+Epoca 887, RMS = 0.06368
+Epoca 888, RMS = 0.06368
+Epoca 889, RMS = 0.06368
+Epoca 890, RMS = 0.06368
+Epoca 891, RMS = 0.06368
+Epoca 892, RMS = 0.06368
+Epoca 893, RMS = 0.06368
+Epoca 894, RMS = 0.06368
+Epoca 895, RMS = 0.06368
+Epoca 896, RMS = 0.06368
+Epoca 897, RMS = 0.06368
+Epoca 898, RMS = 0.06368
+Epoca 899, RMS = 0.06368
+Epoca 900, RMS = 0.06368
+Epoca 901, RMS = 0.06368
+Epoca 902, RMS = 0.06368
+Epoca 903, RMS = 0.06368
+Epoca 904, RMS = 0.06368
+Epoca 905, RMS = 0.06369
+Epoca 906, RMS = 0.06369
+Epoca 907, RMS = 0.06369
+Epoca 908, RMS = 0.06369
+Epoca 909, RMS = 0.06369
+Epoca 910, RMS = 0.06369
+Epoca 911, RMS = 0.06369
+Epoca 912, RMS = 0.06369
+Epoca 913, RMS = 0.06369
+Epoca 914, RMS = 0.06369
+Epoca 915, RMS = 0.06369
+Epoca 916, RMS = 0.06369
+Epoca 917, RMS = 0.06369
+Epoca 918, RMS = 0.06369
+Epoca 919, RMS = 0.06369
+Epoca 920, RMS = 0.06369
+Epoca 921, RMS = 0.06369
+Epoca 922, RMS = 0.06369
+Epoca 923, RMS = 0.06369
+Epoca 924, RMS = 0.06369
+Epoca 925, RMS = 0.06369
+Epoca 926, RMS = 0.06369
+Epoca 927, RMS = 0.06369
+Epoca 928, RMS = 0.06369
+Epoca 929, RMS = 0.06369
+Epoca 930, RMS = 0.06369
+Epoca 931, RMS = 0.06370
+Epoca 932, RMS = 0.06370
+Epoca 933, RMS = 0.06370
+Epoca 934, RMS = 0.06370
+Epoca 935, RMS = 0.06370
+Epoca 936, RMS = 0.06370
+Epoca 937, RMS = 0.06370
+Epoca 938, RMS = 0.06370
+Epoca 939, RMS = 0.06370
+Epoca 940, RMS = 0.06370
+Epoca 941, RMS = 0.06370
+Epoca 942, RMS = 0.06370
+Epoca 943, RMS = 0.06370
+Epoca 944, RMS = 0.06370
+Epoca 945, RMS = 0.06370
+Epoca 946, RMS = 0.06370
+Epoca 947, RMS = 0.06370
+Epoca 948, RMS = 0.06370
+Epoca 949, RMS = 0.06370
+Epoca 950, RMS = 0.06370
+Epoca 951, RMS = 0.06370
+Epoca 952, RMS = 0.06370
+Epoca 953, RMS = 0.06370
+Epoca 954, RMS = 0.06370
+Epoca 955, RMS = 0.06370
+Epoca 956, RMS = 0.06370
+Epoca 957, RMS = 0.06370
+Epoca 958, RMS = 0.06370
+Epoca 959, RMS = 0.06371
+Epoca 960, RMS = 0.06371
+Epoca 961, RMS = 0.06371
+Epoca 962, RMS = 0.06371
+Epoca 963, RMS = 0.06371
+Epoca 964, RMS = 0.06371
+Epoca 965, RMS = 0.06371
+Epoca 966, RMS = 0.06371
+Epoca 967, RMS = 0.06371
+Epoca 968, RMS = 0.06371
+Epoca 969, RMS = 0.06371
+Epoca 970, RMS = 0.06371
+Epoca 971, RMS = 0.06371
+Epoca 972, RMS = 0.06371
+Epoca 973, RMS = 0.06371
+Epoca 974, RMS = 0.06371
+Epoca 975, RMS = 0.06371
+Epoca 976, RMS = 0.06371
+Epoca 977, RMS = 0.06371
+Epoca 978, RMS = 0.06371
+Epoca 979, RMS = 0.06371
+Epoca 980, RMS = 0.06371
+Epoca 981, RMS = 0.06371
+Epoca 982, RMS = 0.06371
+Epoca 983, RMS = 0.06371
+Epoca 984, RMS = 0.06371
+Epoca 985, RMS = 0.06371
+Epoca 986, RMS = 0.06371
+Epoca 987, RMS = 0.06371
+Epoca 988, RMS = 0.06372
+Epoca 989, RMS = 0.06372
+Epoca 990, RMS = 0.06372
+Epoca 991, RMS = 0.06372
+Epoca 992, RMS = 0.06372
+Epoca 993, RMS = 0.06372
+Epoca 994, RMS = 0.06372
+Epoca 995, RMS = 0.06372
+Epoca 996, RMS = 0.06372
+Epoca 997, RMS = 0.06372
+Epoca 998, RMS = 0.06372
+Epoca 999, RMS = 0.06372
+Epoca 1000, RMS = 0.06372
+
+##################TEST##################
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.76
+Y_IN 3.21
+T[0] = 1 Y[0] = 0.92
+Y_IN 0.63
+T[1] = 0 Y[1] = 0.31
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.14
+Y_IN 1.56
+T[0] = 0 Y[0] = 0.65
+Y_IN 2.52
+T[1] = 1 Y[1] = 0.85
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.97
+Y_IN 0.04
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.26
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.80
+Y_IN 3.28
+T[0] = 0 Y[0] = 0.93
+Y_IN 0.55
+T[1] = 1 Y[1] = 0.27
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 0 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 1 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.32
+Y_IN 1.23
+T[0] = 0 Y[0] = 0.55
+Y_IN 2.90
+T[1] = 1 Y[1] = 0.90
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.94
+Y_IN 0.10
+T[0] = 0 Y[0] = 0.05
+Y_IN 4.20
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.29
+Y_IN 1.29
+T[0] = 0 Y[0] = 0.57
+Y_IN 2.83
+T[1] = 1 Y[1] = 0.89
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.94
+Y_IN 0.09
+T[0] = 1 Y[0] = 0.04
+Y_IN 4.20
+T[1] = 0 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.81
+Y_IN 0.32
+T[0] = 0 Y[0] = 0.16
+Y_IN 3.93
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.96
+Y_IN 3.58
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.20
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.79
+Y_IN 0.38
+T[0] = 0 Y[0] = 0.19
+Y_IN 3.87
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.98
+Y_IN 3.61
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.17
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.63
+Y_IN 2.97
+T[0] = 1 Y[0] = 0.90
+Y_IN 0.91
+T[1] = 0 Y[1] = 0.43
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.59
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.19
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.81
+Y_IN 0.33
+T[0] = 0 Y[0] = 0.16
+Y_IN 3.93
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.54
+Y_IN 0.83
+T[0] = 0 Y[0] = 0.39
+Y_IN 3.36
+T[1] = 1 Y[1] = 0.93
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.60
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.18
+T[1] = 0 Y[1] = 0.09
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.12
+Y_IN 2.04
+T[0] = 0 Y[0] = 0.77
+Y_IN 1.97
+T[1] = 1 Y[1] = 0.75
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.97
+Y_IN 0.04
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.26
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.87
+Y_IN 0.22
+T[0] = 0 Y[0] = 0.11
+Y_IN 4.05
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 1 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 0 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.94
+Y_IN 0.09
+T[0] = 0 Y[0] = 0.05
+Y_IN 4.20
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN -0.00
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.97
+Y_IN 0.03
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.27
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 1 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 0 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.96
+Y_IN 3.57
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.22
+T[1] = 0 Y[1] = 0.11
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.82
+Y_IN 3.32
+T[0] = 1 Y[0] = 0.93
+Y_IN 0.51
+T[1] = 0 Y[1] = 0.25
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.87
+Y_IN 3.41
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.39
+T[1] = 0 Y[1] = 0.19
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.58
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.20
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.95
+Y_IN 0.08
+T[0] = 0 Y[0] = 0.04
+Y_IN 4.21
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.91
+Y_IN 0.16
+T[0] = 0 Y[0] = 0.08
+Y_IN 4.12
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.95
+Y_IN 0.08
+T[0] = 0 Y[0] = 0.04
+Y_IN 4.21
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.00
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.98
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.05
+Y_IN 1.91
+T[0] = 0 Y[0] = 0.74
+Y_IN 2.12
+T[1] = 1 Y[1] = 0.79
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.95
+Y_IN 3.55
+T[0] = 0 Y[0] = 0.94
+Y_IN 0.24
+T[1] = 1 Y[1] = 0.12
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.90
+Y_IN 0.18
+T[0] = 0 Y[0] = 0.09
+Y_IN 4.10
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.94
+Y_IN 0.09
+T[0] = 0 Y[0] = 0.04
+Y_IN 4.20
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.50
+Y_IN 2.73
+T[0] = 0 Y[0] = 0.88
+Y_IN 1.18
+T[1] = 1 Y[1] = 0.53
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.95
+Y_IN 3.56
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.23
+T[1] = 0 Y[1] = 0.11
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.87
+Y_IN 3.40
+T[0] = 0 Y[0] = 0.94
+Y_IN 0.41
+T[1] = 1 Y[1] = 0.20
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.97
+Y_IN 0.03
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.27
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.92
+Y_IN 0.14
+T[0] = 0 Y[0] = 0.07
+Y_IN 4.15
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.93
+Y_IN 0.12
+T[0] = 0 Y[0] = 0.06
+Y_IN 4.17
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.85
+Y_IN 0.27
+T[0] = 0 Y[0] = 0.13
+Y_IN 4.00
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.71
+Y_IN 3.11
+T[0] = 1 Y[0] = 0.91
+Y_IN 0.74
+T[1] = 0 Y[1] = 0.36
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.62
+Y_IN 0.68
+T[0] = 0 Y[0] = 0.33
+Y_IN 3.53
+T[1] = 1 Y[1] = 0.94
+Z[0] = 1.00
+Z[1] = 0.75
+Y_IN 3.19
+T[0] = 0 Y[0] = 0.92
+Y_IN 0.65
+T[1] = 1 Y[1] = 0.31
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.90
+Y_IN 3.47
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.33
+T[1] = 0 Y[1] = 0.17
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = -0.41
+Y_IN 1.06
+T[0] = 1 Y[0] = 0.49
+Y_IN 3.09
+T[1] = 0 Y[1] = 0.91
+Z[0] = 1.00
+Z[1] = -0.95
+Y_IN 0.08
+T[0] = 0 Y[0] = 0.04
+Y_IN 4.21
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.98
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.94
+Y_IN 3.54
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.25
+T[1] = 0 Y[1] = 0.12
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.91
+Y_IN 3.48
+T[0] = 0 Y[0] = 0.94
+Y_IN 0.31
+T[1] = 1 Y[1] = 0.16
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.94
+Y_IN 0.09
+T[0] = 1 Y[0] = 0.05
+Y_IN 4.20
+T[1] = 0 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.88
+Y_IN 3.43
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.37
+T[1] = 0 Y[1] = 0.19
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.90
+Y_IN 3.46
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.35
+T[1] = 0 Y[1] = 0.17
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.32
+Y_IN 1.23
+T[0] = 1 Y[0] = 0.55
+Y_IN 2.89
+T[1] = 0 Y[1] = 0.90
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.98
+Y_IN 0.03
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.27
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.86
+Y_IN 0.24
+T[0] = 0 Y[0] = 0.12
+Y_IN 4.02
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.60
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.18
+T[1] = 0 Y[1] = 0.09
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.00
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.39
+Y_IN 2.52
+T[0] = 0 Y[0] = 0.85
+Y_IN 1.41
+T[1] = 1 Y[1] = 0.61
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.78
+Y_IN 0.39
+T[0] = 0 Y[0] = 0.19
+Y_IN 3.86
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.80
+Y_IN 3.28
+T[0] = 1 Y[0] = 0.93
+Y_IN 0.55
+T[1] = 0 Y[1] = 0.27
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.95
+Y_IN 3.56
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.23
+T[1] = 0 Y[1] = 0.11
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.42
+Y_IN 1.05
+T[0] = 0 Y[0] = 0.48
+Y_IN 3.10
+T[1] = 1 Y[1] = 0.91
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.58
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.20
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.98
+Y_IN 3.61
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.17
+T[1] = 0 Y[1] = 0.09
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.19
+Y_IN 1.46
+T[0] = 1 Y[0] = 0.62
+Y_IN 2.63
+T[1] = 0 Y[1] = 0.87
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.61
+Y_IN 0.70
+T[0] = 0 Y[0] = 0.34
+Y_IN 3.51
+T[1] = 1 Y[1] = 0.94
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.92
+Y_IN 3.49
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.31
+T[1] = 0 Y[1] = 0.15
+Z[0] = 1.00
+Z[1] = 0.88
+Y_IN 3.42
+T[0] = 0 Y[0] = 0.94
+Y_IN 0.38
+T[1] = 1 Y[1] = 0.19
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.85
+Y_IN 0.27
+T[0] = 0 Y[0] = 0.13
+Y_IN 4.00
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.54
+Y_IN 0.83
+T[0] = 0 Y[0] = 0.39
+Y_IN 3.36
+T[1] = 1 Y[1] = 0.93
+Z[0] = 1.00
+Z[1] = 0.86
+Y_IN 3.39
+T[0] = 1 Y[0] = 0.93
+Y_IN 0.42
+T[1] = 0 Y[1] = 0.21
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.98
+Y_IN 0.02
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.28
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.83
+Y_IN 0.30
+T[0] = 1 Y[0] = 0.15
+Y_IN 3.96
+T[1] = 0 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.59
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.19
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.84
+Y_IN 0.29
+T[0] = 0 Y[0] = 0.14
+Y_IN 3.98
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.50
+Y_IN 2.72
+T[0] = 1 Y[0] = 0.88
+Y_IN 1.19
+T[1] = 0 Y[1] = 0.53
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.49
+Y_IN 2.71
+T[0] = 0 Y[0] = 0.88
+Y_IN 1.20
+T[1] = 1 Y[1] = 0.54
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.93
+Y_IN 3.52
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.27
+T[1] = 0 Y[1] = 0.13
+Z[0] = 1.00
+Z[1] = -0.95
+Y_IN 0.08
+T[0] = 0 Y[0] = 0.04
+Y_IN 4.21
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.74
+Y_IN 0.46
+T[0] = 0 Y[0] = 0.22
+Y_IN 3.78
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.96
+Y_IN 3.57
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.21
+T[1] = 0 Y[1] = 0.11
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.81
+Y_IN 3.30
+T[0] = 0 Y[0] = 0.93
+Y_IN 0.53
+T[1] = 1 Y[1] = 0.26
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.94
+Y_IN 3.54
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.25
+T[1] = 0 Y[1] = 0.13
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.34
+Y_IN 2.44
+T[0] = 0 Y[0] = 0.84
+Y_IN 1.51
+T[1] = 1 Y[1] = 0.64
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.98
+Y_IN 3.60
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.18
+T[1] = 0 Y[1] = 0.09
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.00
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.96
+Y_IN 3.57
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.22
+T[1] = 0 Y[1] = 0.11
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.00
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.01
+T[0] = 0 Y[0] = 0.01
+Y_IN 4.29
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.96
+Y_IN 0.05
+T[0] = 0 Y[0] = 0.03
+Y_IN 4.24
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.97
+Y_IN 0.05
+T[0] = 0 Y[0] = 0.02
+Y_IN 4.25
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.38
+Y_IN 1.11
+T[0] = 0 Y[0] = 0.51
+Y_IN 3.03
+T[1] = 1 Y[1] = 0.91
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.42
+Y_IN 2.58
+T[0] = 1 Y[0] = 0.86
+Y_IN 1.35
+T[1] = 0 Y[1] = 0.59
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.98
+Y_IN 3.60
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.18
+T[1] = 0 Y[1] = 0.09
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.74
+Y_IN 0.46
+T[0] = 0 Y[0] = 0.23
+Y_IN 3.78
+T[1] = 1 Y[1] = 0.96
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -0.96
+Y_IN 0.06
+T[0] = 0 Y[0] = 0.03
+Y_IN 4.23
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.81
+Y_IN 3.30
+T[0] = 1 Y[0] = 0.93
+Y_IN 0.52
+T[1] = 0 Y[1] = 0.26
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -0.62
+Y_IN 0.67
+T[0] = 0 Y[0] = 0.32
+Y_IN 3.53
+T[1] = 1 Y[1] = 0.94
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.31
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.62
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.16
+T[1] = 0 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 1 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 0 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.98
+Y_IN 3.61
+T[0] = 0 Y[0] = 0.95
+Y_IN 0.17
+T[1] = 1 Y[1] = 0.08
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.63
+Y_IN 2.96
+T[0] = 0 Y[0] = 0.90
+Y_IN 0.91
+T[1] = 1 Y[1] = 0.43
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.00
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.93
+Y_IN 3.51
+T[0] = 1 Y[0] = 0.94
+Y_IN 0.28
+T[1] = 0 Y[1] = 0.14
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.59
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.19
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.18
+Y_IN 1.49
+T[0] = 1 Y[0] = 0.63
+Y_IN 2.60
+T[1] = 0 Y[1] = 0.86
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.99
+Y_IN 3.63
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.15
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 0.97
+Y_IN 3.59
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.19
+T[1] = 0 Y[1] = 0.10
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.14
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.65
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.06
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = 0.51
+Y_IN 2.75
+T[0] = 0 Y[0] = 0.88
+Y_IN 1.16
+T[1] = 1 Y[1] = 0.52
+Z[0] = 1.00
+Z[1] = -1.00
+Y_IN -0.01
+T[0] = 0 Y[0] = -0.01
+Y_IN 4.32
+T[1] = 1 Y[1] = 0.97
+Z[0] = 1.00
+Z[1] = 1.00
+Y_IN 3.64
+T[0] = 1 Y[0] = 0.95
+Y_IN 0.13
+T[1] = 0 Y[1] = 0.07
+Z[0] = 1.00
+Z[1] = -0.99
+Y_IN 0.00
+T[0] = 0 Y[0] = 0.00
+Y_IN 4.30
+T[1] = 1 Y[1] = 0.97
