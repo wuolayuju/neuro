@@ -1,0 +1,227 @@
+0.49 -0.21 
+0.27 0.48 
+-0.21 -0.48 
+-0.02 0.34 
+0.41 -0.16 0.44 0.21 
+
+##################LEARN##################
+Epoca 1, RMS = 0.72890
+Epoca 2, RMS = 0.56709
+Epoca 3, RMS = 0.47981
+Epoca 4, RMS = 0.43382
+Epoca 5, RMS = 0.41130
+Epoca 6, RMS = 0.40073
+Epoca 7, RMS = 0.39589
+Epoca 8, RMS = 0.39376
+Epoca 9, RMS = 0.39289
+Epoca 10, RMS = 0.39258
+Epoca 11, RMS = 0.39253
+Epoca 12, RMS = 0.39256
+Epoca 13, RMS = 0.39260
+Epoca 14, RMS = 0.39260
+Epoca 15, RMS = 0.39253
+Epoca 16, RMS = 0.39237
+Epoca 17, RMS = 0.39211
+Epoca 18, RMS = 0.39173
+Epoca 19, RMS = 0.39123
+Epoca 20, RMS = 0.39060
+Epoca 21, RMS = 0.38981
+Epoca 22, RMS = 0.38886
+Epoca 23, RMS = 0.38773
+Epoca 24, RMS = 0.38640
+Epoca 25, RMS = 0.38485
+Epoca 26, RMS = 0.38306
+Epoca 27, RMS = 0.38100
+Epoca 28, RMS = 0.37868
+Epoca 29, RMS = 0.37613
+Epoca 30, RMS = 0.37343
+Epoca 31, RMS = 0.37081
+Epoca 32, RMS = 0.36872
+Epoca 33, RMS = 0.36789
+Epoca 34, RMS = 0.36922
+Epoca 35, RMS = 0.37316
+Epoca 36, RMS = 0.37887
+Epoca 37, RMS = 0.38431
+Epoca 38, RMS = 0.38782
+Epoca 39, RMS = 0.38902
+Epoca 40, RMS = 0.38841
+Epoca 41, RMS = 0.38660
+Epoca 42, RMS = 0.38402
+Epoca 43, RMS = 0.38093
+Epoca 44, RMS = 0.37747
+Epoca 45, RMS = 0.37373
+Epoca 46, RMS = 0.36979
+Epoca 47, RMS = 0.36571
+Epoca 48, RMS = 0.36153
+Epoca 49, RMS = 0.35728
+Epoca 50, RMS = 0.35297
+Epoca 51, RMS = 0.34857
+Epoca 52, RMS = 0.34409
+Epoca 53, RMS = 0.33958
+Epoca 54, RMS = 0.33527
+Epoca 55, RMS = 0.33170
+Epoca 56, RMS = 0.32965
+Epoca 57, RMS = 0.32924
+Epoca 58, RMS = 0.32825
+Epoca 59, RMS = 0.32376
+Epoca 60, RMS = 0.31677
+Epoca 61, RMS = 0.31057
+Epoca 62, RMS = 0.30619
+Epoca 63, RMS = 0.30303
+Epoca 64, RMS = 0.30047
+Epoca 65, RMS = 0.29804
+Epoca 66, RMS = 0.29526
+Epoca 67, RMS = 0.29186
+Epoca 68, RMS = 0.28779
+Epoca 69, RMS = 0.28317
+Epoca 70, RMS = 0.27812
+Epoca 71, RMS = 0.27270
+Epoca 72, RMS = 0.26692
+Epoca 73, RMS = 0.26081
+Epoca 74, RMS = 0.25441
+Epoca 75, RMS = 0.24778
+Epoca 76, RMS = 0.24103
+Epoca 77, RMS = 0.23424
+Epoca 78, RMS = 0.22751
+Epoca 79, RMS = 0.22089
+Epoca 80, RMS = 0.21443
+Epoca 81, RMS = 0.20817
+Epoca 82, RMS = 0.20214
+Epoca 83, RMS = 0.19636
+Epoca 84, RMS = 0.19086
+Epoca 85, RMS = 0.18565
+Epoca 86, RMS = 0.18072
+Epoca 87, RMS = 0.17605
+Epoca 88, RMS = 0.17164
+Epoca 89, RMS = 0.16751
+Epoca 90, RMS = 0.16366
+Epoca 91, RMS = 0.16009
+Epoca 92, RMS = 0.15679
+Epoca 93, RMS = 0.15372
+Epoca 94, RMS = 0.15087
+Epoca 95, RMS = 0.14820
+Epoca 96, RMS = 0.14574
+Epoca 97, RMS = 0.14347
+Epoca 98, RMS = 0.14138
+Epoca 99, RMS = 0.13943
+Epoca 100, RMS = 0.13758
+Epoca 101, RMS = 0.13582
+Epoca 102, RMS = 0.13413
+Epoca 103, RMS = 0.13251
+Epoca 104, RMS = 0.13095
+Epoca 105, RMS = 0.12942
+Epoca 106, RMS = 0.12790
+Epoca 107, RMS = 0.12639
+Epoca 108, RMS = 0.12489
+Epoca 109, RMS = 0.12340
+Epoca 110, RMS = 0.12193
+Epoca 111, RMS = 0.12049
+Epoca 112, RMS = 0.11907
+Epoca 113, RMS = 0.11766
+Epoca 114, RMS = 0.11626
+Epoca 115, RMS = 0.11487
+Epoca 116, RMS = 0.11350
+Epoca 117, RMS = 0.11214
+Epoca 118, RMS = 0.11079
+Epoca 119, RMS = 0.10943
+Epoca 120, RMS = 0.10806
+Epoca 121, RMS = 0.10669
+Epoca 122, RMS = 0.10530
+Epoca 123, RMS = 0.10392
+Epoca 124, RMS = 0.10252
+Epoca 125, RMS = 0.10113
+Epoca 126, RMS = 0.09973
+Epoca 127, RMS = 0.09832
+Epoca 128, RMS = 0.09692
+Epoca 129, RMS = 0.09552
+Epoca 130, RMS = 0.09412
+Epoca 131, RMS = 0.09275
+Epoca 132, RMS = 0.09138
+Epoca 133, RMS = 0.09003
+Epoca 134, RMS = 0.08871
+Epoca 135, RMS = 0.08740
+Epoca 136, RMS = 0.08612
+Epoca 137, RMS = 0.08487
+Epoca 138, RMS = 0.08365
+Epoca 139, RMS = 0.08246
+Epoca 140, RMS = 0.08130
+Epoca 141, RMS = 0.08018
+Epoca 142, RMS = 0.07908
+Epoca 143, RMS = 0.07803
+Epoca 144, RMS = 0.07701
+Epoca 145, RMS = 0.07602
+Epoca 146, RMS = 0.07507
+Epoca 147, RMS = 0.07415
+Epoca 148, RMS = 0.07326
+Epoca 149, RMS = 0.07241
+Epoca 150, RMS = 0.07158
+Epoca 151, RMS = 0.07079
+Epoca 152, RMS = 0.07002
+Epoca 153, RMS = 0.06929
+Epoca 154, RMS = 0.06857
+Epoca 155, RMS = 0.06789
+Epoca 156, RMS = 0.06722
+Epoca 157, RMS = 0.06658
+Epoca 158, RMS = 0.06596
+Epoca 159, RMS = 0.06535
+Epoca 160, RMS = 0.06477
+Epoca 161, RMS = 0.06420
+Epoca 162, RMS = 0.06364
+Epoca 163, RMS = 0.06310
+Epoca 164, RMS = 0.06258
+Epoca 165, RMS = 0.06206
+Epoca 166, RMS = 0.06156
+Epoca 167, RMS = 0.06106
+Epoca 168, RMS = 0.06058
+Epoca 169, RMS = 0.06010
+Epoca 170, RMS = 0.05964
+Epoca 171, RMS = 0.05918
+Epoca 172, RMS = 0.05872
+Epoca 173, RMS = 0.05827
+Epoca 174, RMS = 0.05783
+Epoca 175, RMS = 0.05740
+Epoca 176, RMS = 0.05697
+Epoca 177, RMS = 0.05654
+Epoca 178, RMS = 0.05612
+Epoca 179, RMS = 0.05570
+Epoca 180, RMS = 0.05529
+Epoca 181, RMS = 0.05488
+Epoca 182, RMS = 0.05448
+Epoca 183, RMS = 0.05408
+Epoca 184, RMS = 0.05368
+Epoca 185, RMS = 0.05329
+Epoca 186, RMS = 0.05290
+Epoca 187, RMS = 0.05251
+Epoca 188, RMS = 0.05213
+Epoca 189, RMS = 0.05175
+Epoca 190, RMS = 0.05138
+Epoca 191, RMS = 0.05100
+Epoca 192, RMS = 0.05063
+Epoca 193, RMS = 0.05027
+Epoca 194, RMS = 0.04991
+
+##################TEST##################
+Z[0] = -0.65
+Z[1] = -0.73
+Y_IN 4.16
+T[0] = 1 Y[0] = 0.97
+Y_IN 0.08
+T[1] = 0 Y[1] = 0.04
+Z[0] = -0.94
+Z[1] = -0.84
+Y_IN 5.12
+T[0] = 1 Y[0] = 0.99
+Y_IN -0.35
+T[1] = 0 Y[1] = -0.17
+Z[0] = 0.57
+Z[1] = -0.13
+Y_IN 0.04
+T[0] = 0 Y[0] = 0.02
+Y_IN 1.85
+T[1] = 1 Y[1] = 0.73
+Z[0] = -0.33
+Z[1] = -0.41
+Y_IN 2.90
+T[0] = 1 Y[0] = 0.90
+Y_IN 0.52
+T[1] = 0 Y[1] = 0.25

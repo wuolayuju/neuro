@@ -253,8 +253,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		}
 		n_iter++;
 		printf("Epoca %d, RMS = %.5f\n",n_iter,RMS);
-		//if(n_iter>=NUM_MAX_ITER)
-			//break;
+		if(n_iter>=NUM_MAX_ITER)
+			break;
 	}while(RMS>tolerance);
 
 	free(y);
