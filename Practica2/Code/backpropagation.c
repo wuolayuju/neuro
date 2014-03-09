@@ -384,10 +384,9 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			
 		}
 		n_iter++;
-		printf("Epoca %d, RMS = %.5f\n",n_iter,RMS);
-		if(n_iter>=NUM_MAX_ITER)
-			break;
-	}while(RMS>tolerance);
+		printf("%.5f\n",RMS);
+	
+	}while(n_iter<NUM_MAX_ITER);
 
 
 	/**FREE BLOCK**/
@@ -459,5 +458,39 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	free(y_in);
 
 	return 1;
+}
+
+void patternNormalization(Pattern *patterns, int numPatterns)
+{
+	float *average = NULL;
+	float *standardDeviation = NULL;
+	int i,j;
+
+	average = calloc(numPatterns,sizeof(float));
+	standardDeviation = calloc(numPatterns,sizeof(float));
+
+	
+	for(i=0; i<numPatterns; i++)
+	{
+		for (j=0; j<patterns->numAttributes; j++)
+			average[i] += patterns->attributes[i][j];
+
+		average[i]/=numPatterns;
+	}
+	
+	for(i=0; i<numPatterns; i++)
+	{
+		for(j=0; j<patterns->numAttributes; j++)
+		{
+			patterns->attributes[i][j] -= average[j];
+			patterns->attributes[i][j] = pow(patterns->attributes[i][j], 2);
+			standardDeviation[i] += patterns->attributes[i][j];			
+		}
+		standardDeviation[i] /= numPatterns -1;
+		standardDeviation[i] = sqrt(standardDeviation[i]);
+	}
+
+	free(average);
+	free(standardDeviation);
 }
 

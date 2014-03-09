@@ -17,6 +17,8 @@ float function_bipolar(float in);
 float dfunction_bipolar(float fx);
 float dfunction_binary(float fx);
 
+void patternNormalization(Pattern *patterns, int numPatterns);
+
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
 	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance);
 int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
