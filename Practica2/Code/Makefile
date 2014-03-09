@@ -1,5 +1,6 @@
-CC = gcc  -g -lm
+CC = gcc  -g 
 CFLAGS = -Wall
+LDFLAGS = -lm
 EXE = backpropagationapp
 
 help :
@@ -17,7 +18,7 @@ $(EXE) : % : %.o perceptron.o backpropagation.o
 	@echo "# Generando $@ "
 	@echo "# Depende de $^"
 	@echo "# Ha cambiado $<"
-	$(CC) $(CFLAGS) -o $@ $@.o perceptron.o backpropagation.o
+	$(CC) $(CFLAGS) -o $@ $@.o perceptron.o backpropagation.o $(LDFLAGS)
 
 %.o : %.c perceptron.h
 	@echo "#---------------------------"
