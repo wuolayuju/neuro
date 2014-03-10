@@ -20,9 +20,9 @@ float dfunction_binary(float fx);
 void patternNormalization(Pattern *patterns, int numPatterns);
 
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance);
+	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance, FILE *output);
 int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numFirstPattern);
+	int numHiddenLayerNeurons, float learnRate, int numFirstPattern, FILE *output);
 
 void debugWeight(float **weight, int row, int column);
 

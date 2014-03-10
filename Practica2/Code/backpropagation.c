@@ -213,7 +213,7 @@ Parameters:
 
 ******************************************************************************/
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance)
+	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance, FILE *output)
 {
 
 	int i, j, p;
@@ -384,32 +384,32 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			
 		}
 		n_iter++;
-		printf("%.5f\n",RMS);
-		if(DEBUG_TEST)
+		fprintf(output,"RMS %.5f\n",RMS);
+	
+		fprintf(output,"WEIGHTS W:\n");
+		for (i=0; i<pattern->numCategories; i++)
 		{
-			printf("WEIGHTS W:\n");
-			for (i=0; i<pattern->numCategories; i++)
+			for (j=0; j<numHiddenLayerNeurons; j++)
 			{
-				for (j=0; j<numHiddenLayerNeurons; j++)
-				{
-					printf("%.3f ",weightsW[i][j]);
-				}
-				printf("\n");
+				fprintf(output,"%.3f ",weightsW[i][j]);
 			}
-			for (i=0; i<numHiddenLayerNeurons; i++)
-			{
-				for (j=0; j<pattern->numAttributes; j++)
-				{
-					printf("%.3f ",weightsV[i][j]);
-				}
-				printf("\n");
-			}
-			printf("BIAS\n");
-			for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
-			{
-				printf("%.4f ",bias[i]);
-			}
+			fprintf(output,"\n");
 		}
+		for (i=0; i<numHiddenLayerNeurons; i++)
+		{
+			for (j=0; j<pattern->numAttributes; j++)
+			{
+				fprintf(output,"%.3f ",weightsV[i][j]);
+			}
+			fprintf(output,"\n");
+		}
+		fprintf(output,"BIAS\n");
+		for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
+		{
+			fprintf(output,"%.4f ",bias[i]);
+		}
+		fprintf(output,"\n");
+
 	
 	}while(n_iter<NUM_MAX_ITER);
 
@@ -434,7 +434,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 }
 
 int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numFirstPattern)
+	int numHiddenLayerNeurons, float learnRate, int numFirstPattern, FILE *output)
 {
 	int p,i,j;
 	float *y_in = NULL;

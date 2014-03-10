@@ -6,6 +6,7 @@ int main(int argc, char **argv)
 {
 
 	FILE *output = NULL;
+	FILE *outputDebug = NULL;
 	FILE *inputLearn = NULL;
 	FILE *inputExploit = NULL;
 	float learnRate = 0.1;
@@ -27,6 +28,9 @@ int main(int argc, char **argv)
 		if (strcmp("-inputExploit", argv[i])==0) {
 			inputExploit = fopen(argv[i+1], "r");
 		}
+		if (strcmp("-outputDebug", argv[i])==0) {
+			outputDebug = fopen(argv[i+1], "r");
+		}
 		else if (strcmp("-output", argv[i])==0) {
 			output = fopen(argv[i+1], "w");
 		}
@@ -45,9 +49,9 @@ int main(int argc, char **argv)
 	}
 
 	// Comprobamos los únicos dos argumentos obligatorios
-	if (inputLearn == NULL || (inputExploit!=NULL&&(output == NULL))) 
+	if (inputLearn == NULL || outputDebug ==NULL || (inputExploit!=NULL&&(output == NULL))) 
 	{
-		printf("\nUSO: %s -inputLearn <f_entrada> [-inputExploit <f_entrada> -output <f_salida>] [-tolerance <tolerancia>] [-numNeurons <numero_neuronas>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>]\n\n", argv[0]);
+		printf("\nUSO: %s [-inputLearn <f_entrada>] [-inputExploit <f_entrada> -output <f_salida>] [-outputDebug <f_debug>] [-tolerance <tolerancia>] [-numNeurons <numero_neuronas>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>]\n\n", argv[0]);
 		exit(0);
 	}
 
@@ -90,11 +94,11 @@ int main(int argc, char **argv)
 
 	printf("\n##################LEARN##################\n");
 	learnBackPropagation(weightsV, weightsW, bias, &patterns, 
-	numHiddenLayerNeurons,learnRate,patterns.numPatterns,errorTolerance);
+	numHiddenLayerNeurons,learnRate,patterns.numPatterns,errorTolerance, outputDebug);
 
 	printf("\n##################TEST##################\n");	
 	testBackPropagation(weightsV, weightsW, bias, &patterns, 
-	numHiddenLayerNeurons,learnRate,0);
+	numHiddenLayerNeurons,learnRate,0, outputDebug);
 
 	freeWeights(weightsW,patterns.numCategories);
 	freeWeights(weightsV,numHiddenLayerNeurons);
