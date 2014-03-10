@@ -234,7 +234,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 
 	int n_iter = 0;
 	float RMS;
-
+	int hits;
 	/**ALLOC BLOCK**/
 	
 	/*Neuron Inputs*/
@@ -265,7 +265,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	do
 	{
 		RMS = 0;
-
+		hits = 0;
 		for(p=0; p < numPatterns; p++)
 		{
 			/*Propagación palante*/
@@ -288,6 +288,10 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				if(DEBUG_TEST)
 					printf("Y_IN %.2f\n",y_in[i]);
 				y[i] = function_bipolar(y_in[i]);
+				if(round(y[i])<=0&& pattern->categories[p][i]==0)
+					hits++;
+				else if(round(y[i])==1&& pattern->categories[p][i]==1)
+					hits++;
 				if(DEBUG_TEST)
 					printf("Y[%d] = %.2f\n",i,y[i]);
 			}
@@ -409,7 +413,9 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			fprintf(output,"%.4f ",bias[i]);
 		}
 		fprintf(output,"\n");
-
+		hits = hits/pattern->numCategories;
+		printf("Epoca %d | ACIERTOS = %d %.0f%%\n",n_iter,hits,
+			(float)hits/numPatterns*100);
 	
 	}while(n_iter<NUM_MAX_ITER);
 
