@@ -385,6 +385,31 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		}
 		n_iter++;
 		printf("%.5f\n",RMS);
+		if(DEBUG_TEST)
+		{
+			printf("WEIGHTS W:\n");
+			for (i=0; i<pattern->numCategories; i++)
+			{
+				for (j=0; j<numHiddenLayerNeurons; j++)
+				{
+					printf("%.3f ",weightsW[i][j]);
+				}
+				printf("\n");
+			}
+			for (i=0; i<numHiddenLayerNeurons; i++)
+			{
+				for (j=0; j<pattern->numAttributes; j++)
+				{
+					printf("%.3f ",weightsV[i][j]);
+				}
+				printf("\n");
+			}
+			printf("BIAS\n");
+			for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
+			{
+				printf("%.4f ",bias[i]);
+			}
+		}
 	
 	}while(n_iter<NUM_MAX_ITER);
 
