@@ -482,7 +482,7 @@ void patternNormalization(Pattern *patterns, int numPatterns)
 	{
 		for(j=0; j<patterns->numAttributes; j++)
 		{
-			patterns->attributes[i][j] -= average[j];
+			patterns->attributes[i][j] -= average[i];
 			patterns->attributes[i][j] = pow(patterns->attributes[i][j], 2);
 			standardDeviation[i] += patterns->attributes[i][j];			
 		}
