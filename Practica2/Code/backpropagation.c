@@ -441,7 +441,7 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	float *z_in = NULL;
 	float *z = NULL;
 	float *y = NULL;
-
+	int hits = 0;
 
 	/*Neuron Inputs*/
 	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
@@ -472,10 +472,18 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 				y_in[i] += weightsW[i][j]*z[j];
 			printf("Y_IN %.2f\n",y_in[i]);
 			y[i] = function_bipolar(y_in[i]);
-			printf("T[%d] = %d Y[%d] = %.2f\n",i,pattern->categories[p][i],i,y[i]);
+			printf("T[%d] = %d Y[%d] = %.2f, ROUND Y [%d] = %.2f\n",
+				i,pattern->categories[p][i],i,y[i],i,round(y[i]));
+			if(round(y[i])<=0&& pattern->categories[p][i]==0)
+				hits++;
+			else if(round(y[i])==1&& pattern->categories[p][i]==1)
+				hits++;
 		}
 
 	}
+
+	printf("ACIERTOS = %d %d%%\n",hits/pattern->numCategories,
+		hits/pattern->numCategories/(pattern->numPatterns-numFirstPattern)*100);
 
 	free(y);
 	free(z);

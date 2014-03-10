@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 			inputExploit = fopen(argv[i+1], "r");
 		}
 		if (strcmp("-outputDebug", argv[i])==0) {
-			outputDebug = fopen(argv[i+1], "r");
+			outputDebug = fopen(argv[i+1], "w");
 		}
 		else if (strcmp("-output", argv[i])==0) {
 			output = fopen(argv[i+1], "w");
