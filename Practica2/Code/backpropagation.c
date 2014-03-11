@@ -284,7 +284,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					printf("Z[%d] = %.2f\n",i,z[i]);
 			}
 
-			max = FLT_MIN;
+			max = INT_MIN;
 			
 			for (i=0; i<pattern->numCategories; i++)
 			{
@@ -296,8 +296,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				if(DEBUG_TEST)
 					printf("Y_IN %.2f\n",y_in[i]);
 				y[i] = function_bipolar(y_in[i]);
-
-				if(max > y[i])
+			
+				if(max < y[i])
 				{
 					max = y[i];
 					maxIndex = i;
@@ -466,8 +466,10 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	float *z_in = NULL;
 	float *z = NULL;
 	float *y = NULL;
-	//int hits = 0;
-
+	int hits =0;
+	float max;
+	int maxIndex;
+	int numPatterns;
 	/*Neuron Inputs*/
 	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
@@ -475,6 +477,8 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	/*Neuron Outputs*/
 	z = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y = (float *)calloc(sizeof(float),pattern->numCategories);
+
+	numPatterns = pattern->numPatterns - numFirstPattern;
 
 	for(p=numFirstPattern; p<pattern->numPatterns ;p++)
 	{
@@ -487,22 +491,39 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 				z_in[i] += weightsV[i][j] * pattern->attributes[p][j];
 			
 			z[i] = function_bipolar(z_in[i]);
-			printf("Z[%d] = %.2f\n",i,z[i]);
+
+			if(DEBUG_TEST)
+				printf("Z[%d] = %.2f\n",i,z[i]);
 		}
+
+		max = INT_MIN;
 
 		for (i=0; i<pattern->numCategories; i++)
 		{
 			y_in[i] = bias[numHiddenLayerNeurons+i];
+
 			for (j=0; j<numHiddenLayerNeurons; j++)
 				y_in[i] += weightsW[i][j]*z[j];
-			printf("Y_IN %.2f\n",y_in[i]);
+
+			if(DEBUG_TEST)
+				printf("Y_IN %.2f\n",y_in[i]);
+
 			y[i] = function_bipolar(y_in[i]);
-			printf("T[%d] = %.2f Y[%d] = %.2f\n",
-				i,pattern->categories[p][i],i,y[i]);
-			
+
+			if(max < y[i])
+			{
+				max = y[i];
+				maxIndex = i;
+			}
 		}
+		if(pattern->categories[p][maxIndex] > 0)
+			hits++;
 
 	}
+	printf("Test : ACIERTOS = %d %.0f%%\n",hits,
+	(float)hits/numPatterns*100);
+	printf("Test FALLOS = %d %.0f%%\n",numPatterns - hits,
+	(float)(numPatterns - hits)/numPatterns*100);
 /*
 	printf("ACIERTOS = %d %d%%\n",hits/pattern->numCategories,
 		hits/pattern->numCategories/(pattern->numPatterns-numFirstPattern)*100);*/

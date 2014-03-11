@@ -94,11 +94,12 @@ int main(int argc, char **argv)
 
 	printf("\n##################LEARN##################\n");
 	learnBackPropagation(weightsV, weightsW, bias, &patterns, 
-	numHiddenLayerNeurons,learnRate,patterns.numPatterns,errorTolerance, outputDebug);
+	numHiddenLayerNeurons,learnRate,patterns.numPatterns*fractionLearn,errorTolerance, outputDebug);
 
 	printf("\n##################TEST##################\n");	
 	testBackPropagation(weightsV, weightsW, bias, &patterns, 
-	numHiddenLayerNeurons,learnRate,0, outputDebug);
+	numHiddenLayerNeurons,learnRate,(int)(patterns.numPatterns*fractionLearn) % patterns.numPatterns,
+	 outputDebug);
 
 	freeWeights(weightsW,patterns.numCategories);
 	freeWeights(weightsV,numHiddenLayerNeurons);
