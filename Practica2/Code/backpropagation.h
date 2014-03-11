@@ -3,7 +3,7 @@
 #define BACKPROPAGATION_H
 
 #include "perceptron.h"
-
+#include <float.h>
 
 
 void initWeights(float **weights, int numHidderLayerNeurons, int numAtributtes);

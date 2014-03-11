@@ -160,6 +160,7 @@ int parser(FILE *file, Pattern *pattern)
 	char *ptr = NULL;
 	int patternCount=0;
 	int i;
+	int target;
 
 	// Lectura del numero de atributos y clases del fichero
 	fscanf(file, "%d %d\n", &numAttributes, &numCategories);
@@ -168,12 +169,12 @@ int parser(FILE *file, Pattern *pattern)
 
 	// Reserva de memoria inicial para almacenar los patrones
 	pattern->attributes = (float **)malloc(sizeof(float *)*INCR_SIZE_PATTERN);
-	pattern->categories = (int **)malloc(sizeof(int *)*INCR_SIZE_PATTERN);
+	pattern->categories = (float **)malloc(sizeof(float *)*INCR_SIZE_PATTERN);
 
 	for(i=0;i<INCR_SIZE_PATTERN;i++)
 	{
 		pattern->attributes[i]= (float *)malloc(sizeof(float)*numAttributes);
-		pattern->categories[i]= (int *)malloc(sizeof(int)*numCategories);
+		pattern->categories[i]= (float *)malloc(sizeof(float)*numCategories);
 	}
 	
 	while(fgets(string,MAX_LINE,file)!=NULL)
@@ -191,7 +192,8 @@ int parser(FILE *file, Pattern *pattern)
 		for(i=0;i<numCategories;i++)
 		{
 			ptr = strtok(NULL, tokens );
-			pattern->categories[patternCount][i] =  atoi(ptr);	
+			target = atoi(ptr);
+			pattern->categories[patternCount][i] =  target > 0 ? 0.9 : -0.9;
 		}
 
 		// Aumento de la memoria reservada para los patrones en caso necesario
@@ -199,12 +201,12 @@ int parser(FILE *file, Pattern *pattern)
 		if ((patternCount % INCR_SIZE_PATTERN) == 0)
 		{		
 			pattern->attributes = (float **)realloc(pattern->attributes, sizeof(float *)*(INCR_SIZE_PATTERN+patternCount));
-			pattern->categories = (int **)realloc(pattern->categories, sizeof(int *)*(INCR_SIZE_PATTERN+patternCount));
+			pattern->categories = (float **)realloc(pattern->categories, sizeof(float *)*(INCR_SIZE_PATTERN+patternCount));
 
 			for(i=patternCount; i < INCR_SIZE_PATTERN+patternCount ; i++)
 			{
 				pattern->attributes[i]= (float *)malloc(sizeof(float)*numAttributes);
-				pattern->categories[i]= (int *)malloc(sizeof(int)*numCategories);
+				pattern->categories[i]= (float *)malloc(sizeof(float)*numCategories);
 			}
 		}
 	}

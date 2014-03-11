@@ -51,7 +51,7 @@ typedef struct
 typedef struct
 {
 	float **attributes;
-	int **categories;
+	float **categories;
 	int numAttributes;
 	int numCategories;
 	int numPatterns;
