@@ -26,6 +26,31 @@ void initWeights(float **weights, int weightsRow, int weightsColumn)
 		for(j=0;j<weightsColumn;j++)
 			weights[i][j] = getRandomNumberF(-0.5 , 0.5);
 }
+
+
+void nguyenWidrow(float **weights, int weightsRow, int weightsColumn, 
+	float *bias, int numHiddenLayerNeurons, int numInputs)
+{
+	float modulus =0;
+	float beta;
+	int i,j;
+
+	beta = 0.7*pow(numHiddenLayerNeurons,1/numInputs);
+
+	for(i=0;i<weightsRow;i++)
+		for(j=0;j<weightsColumn;j++)
+			modulus += pow(weights[i][j],2);
+
+	modulus = sqrt(modulus);
+
+	for(i=0;i<weightsRow;i++)
+		for(j=0;j<weightsColumn;j++)
+			weights[i][j] = beta*weights[i][j]/modulus;
+
+	for(i=0;i<numHiddenLayerNeurons;i++)
+		bias[i] = getRandomNumberF(-beta , beta);
+
+}
 /******************************************************************************
 Purpose:
 

@@ -7,6 +7,8 @@
 
 
 void initWeights(float **weights, int numHidderLayerNeurons, int numAtributtes);
+void nguyenWidrow(float **weights, int weightsRow, int weightsColumn, 
+	float *bias, int numHiddenLayerNeurons, int numInputs);
 
 float **generateWeights(int weightsRow, int weightsColumn);
 float *generateBias(int numHidderLayerNeurons, int numCategories);

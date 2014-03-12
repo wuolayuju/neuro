@@ -88,6 +88,9 @@ int main(int argc, char **argv)
 	debugWeight(weightsV,numHiddenLayerNeurons,patterns.numAttributes);
 	debugWeight(weightsW,patterns.numCategories,numHiddenLayerNeurons);
 
+	nguyenWidrow(weightsW,patterns.numCategories,numHiddenLayerNeurons
+		,bias,numHiddenLayerNeurons,patterns.numAttributes);
+
 	for(i=0;i<numHiddenLayerNeurons+patterns.numCategories;i++)
 		printf("%.2f ",bias[i]);
 	printf("\n");
