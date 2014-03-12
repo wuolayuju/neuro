@@ -88,6 +88,7 @@ int main(int argc, char **argv)
 	debugWeight(weightsV,numHiddenLayerNeurons,patterns.numAttributes);
 	debugWeight(weightsW,patterns.numCategories,numHiddenLayerNeurons);
 
+
 	//nguyenWidrow(weightsW,patterns.numCategories,numHiddenLayerNeurons
 		//,bias,numHiddenLayerNeurons,patterns.numAttributes);
 
