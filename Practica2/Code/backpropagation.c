@@ -274,7 +274,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 
 	/*Errores*/
 	dk = (float *)malloc(sizeof(float)*pattern->numCategories);
-	d_inj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
+	d_inj = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	dj = (float *)malloc(sizeof(float)*numHiddenLayerNeurons);
 
 	
@@ -343,10 +343,10 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			// y del incremento de los pesos
 			for(i=0;i<pattern->numCategories;i++)
 			{
-				dk[i] = (pattern->categories[p][i] - y[i])*dfunction_bipolar(y[i]);
+				dk[i] = (pattern->categories[p][i] - y[i])*dfunction_bipolar(y_in[i]);
 				if(DEBUG_TEST)
 					printf("%.2f %.2f %.2f\n",pattern->attributes[p][i],y[i],
-					dfunction_bipolar(y[i]));
+					dfunction_bipolar(y_in[i]));
 				if(DEBUG_TEST)
 					printf("DK[%d] = %.2f\n",i,dk[i]);
 
@@ -374,7 +374,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 						printf("D_IN[%d] = %.3f\n",i,d_inj[i]);
 				}
 
-				dj[i] = d_inj[i]*dfunction_bipolar(z[i]);
+				dj[i] = d_inj[i]*dfunction_bipolar(z_in[i]);
 				if(DEBUG_TEST)
 					printf("D_J[%d] = %.3f\n",i,dj[i]);
 
