@@ -1,0 +1,3 @@
+
+USO: ./backpropagationapp [-inputLearn <f_entrada>] [-inputExploit <f_entrada> -output <f_salida>] [-outputDebug <f_debug>] [-tolerance <tolerancia>] [-numNeurons <numero_neuronas>] [-part <porcentaje_aprendizaje>] [-learnrate <tasa_aprendizaje>]
+

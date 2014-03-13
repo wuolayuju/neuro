@@ -1,29 +1,15 @@
 
 #incrementos Neuronas
 
-inicio=1
-final=8
+inicio=4
+final=12
 incr=1
 
 
 for i in $(seq $inicio $incr $final)
 do
-	./backpropagationapp -inputLearn nand.txt -numNeurons $i -part 1 -learnrate 0.1 -tolerance 0.05 -outputDebug outputs/neuron_nand$i.out>  outputs/hits_neuron_nand$i.out
-	./backpropagationapp -inputLearn nor.txt -numNeurons $i -part 1 -learnrate 0.1 -tolerance 0.05 -outputDebug outputs/neuron_nor$i.out>  outputs/hits_neuron_nor$i.out
-	./backpropagationapp -inputLearn xor.txt -numNeurons $i -part 1 -learnrate 0.1 -tolerance 0.05 -outputDebug outputs/neuron_xor$i.out>  outputs/hits_neuron_xor$i.out
+	./backpropagationapp -inputLearn nand.txt -numNeurons $i -part 1 -learnrate 0.05  -outputDebug outputs/neuron_nand$i.out>  outputs/hits_neuron_nand$i.out
+	./backpropagationapp -inputLearn nor.txt -numNeurons $i -part 1 -learnrate 0.05  -outputDebug outputs/neuron_nor$i.out>  outputs/hits_neuron_nor$i.out
 
 done
 
-
-#incrementos Tasa aprendizaje
-
-inicio=0.1
-final=1
-incr=0.1
-for i in $(seq $inicio $incr $final)
-do
-	./backpropagationapp -inputLearn nand.txt -numNeurons 2 -part 1 -learnrate $i -outputDebug outputs/learn_nand$i.out > outputs/hits_learn_nand$i.out
-	./backpropagationapp -inputLearn nor.txt -numNeurons 2 -part 1 -learnrate $i -outputDebug outputs/learn_nor$i.out > outputs/hits_learn_nor$i.out
-	./backpropagationapp -inputLearn xor.txt -numNeurons 2 -part 1 -learnrate $i -outputDebug outputs/learn_xor$i.out >outputs/hits_learn_xor$i.out
-
-done
