@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 	FILE *outputDebug = NULL;
 	FILE *inputLearn = NULL;
 	FILE *inputExploit = NULL;
+	boolean normalization = false;
 	float learnRate = 0.1;
 	float fractionLearn = 0.3;
 	int i;
@@ -45,6 +46,9 @@ int main(int argc, char **argv)
 		}
 		else if (strcmp("-tolerance", argv[i])==0) {
 			errorTolerance = atof(argv[i+1]);
+		}
+		else if (strcmp("-normalization", argv[i])==0) {
+			normalization = true;
 		}
 	}
 
@@ -92,9 +96,14 @@ int main(int argc, char **argv)
 	//nguyenWidrow(weightsW,patterns.numCategories,numHiddenLayerNeurons
 		//,bias,numHiddenLayerNeurons,patterns.numAttributes);
 
-	for(i=0;i<numHiddenLayerNeurons+patterns.numCategories;i++)
-		printf("%.2f ",bias[i]);
-	printf("\n");
+	//for(i=0;i<numHiddenLayerNeurons+patterns.numCategories;i++)
+		//printf("%.2f ",bias[i]);
+	//printf("\n");
+
+	if(normalization)
+	{
+		patternNormalization(&patterns,patterns.numPatterns*fractionLearn);
+	}
 
 	printf("\n##################LEARN##################\n");
 	learnBackPropagation(weightsV, weightsW, bias, &patterns, 

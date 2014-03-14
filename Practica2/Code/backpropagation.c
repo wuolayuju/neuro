@@ -459,7 +459,6 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			
 		}
 		n_iter++;
-		fprintf(stdout,"RMS %.5f\n",RMS);
 		fprintf(output,"RMS %.5f\n",RMS);
 	
 		fprintf(output,"WEIGHTS W:\n");
@@ -485,10 +484,10 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			fprintf(output,"%.4f ",bias[i]);
 		}
 		fprintf(output,"\n");
-		//printf("Epoca %d | ACIERTOS = %d %.0f%%\n",n_iter,hits,
-			//(float)hits/numPatterns*100);
-		//printf("Epoca %d | FALLOS = %d %.0f%%\n",n_iter,numPatterns - hits,
-			//(float)(numPatterns - hits)/numPatterns*100);
+		printf("Epoca %d | ACIERTOS = %d %.0f%%\n",n_iter,hits,
+			(float)hits/numPatterns*100);
+		printf("Epoca %d | FALLOS = %d %.0f%%\n",n_iter,numPatterns - hits,
+			(float)(numPatterns - hits)/numPatterns*100);
 
 	}while(n_iter<NUM_MAX_ITER);
 
