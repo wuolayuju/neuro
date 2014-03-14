@@ -27,5 +27,6 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	int numHiddenLayerNeurons, float learnRate, int numFirstPattern, FILE *output);
 
 void debugWeight(float **weight, int row, int column);
-
+int exploit(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
+	int numHiddenLayerNeurons, float learnRate, FILE *output);
 #endif

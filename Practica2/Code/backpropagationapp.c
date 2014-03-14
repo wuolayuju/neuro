@@ -114,10 +114,30 @@ int main(int argc, char **argv)
 	numHiddenLayerNeurons,learnRate,(int)(patterns.numPatterns*fractionLearn) % patterns.numPatterns,
 	 outputDebug);
 
+	if (inputExploit != NULL) {
+
+		printf("\n##################EXPLOIT##################\n");
+
+		freePattern(&patterns);
+		if (!createPatternExploit(inputExploit, &patterns))
+		{
+			fprintf(stderr, "ERROR: Error en la lectura de patrones\n");
+			fclose(inputExploit);
+			fclose(output);
+			return 0;
+		}
+
+		exploit(weightsV, weightsW, bias, &patterns,numHiddenLayerNeurons,
+			learnRate, output);
+
+
+	}
+
 	freeWeights(weightsW,patterns.numCategories);
 	freeWeights(weightsV,numHiddenLayerNeurons);
 	freePattern(&patterns);
 	free(bias);
+	fclose(outputDebug);
 
 	return 1;
 }

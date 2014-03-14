@@ -631,3 +631,67 @@ void patternNormalization(Pattern *patterns, int numPatterns)
 	free(standardDeviation);
 }
 
+int exploit(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
+	int numHiddenLayerNeurons, float learnRate,FILE *output)
+{
+	int p,i,j;
+	float *y_in = NULL;
+	float *z_in = NULL;
+	float *z = NULL;
+	float *y = NULL;
+	float max;
+	int maxIndex=-1;
+	/*Neuron Inputs*/
+	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
+	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
+
+	/*Neuron Outputs*/
+	z = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
+	y = (float *)calloc(sizeof(float),pattern->numCategories);
+
+	
+	for(p=0; p<pattern->numPatterns ;p++)
+	{
+
+		/*Propagación palante*/
+		for (i=0; i<numHiddenLayerNeurons; i++)
+		{
+			z_in[i] = bias[i];
+			for (j=0; j<pattern->numAttributes; j++)
+				z_in[i] += weightsV[i][j] * pattern->attributes[p][j];
+			
+			z[i] = (2/(1+exp(-z_in[i])))-1;
+				
+		}
+
+		max = INT_MIN;
+
+		for (i=0; i<pattern->numCategories; i++)
+		{
+			y_in[i] = bias[numHiddenLayerNeurons+i];
+
+			for (j=0; j<numHiddenLayerNeurons; j++)
+				y_in[i] += weightsW[i][j]*z[j];
+
+		
+			y[i] = (2/(1+exp(-y_in[i])))-1;
+	
+			if(max < y[i])
+			{
+				max = y[i];
+				maxIndex = i;
+			}
+		}
+		for (i=0; i<pattern->numCategories; i++)
+		{
+			if(i == maxIndex)
+				fprintf(output,"1 ");
+			else
+				fprintf(output,"0 ");
+		}
+		fprintf(output,"\n");
+
+	}
+	return 1;
+}
+
