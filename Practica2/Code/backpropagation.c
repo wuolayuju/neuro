@@ -459,35 +459,38 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 			
 		}
 		n_iter++;
-		fprintf(output,"RMS %.5f\n",RMS);
+		fprintf(output,"Epoca %d | RMS %.5f\n",n_iter, RMS);
 	
-		fprintf(output,"WEIGHTS W:\n");
-		for (i=0; i<pattern->numCategories; i++)
+		if(DEBUG_TEST)
 		{
-			for (j=0; j<numHiddenLayerNeurons; j++)
+			fprintf(output,"WEIGHTS W:\n");
+			for (i=0; i<pattern->numCategories; i++)
 			{
-				fprintf(output,"%.3f ",weightsW[i][j]);
+				for (j=0; j<numHiddenLayerNeurons; j++)
+				{
+					fprintf(output,"%.3f ",weightsW[i][j]);
+				}
+				fprintf(output,"\n");
+			}
+			for (i=0; i<numHiddenLayerNeurons; i++)
+			{
+				for (j=0; j<pattern->numAttributes; j++)
+				{
+					fprintf(output,"%.3f ",weightsV[i][j]);
+				}
+				fprintf(output,"\n");
+			}
+			fprintf(output,"BIAS\n");
+			for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
+			{
+				fprintf(output,"%.4f ",bias[i]);
 			}
 			fprintf(output,"\n");
 		}
-		for (i=0; i<numHiddenLayerNeurons; i++)
-		{
-			for (j=0; j<pattern->numAttributes; j++)
-			{
-				fprintf(output,"%.3f ",weightsV[i][j]);
-			}
-			fprintf(output,"\n");
-		}
-		fprintf(output,"BIAS\n");
-		for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
-		{
-			fprintf(output,"%.4f ",bias[i]);
-		}
-		fprintf(output,"\n");
+		
+		
 		printf("Epoca %d | ACIERTOS = %d %.0f%%\n",n_iter,hits,
 			(float)hits/numPatterns*100);
-		printf("Epoca %d | FALLOS = %d %.0f%%\n",n_iter,numPatterns - hits,
-			(float)(numPatterns - hits)/numPatterns*100);
 
 	}while(n_iter<NUM_MAX_ITER);
 
@@ -597,34 +600,42 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	return 1;
 }
 
-void patternNormalization(Pattern *patterns, int numPatterns)
+void patternNormalization(Pattern *patterns, int numPatternsLearn)
 {
 	float *average = NULL;
 	float *standardDeviation = NULL;
 	int i,j;
 
-	average = calloc(numPatterns,sizeof(float));
-	standardDeviation = calloc(numPatterns,sizeof(float));
+	average = calloc(patterns->numAttributes,sizeof(float));
+	standardDeviation = calloc(patterns->numAttributes,sizeof(float));
 
 	
-	for(i=0; i<numPatterns; i++)
-	{
-		for (j=0; j<patterns->numAttributes; j++)
-			average[i] += patterns->attributes[i][j];
 
-		average[i]/=numPatterns;
+	for (i=0; i<patterns->numAttributes; i++)
+	{
+		for(j=0;j<numPatternsLearn;j++)
+		{
+			average[i] += patterns->attributes[j][i];
+		}
+		average[i]/=numPatternsLearn;
+	
 	}
 	
-	for(i=0; i<numPatterns; i++)
+	for (i=0; i<patterns->numAttributes; i++)
 	{
-		for(j=0; j<patterns->numAttributes; j++)
+		for(j=0;j<numPatternsLearn;j++)
 		{
-			patterns->attributes[i][j] -= average[i];
-			patterns->attributes[i][j] = pow(patterns->attributes[i][j], 2);
-			standardDeviation[i] += patterns->attributes[i][j];			
+			standardDeviation[i] = patterns->attributes[j][i] - average[i];
+			standardDeviation[i] = pow(standardDeviation[i], 2);
+			
 		}
-		standardDeviation[i] /= numPatterns -1;
+		standardDeviation[i] /= numPatternsLearn -1;
 		standardDeviation[i] = sqrt(standardDeviation[i]);
+
+		for(j=0;j<patterns->numPatterns;j++)
+			patterns->attributes[j][i] = (patterns->attributes[j][i] - average[i]) / standardDeviation[i];
+		
+		
 	}
 
 	free(average);
