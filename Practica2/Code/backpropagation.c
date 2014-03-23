@@ -238,11 +238,10 @@ Parameters:
 	numHiddenLayerNeurons
 	learnRate
 	numPatterns
-	tolerance
 
 ******************************************************************************/
 int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern *pattern, 
-	int numHiddenLayerNeurons, float learnRate, int numPatterns, float tolerance, FILE *output)
+	int numHiddenLayerNeurons, float learnRate, int numPatterns, FILE *output)
 {
 
 	int i, j, p;
@@ -345,20 +344,13 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					printf("Y[%d] = %.10f\n",i,y[i]);
 					printf("T[%d] = %.10f\n",i,pattern->categories[p][i]);
 				}
-					
-				/*
-				if(round(y[i])<=0&& pattern->categories[p][i]==0)
-					hits++;
-				else if(round(y[i])==1&& pattern->categories[p][i]==1)
-					hits++;
-				if(DEBUG_TEST)
-					printf("Y[%d] = %.2f\n",i,y[i]);*/
+				
 			}
 
 			if(pattern->categories[p][maxIndex] > 0)
 				hits++;
 
-			// Calculo del error en neuronas de salida
+			// Calculo y propagación del error en neuronas de salida
 			// y del incremento de los pesos
 			for(i=0;i<pattern->numCategories;i++)
 			{
@@ -415,11 +407,7 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					printf("Ab[%d] = %.3f\n",i,Ab[i]);
 			}
 
-
-			//Retropropagación
-			//FALTAN COSAS
-
-			//Actualiza pesos (derrame cerebrall)
+			//Actualiza de los pesos
 			for (i=0; i<pattern->numCategories; i++)
 			{
 				for (j=0; j<numHiddenLayerNeurons; j++)
@@ -539,7 +527,7 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	for(p=numFirstPattern; p<pattern->numPatterns ;p++)
 	{
 
-		/*Propagación palante*/
+		/*Propagación hacia adelante*/
 		for (i=0; i<numHiddenLayerNeurons; i++)
 		{
 			z_in[i] = bias[i];
@@ -652,6 +640,7 @@ int exploit(float **weightsV, float **weightsW, float *bias, Pattern *pattern,
 	float *y = NULL;
 	float max;
 	int maxIndex=-1;
+
 	/*Neuron Inputs*/
 	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
@@ -664,7 +653,7 @@ int exploit(float **weightsV, float **weightsW, float *bias, Pattern *pattern,
 	for(p=0; p<pattern->numPatterns ;p++)
 	{
 
-		/*Propagación palante*/
+		/*Propagación hacia adelante*/
 		for (i=0; i<numHiddenLayerNeurons; i++)
 		{
 			z_in[i] = bias[i];
