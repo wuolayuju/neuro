@@ -1,5 +1,6 @@
 
 
+#include "autoencoder.h"
 #include "backpropagation.h"
 
 int main(int argc, char **argv)
@@ -92,11 +93,11 @@ int main(int argc, char **argv)
 	}
 
 	printf("\n##################LEARN##################\n");
-	learnBackPropagation(weightsV, weightsW, bias, &patterns, 
+	learnBackPropagationAutoencoder(weightsV, weightsW, bias, &patterns, 
 	numHiddenLayerNeurons,learnRate,patterns.numPatterns*fractionLearn, outputDebug);
 
 	printf("\n##################TEST##################\n");	
-	testBackPropagation(weightsV, weightsW, bias, &patterns, 
+	testBackPropagationAutoencoder(weightsV, weightsW, bias, &patterns, 
 	numHiddenLayerNeurons,learnRate,(int)(patterns.numPatterns*fractionLearn) % patterns.numPatterns,
 	 outputDebug);
 

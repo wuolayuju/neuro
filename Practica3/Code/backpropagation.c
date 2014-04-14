@@ -263,6 +263,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 	int n_iter = 0;
 	float RMS;
 	int hits;
+	float max;
+	int maxIndex;
 	/**ALLOC BLOCK**/
 	
 	/*Neuron Inputs*/
@@ -298,17 +300,6 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		hits = 0;
 		for(p=0; p < numPatterns; p++)
 		{
-			if(0)
-			{
-				printf("%d:",p);
-				for (i=0; i<pattern->numCategories; i++)
-				{
-					printf("%.1f ",pattern->categories[p][i]);
-
-				}
-			
-				printf("| ");
-			}
 			/*Propagación palante*/
 			for (i=0; i<numHiddenLayerNeurons; i++)
 			{
@@ -322,17 +313,16 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				
 				z[i] = (2/(1+exp(-z_in[i])))-1;
 
-				if(0)
+				if(DEBUG_TEST)
 				{
-					printf("%.2f ",z[i]);
-					//printf("ZIN[%d] = %.6f\n",i,z_in[i]);
+					printf("Z[%d] = %.10f\n",i,z[i]);
+					printf("ZIN[%d] = %.6f\n",i,z_in[i]);
 				}
 					
 			}
-			if(0)
-			{
-				printf("\n");
-			}
+
+			max = INT_MIN;
+			
 			for (i=0; i<pattern->numCategories; i++)
 			{
 				y_in[i] = bias[numHiddenLayerNeurons+i];
@@ -344,10 +334,10 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					printf("Y_IN %.2f\n",y_in[i]);
 				y[i] = (2/(1+exp(-y_in[i])))-1;
 			
-				if(!(((y[i] > 0) && (pattern->categories[p][i] > 0))
-				|| ((y[i] <= 0) && (pattern->categories[p][i] < 0))))
-				{	
-					hits++;
+				if(max < y[i])
+				{
+					max = y[i];
+					maxIndex = i;
 				}
 				if(DEBUG_TEST)
 				{
@@ -356,6 +346,9 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 				}
 				
 			}
+
+			if(pattern->categories[p][maxIndex] > 0)
+				hits++;
 
 			// Calculo y propagación del error en neuronas de salida
 			// y del incremento de los pesos
@@ -456,9 +449,8 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 		n_iter++;
 		fprintf(output,"Epoca %d | RMS %.5f\n",n_iter, RMS);
 	
-		if(0)
+		if(DEBUG_TEST)
 		{
-			/*
 			fprintf(output,"WEIGHTS W:\n");
 			for (i=0; i<pattern->numCategories; i++)
 			{
@@ -467,28 +459,26 @@ int learnBackPropagation(float **weightsV, float **weightsW, float *bias, Patter
 					fprintf(output,"%.3f ",weightsW[i][j]);
 				}
 				fprintf(output,"\n");
-			}*/
-			fprintf(output,"WEIGHTS V:\n");
+			}
 			for (i=0; i<numHiddenLayerNeurons; i++)
 			{
-				fprintf(output,"%d: ",i);
 				for (j=0; j<pattern->numAttributes; j++)
 				{
 					fprintf(output,"%.3f ",weightsV[i][j]);
 				}
 				fprintf(output,"\n");
 			}
-			/*fprintf(output,"BIAS\n");
+			fprintf(output,"BIAS\n");
 			for (i=0;i<numHiddenLayerNeurons+pattern->numCategories;i++)
 			{
 				fprintf(output,"%.4f ",bias[i]);
 			}
-			fprintf(output,"\n");*/
+			fprintf(output,"\n");
 		}
 		
 		
-		printf("Epoca %d | Pixeles fallados = %d %.0f%%\n",n_iter,hits/pattern->numCategories,
-			(float)hits/pattern->numCategories/numPatterns*100);
+		printf("Epoca %d | ACIERTOS = %d %.0f%%\n",n_iter,hits,
+			(float)hits/numPatterns*100);
 
 	}while(n_iter<NUM_MAX_ITER);
 
@@ -521,7 +511,9 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	float *z = NULL;
 	float *y = NULL;
 	int hits =0;
-	
+	float max;
+	int maxIndex;
+	int numPatterns;
 	/*Neuron Inputs*/
 	z_in = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y_in = (float *)calloc(sizeof(float),pattern->numCategories);
@@ -530,21 +522,10 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 	z = (float *)calloc(sizeof(float),numHiddenLayerNeurons);
 	y = (float *)calloc(sizeof(float),pattern->numCategories);
 
+	numPatterns = pattern->numPatterns - numFirstPattern;
 
 	for(p=numFirstPattern; p<pattern->numPatterns ;p++)
 	{
-
-		if(1)
-		{
-			printf("%d:",p+1);
-			for (i=0; i<pattern->numCategories; i++)
-			{
-				printf("%d",(pattern->categories[p][i])>0);
-
-			}
-		
-			printf("| ");
-		}
 
 		/*Propagación hacia adelante*/
 		for (i=0; i<numHiddenLayerNeurons; i++)
@@ -555,20 +536,18 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 			
 			z[i] = (2/(1+exp(-z_in[i])))-1;
 
-			if(1)
+			if(DEBUG_TEST)
 			{
-				printf("%.2f ",z[i]);
-				//printf("ZIN[%d] = %.6f\n",i,z_in[i]);
+				printf("ZIN[%d] = %.10f\n",i,z_in[i]);
+				printf("Z[%d] = %.10f\n",i,z[i]);
 			}
 				
 		}
-		if(1) printf("\n");
 
-		//max = INT_MIN;
-		hits = 0;
+		max = INT_MIN;
+
 		for (i=0; i<pattern->numCategories; i++)
 		{
-			
 			y_in[i] = bias[numHiddenLayerNeurons+i];
 
 			for (j=0; j<numHiddenLayerNeurons; j++)
@@ -582,22 +561,21 @@ int testBackPropagation(float **weightsV, float **weightsW, float *bias, Pattern
 				printf("Y[%d] = %.10f\n",i,y[i]);
 				printf("T[%d] = %.10f\n",i,pattern->categories[p][i]);
 			}
-			if(((y[i] > 0) && (pattern->categories[p][i] > 0))
-				|| ((y[i] <= 0) && (pattern->categories[p][i] < 0)))
+				
+			if(max < y[i])
 			{
-				hits++;
+				max = y[i];
+				maxIndex = i;
 			}
 		}
-
-		printf("%d) Pixeles fallados %.2f\n",p+1,
-			(float)(pattern->numCategories-hits)/pattern->numCategories*100);
-			
+		if(pattern->categories[p][maxIndex] > 0)
+			hits++;
 
 	}
-	//printf("Test : ACIERTOS = %d %.0f%%\n",hits,
-	//(float)hits/numPatterns*100);
-	//printf("Test FALLOS = %d %.0f%%\n",numPatterns - hits,
-	//(float)(numPatterns - hits)/numPatterns*100);
+	printf("Test : ACIERTOS = %d %.0f%%\n",hits,
+	(float)hits/numPatterns*100);
+	printf("Test FALLOS = %d %.0f%%\n",numPatterns - hits,
+	(float)(numPatterns - hits)/numPatterns*100);
 /*
 	printf("ACIERTOS = %d %d%%\n",hits/pattern->numCategories,
 		hits/pattern->numCategories/(pattern->numPatterns-numFirstPattern)*100);*/

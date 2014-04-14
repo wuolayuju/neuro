@@ -1,6 +1,6 @@
 CC = gcc  -g
 CFLAGS = -Wall
-EXE = backpropagationapp generateInput
+EXE = backpropagationPart1 generateInput adapta-fichero-serie backpropagationPart2
 LM = -lm
 
 help :
